@@ -1,0 +1,9 @@
+/* ACCESSIBILITY */
+.vh {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+}

@@ -1,0 +1,82 @@
+.siteFooter {
+  background-color: var(--color-canvas)
+}
+
+.siteFooter > section {
+  border-top: .35rem solid var(--color-canvas-text-faded);
+  padding: 2rem;
+}
+
+.connectionList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 1rem 0;
+}
+
+
+@media (min-width: 640px) {
+  .connectionList {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+
+@media (min-width: 61.25rem) {
+  .connectionList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.connectionItem {
+  display: block;
+  flex-basis: 25%;
+}
+
+.connectionLink {
+  background-color: var(--color-white);
+  border-radius: 100%;
+  color: var(--color-dark);
+  display: inline-block;
+  height: 3rem;
+  margin: .5rem;
+  outline: none;
+  padding: 1px;
+  text-align: center;
+  transition: background-color 200ms, color 200ms;
+  width: 3rem;
+}
+
+.connectionLink:hover,
+.connectionLink:focus {
+  color: var(--color-dark-faded);
+}
+
+.connectionIcon {
+  height: 3rem;
+  width: 2.5rem;
+  padding: 5px;
+}
+
+@media (min-width: 61.25rem) {
+  .siteFooter > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+  }
+
+  .siteFooter .about {
+    width: 60%;
+  }
+
+  .siteFooter .connect {
+    width: 33%;
+  }
+
+  .siteFooter .legal {
+    width: 100%;
+  }
+}

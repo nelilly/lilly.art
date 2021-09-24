@@ -1,0 +1,28 @@
+{
+  "log": [
+    {
+      "date":"2021-08-11T12:00:00",
+      "title":"Comcast Open Source Softwate Launched",
+      "location": "https://github.com/nelilly/lilly.art/blob/main/index.html",
+      "excerpt":"A redesign and rearchitecture of the Comcast Open Source Software website. New features include a virtual conference, yoctometers, and zoophobia. Designed to use the Comcast corporate styles guide. Rearchitected to take advantage of some of the latest features available through GitHub."
+    },
+    {
+      "date":"2021-08-11T12:00:00",
+      "title":"Component Added",
+      "location": "https://github.com/nelilly/lilly.art/blob/main/index.html",
+      "excerpt":"A redesign and rearchitecture of the Comcast Open Source Software website. New features include a virtual conference, yoctometers, and zoophobia. Designed to use the Comcast corporate styles guide. Rearchitected to take advantage of some of the latest features available through GitHub."
+    },
+    {
+      "date":"2021-08-11T12:00:00",
+      "title":"Resume Updated",
+      "location": "/resume",
+      "excerpt":"A redesign and rearchitecture of the Comcast Open Source Software website. New features include a virtual conference, yoctometers, and zoophobia. Designed to use the Comcast corporate styles guide. Rearchitected to take advantage of some of the latest features available through GitHub."
+    },
+    {
+      "date":"2021-10-08T12:00:00",
+      "title":"Site Launch",
+      "location": "https://github.com/nelilly/lilly.art/",
+      "excerpt":"Next.js version of the site launched, replacing the placeholder landing page."
+    }
+  ]
+}

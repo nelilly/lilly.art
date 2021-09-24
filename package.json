@@ -1,0 +1,37 @@
+{
+  "name": "lilly.art",
+  "version": "1.0.0",
+  "description": "Work Portfolio",
+  "main": "index.jsx",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export -o docs",
+    "deploy": "npm run build && git add . && git commit -m \"Deploy docs\" && git push origin gh-pages",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelilly/lilly.art.git"
+  },
+  "author": "Nathan E. Lilly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelilly/lilly.art/issues"
+  },
+  "homepage": "https://github.com/nelilly/lilly.art#readme",
+  "dependencies": {
+    "next": "^10.0.7",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^4.20.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "react-svg-loader": "^3.0.3"
+  }
+}

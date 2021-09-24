@@ -1,0 +1,53 @@
+.main {
+  display: inherit;
+}
+
+.siteHeader {
+  /* font-family: "Lora", serif; */
+}
+
+.siteId {
+  color: var(--color-canvas-text);
+  display: flex;
+}
+
+.siteLogo {
+  height: 2.8rem;
+  /* transform: translateY(-.2rem); */
+  margin-bottom: -2rem;
+  position: relative;
+  vertical-align: top;
+  width: 2.8rem;
+  z-index: 1;
+}
+
+.siteTitle {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-variation-settings: 'wght' 500;
+  letter-spacing: .1rem;
+  margin: 0;
+  padding-left: .5rem;
+}
+
+.siteSubtitle {
+  margin: 0;
+  letter-spacing: .2rem;
+  line-height: .666;
+  opacity: .6;
+  font-size: .8rem;
+  font-variation-settings: 'wght' 900;
+  text-transform: uppercase;
+}
+
+.siteId:hover,
+.siteId:focus {
+  color: var(--color-canvas-text);
+}
+
+.helm {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .35rem solid var(--color-canvas-text-faded);
+  padding: .5rem;
+}

@@ -1,0 +1,117 @@
+.toggle {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  gap: 1ch;
+  margin-bottom: .5rem;
+  position: relative;
+}
+
+button.toggle {
+  background-color: transparent;
+  border: 0;
+  font: inherit;
+  padding: 0;
+}
+
+.toggle > input {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  /* width: 100%; */
+}
+
+.display {
+  --diameter: 1.25rem;
+  --offset: 0rem;
+  align-items: center;
+  background-color: #fbe4e200;
+  background-color: #fff;
+  border-radius: .333rem;
+  border: 0.1rem solid currentColor;
+  box-sizing: content-box;
+  display: inline-flex;
+  height: calc(var(--diameter) + var(--offset) * 2);
+  justify-content: space-around;
+  position: relative;
+  transition: 100ms;
+  width: calc(var(--diameter) * 2 + var(--offset) * 2);
+}
+
+.display::before {
+  background-color: #000;
+  border-radius: .25rem;
+  border: 0.10rem solid currentColor;
+  box-sizing: border-box;
+  content: "";
+  height: var(--diameter);
+  left: var(--offset);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: inherit;
+  width: var(--diameter);
+  will-change: transform;
+  z-index: 2;
+}
+
+
+.toggle:focus .display,
+.toggle > input:focus + .display {
+  outline: 1px dotted #212121;
+  outline: 1px auto -webkit-focus-ring-color;
+  outline-offset: 2px;
+}
+
+.toggle:focus,
+.toggle:focus:not(:focus-visible) .display,
+.toggle > input:focus:not(:focus-visible) + .display {
+  outline: 0;
+}
+
+.toggle[aria-pressed="true"] .display,
+.toggle > input:checked + .display {
+  background-color: #061a0f;
+}
+
+.toggle[aria-pressed="true"] .display::before,
+.toggle > input:checked + .display::before {
+  transform: translate(100%, -50%);
+}
+
+.toggle[disabled] .display,
+.toggle > input:disabled + .display {
+  opacity: 0.6;
+  filter: grayscale(40%);
+  cursor: not-allowed;
+}
+
+[dir="rtl"] .display::before {
+  left: auto;
+  right: var(--offset);
+}
+
+[dir="rtl"] .toggle[aria-pressed="true"] + .display::before,
+[dir="rtl"] .toggle > input:checked + .display::before {
+  transform: translate(-100%, -50%);
+}
+
+.icon {
+  display: inline-block;
+  width: .75rem;
+  height: .75rem;
+  color: inherit;
+  fill: currentcolor;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.iconCross {
+  color: #e74c3c;
+}
+
+.iconCheck {
+  color: #58dfa7;
+}

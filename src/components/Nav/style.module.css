@@ -1,0 +1,221 @@
+.nav {
+  font-size: 1rem;
+  line-height: 0;
+}
+
+.helmItem {
+  background-color: transparent;
+  border: none;
+  color: var(--color-canvas-text);
+  cursor: pointer;
+  /* filter: drop-shadow(0 0 .1rem currentColor); */
+  line-height: 0;
+  outline: none;
+  padding: 0;
+  transition: 300ms transform ease-in-out;
+  transition-property: border-color, color, transform;
+}
+
+.navigationClose {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  fill: currentColor;
+  line-height: 0;
+  outline: none;
+  padding: .2rem;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  transition: 300ms transform ease-in-out;
+  transition-property: border-color, color, transform;
+  z-index: 1000;
+}
+
+.helmItem > svg {
+  fill: var(--color-canvas-text-faded);
+  transform-origin: .989rem 1.085rem;
+}
+
+.helmItem > svg,
+.navigationClose > svg {
+  border: .05rem solid #0000;
+  border-radius: 100%;
+  color: var(--color-canvas-text);
+  height: 2rem;
+  width: 2rem;
+  transform: rotate(0deg) scale(1);
+  transform-origin: 50% 50%;
+  transition: 300ms transform ease-in-out;
+  transition-property: border, color, transform;
+}
+
+.helmItem:hover > svg,
+.helmItem:focus > svg {
+  transform: rotate(360deg) scale(1.15);
+}
+
+.navigationClose:hover > svg,
+.navigationClose:focus > svg {
+  border: .05rem solid currentColor;
+  border-radius: 100%;
+  overflow: visible;
+  transform: scale(1.15);
+}
+
+.navPanel {
+  background-color: var(--color-canvas-faded);
+  color: var(--color-canvas-text);
+  display: flex;
+  font-size: 1.5rem;
+  height: 100vh;
+  left: 0;
+  line-height: initial;
+  list-style: none;
+  margin: 0;
+  padding: 10% 10%;
+  perspective: 200rem;
+  position: fixed;
+  text-shadow: 0 .1rem 0 var(--color-canvas);
+  text-shadow: 0 .1rem 0 #fff0;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 500ms ease-in-out;
+  visibility: hidden;
+  width: 100vw;
+  will-change: transform;
+  z-index: 100;
+}
+
+.navPanel h2 {
+  border-bottom: .2rem solid currentColor;
+  font-size: 1rem;
+  font-variation-settings: 'wght' 600;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+}
+
+.navPanel ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primaryPanel > ul,
+.secondaryPanel > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primaryPanel li > a {
+  background-color: var(--color-canvas);
+  color: var(--color-canvas-text);
+  border: .15rem solid var(--color-canvas-text-faded);
+  display: block;
+  /* filter: drop-shadow(0 0 .1rem var(--color-canvas-text)); */
+  margin: .25rem 0;
+  padding: .5rem;
+  transition: transform 266ms ease-out;
+  transition-property: background-color, border, filter, transform;
+  transform: rotateY(33deg);
+  transform-origin: 80% 50%;
+  will-change: background-color, border, filter, transform;
+}
+
+.primaryPanel li > a:hover,
+.primaryPanel li > a:focus {
+  background-color: var(--color-canvas-text);
+  color: var(--color-canvas);
+  border: .15rem solid var(--color-canvas-text);
+  /* filter: drop-shadow(0 0 .5rem var(--color-canvas-text)); */
+  outline: none;
+  position: relative;
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+.secondaryPanel > section {
+  transform: rotateY(-33deg);
+  transform-origin: 20% 50%;
+  padding: 0 0 1rem;
+}
+
+.secondaryPanel li > a {
+  background-color: var(--color-canvas);
+  color: var(--color-canvas-text);
+  border: .15rem solid var(--color-canvas-text-faded);
+  display: block;
+  /* filter: drop-shadow(0 0 .1rem var(--color-canvas-text)); */
+  margin: .25rem 0;
+  padding: .5rem;
+  transition: transform 266ms ease-out;
+  transition-property: background-color, border, filter, transform;
+  transform: rotateY(-33deg);
+  transform-origin: 20% 50%;
+  will-change: background-color, border, filter, transform;
+}
+
+.secondaryPanel li > a:hover,
+.secondaryPanel li > a:focus {
+  background-color: var(--color-canvas-text);
+  color: var(--color-canvas);
+  border: .15rem solid var(--color-canvas-text);
+  /* filter: drop-shadow(0 0 .5rem var(--color-canvas-text)); */
+  outline: none;
+  position: relative;
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+@supports ((-webkit-backdrop-filter: blur(.5rem)) or (backdrop-filter: blur(.5rem))) {
+  .navPanel {
+    backdrop-filter: blur(.5rem);
+    background-color: var(--color-canvas-faded);
+    color: var(--color-canvas-text);
+  }
+}
+
+.visible {
+  visibility: visible;
+}
+
+.open .navigationClose {
+  display: block;
+}
+
+.open .navPanel {
+  display: flex;
+  transform: translateX(0);
+}
+
+.navPanel > section {
+  flex-basis: 50%;
+}
+
+@media (max-width: 960px) {
+  .nav > ul {
+    display: block;
+    display: none;
+    font-size: 1.25rem;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    padding: 3rem 0 0 0;
+    z-index: 1000;
+  }
+  .nav > .navigation__button {
+    display: block;
+  }
+  .nav > .navigation__close {
+    display: block;
+  }
+  .nav li a {
+    color: var(--color-canvas-text);
+  }
+};

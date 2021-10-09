@@ -1,0 +1,72 @@
+
+.scene {
+  height: 100rem;
+  filter: blur(.05rem);
+  perspective: 100rem;
+  position: absolute;
+  top: -40rem;
+  transition: 1s opacity ease-in-out;
+  width: 100rem;
+}
+
+.cube {
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-25rem);
+  transition: transform 10s;
+  width: 100%;
+}
+
+.cubeFace {
+  position: absolute;
+  width: 100rem;
+  height: 100rem;
+}
+
+.cube_bottom {
+  transform-style: preserve-3d;
+  transform: perspective(30rem) rotateX(60deg) rotateY(0deg) rotateZ(45deg);
+  transform: rotateX(-90deg) rotateZ(-90deg) translateZ(50rem);
+}
+
+.cube_left {
+  transform-style: preserve-3d;
+  transform: perspective(30rem) rotateX(0deg) rotateY(45deg) rotateZ(0deg);
+  transform: rotateY(-90deg) translateZ(50rem);
+}
+
+.cube_back {
+  transform-style: preserve-3d;
+  transform: perspective(30rem) rotateX(0deg) rotateY(135deg) rotateZ(0deg);
+  transform: rotateY(180deg) translateZ(50rem);
+}
+
+.cube.showFront  { transform: translateZ(-25rem) rotateY(   0deg); }
+.cube.showRight  { transform: translateZ(-25rem) rotateY( -90deg); }
+.cube.showBack   { transform: translateZ(-25rem) rotateY(-180deg); }
+.cube.showLeft   { transform: translateZ(-25rem) rotateY(  90deg); }
+.cube.showTop    { transform: translateZ(-25rem) rotateX( -90deg); }
+.cube.showBottom { transform: translateZ(-25rem) rotateX(  90deg); }
+.cube.showRight  { 
+  transform: translateZ(-25rem) rotateX(15deg) rotateY(-45deg) rotateZ(66deg);
+  transform: translateZ(-25rem) rotateX(15deg) rotateY(-33deg) rotateZ(66deg);
+  transform: translateZ(-25rem) rotateX(15deg) rotateY(-12deg) rotateZ(66deg);
+  transform: translateZ(-25rem) rotateX(15deg) rotateY(-33deg) rotateZ(33deg);
+  transform: translateZ(-25rem) rotateX(15deg) rotateY(-16deg) rotateZ(33deg);
+}
+
+.cube {
+  animation: max-box 60s linear infinite;
+  /* transform: perspective(180rem) translateZ(-20rem) rotateX(15deg) rotateY(-33deg) rotateZ(30deg); */
+}
+
+@keyframes max-box {
+  0% { transform: perspective(79rem) translateZ(-32rem) rotateX(10deg) rotateY(-23deg) rotateZ(28deg); }
+  16.6% { transform: perspective(105rem) translateZ(-26rem) rotateX(1deg) rotateY(14deg) rotateZ(14deg); }
+  33.3% { transform: perspective(182rem) translateZ(-28rem) rotateX(0deg) rotateY(-36deg) rotateZ(4deg); }
+  48.9% { transform: perspective(122rem) translateZ(-7rem) rotateX(-21deg) rotateY(2deg) rotateZ(11deg); }
+  66.6% { transform: perspective(52rem) translateZ(-4rem) rotateX(-20deg) rotateY(-41deg) rotateZ(4deg); }
+  83.3% { transform: perspective(66rem) translateZ(-10rem) rotateX(-5deg) rotateY(3deg) rotateZ(4deg); }
+  100% { transform: perspective(79rem) translateZ(-32rem) rotateX(10deg) rotateY(-23deg) rotateZ(28deg); }
+}

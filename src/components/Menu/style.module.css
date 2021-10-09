@@ -1,0 +1,46 @@
+.menu {
+  font-size: 1rem;
+  height: 30rem;
+  line-height: 0;
+  padding-top: 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.menuPanel {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2rem;
+  grid-template-areas:
+    ". . . . ."
+    ". . . . ."
+    ". . . . .";
+  /* transition: transform 200ms ease-in-out; */
+  width: 120vw;
+  will-change: transform;
+}
+
+.menuItem {
+  background-color: #0006;
+  border: .1rem solid #0006;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  filter: drop-shadow(0 0 .2rem #fff0);
+  line-height: 0;
+  outline: none;
+  /* padding: 2rem; */
+  /* margin: 1rem; */
+  transform: scale(1);
+  transition: 300ms transform ease-out;
+  transition-property: border-color, color, filter, transform;
+  will-change: border-color, color, filter, transform;
+}
+
+.menuItem:hover,
+.menuItem:focus {
+  border: .1rem solid #fff;
+  filter: drop-shadow(0 0 .2rem #fff);
+  transform: scale(1.1);
+}

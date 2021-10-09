@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export -o docs",
-    "deploy": "npm run build && git add . && git commit -m \"Deploy docs\" && git push origin gh-pages",
+    "deploy": "npm run build && git add . && git commit -m \"Deploy docs\" && git subtree push --prefix docs origin gh-pages",
     "start": "next start"
   },
   "repository": {

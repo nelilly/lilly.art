@@ -17,12 +17,12 @@ const Shelf = ({books, color = 'var(--color-canvas-text)', canvas, title}) => {
       <div className={bookList}>
         {books.map(({title, cover}) => (
           <figure key={`shelf_${keyChange(title)}}`} className={book}>
-            <img src={cover} />
+            <img src={cover} alt="" />
             <figcaption>{title}</figcaption>
           </figure>)
         )}
         <div className={book}>
-          <a href={`https://journal.lilly.art/${keyChange(title)}/`} title={`More recommended books from ${title}`} aria-label={`More recommended books from ${title}`}  className={moreButton}><span className={moreArrow} aria-hidden="true">&rarr;</span> see all</a>
+          <a href={`https://journal.lilly.art/${keyChange(title)}/`} title={`More recommended books from ${title}`} aria-label={`More recommended books from ${title}`}  className={moreButton} style={{color: color}}><span className={moreArrow} aria-hidden="true">&rarr;</span> see all</a>
         </div>
       </div>
     </article>

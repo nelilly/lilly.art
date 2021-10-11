@@ -32,6 +32,24 @@
   text-align: right;
 }
 
+.galleryContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .galleryContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    gap: 1rem;
+  }
+}
+
 @media (min-width: 61.25rem) {
   .gallery {
     padding: 2rem 4rem 4rem;
@@ -40,9 +58,6 @@
   .galleryContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 1rem;
-    gap: 1rem;
   }
 
 

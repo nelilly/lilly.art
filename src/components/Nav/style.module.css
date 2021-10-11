@@ -1,5 +1,4 @@
 .nav {
-  font-size: 1rem;
   line-height: 0;
 }
 
@@ -65,15 +64,16 @@
 
 .navPanel {
   background-color: var(--color-canvas-faded);
+  /* background-color: hsla(0,0%,0%,.9); */
   color: var(--color-canvas-text);
-  display: flex;
   font-size: 1.5rem;
   height: 100vh;
   left: 0;
   line-height: initial;
   list-style: none;
   margin: 0;
-  padding: 10% 10%;
+  overflow: auto;
+  padding: 4rem 1rem;
   perspective: 200rem;
   position: fixed;
   text-shadow: 0 .1rem 0 var(--color-canvas);
@@ -85,6 +85,13 @@
   width: 100vw;
   will-change: transform;
   z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.navPanel > section {
+  background-color: transparent;
 }
 
 .navPanel h2 {
@@ -97,10 +104,8 @@
   letter-spacing: .25rem;
 }
 
-.navPanel ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.span {
+  white-space: nowrap;
 }
 
 .primaryPanel > ul,
@@ -110,31 +115,32 @@
   padding: 0;
 }
 
-.primaryPanel li > a {
+.navLink {
   background-color: var(--color-canvas);
   color: var(--color-canvas-text);
   border: .15rem solid var(--color-canvas-text-faded);
   display: block;
-  /* filter: drop-shadow(0 0 .1rem var(--color-canvas-text)); */
   margin: .25rem 0;
+  outline: none;
   padding: .5rem;
   transition: transform 266ms ease-out;
   transition-property: background-color, border, filter, transform;
-  transform: rotateY(33deg);
-  transform-origin: 80% 50%;
-  will-change: background-color, border, filter, transform;
+  position: relative;
 }
 
-.primaryPanel li > a:hover,
-.primaryPanel li > a:focus {
+.navLink:hover,
+.navLink:focus {
   background-color: var(--color-canvas-text);
   color: var(--color-canvas);
   border: .15rem solid var(--color-canvas-text);
-  /* filter: drop-shadow(0 0 .5rem var(--color-canvas-text)); */
-  outline: none;
-  position: relative;
   transform: rotateY(0deg);
   z-index: 1;
+}
+
+.primaryPanel .navLink {
+  transform: rotateY(33deg);
+  transform-origin: 80% 50%;
+  will-change: background-color, border, filter, transform;
 }
 
 .secondaryPanel > section {
@@ -143,14 +149,7 @@
   padding: 0 0 1rem;
 }
 
-.secondaryPanel li > a {
-  background-color: var(--color-canvas);
-  color: var(--color-canvas-text);
-  border: .15rem solid var(--color-canvas-text-faded);
-  display: block;
-  /* filter: drop-shadow(0 0 .1rem var(--color-canvas-text)); */
-  margin: .25rem 0;
-  padding: .5rem;
+.secondaryPanel .navLink {
   transition: transform 266ms ease-out;
   transition-property: background-color, border, filter, transform;
   transform: rotateY(-33deg);
@@ -158,24 +157,12 @@
   will-change: background-color, border, filter, transform;
 }
 
-.secondaryPanel li > a:hover,
-.secondaryPanel li > a:focus {
-  background-color: var(--color-canvas-text);
-  color: var(--color-canvas);
-  border: .15rem solid var(--color-canvas-text);
-  /* filter: drop-shadow(0 0 .5rem var(--color-canvas-text)); */
-  outline: none;
-  position: relative;
+.primaryPanel .navLink:hover,
+.primaryPanel .navLink:focus,
+.secondaryPanel .navLink:hover,
+.secondaryPanel .navLink:focus {
   transform: rotateY(0deg);
   z-index: 1;
-}
-
-@supports ((-webkit-backdrop-filter: blur(.5rem)) or (backdrop-filter: blur(.5rem))) {
-  .navPanel {
-    backdrop-filter: blur(.5rem);
-    background-color: var(--color-canvas-faded);
-    color: var(--color-canvas-text);
-  }
 }
 
 .visible {
@@ -187,35 +174,22 @@
 }
 
 .open .navPanel {
-  display: flex;
   transform: translateX(0);
 }
 
-.navPanel > section {
-  flex-basis: 50%;
+
+@media (min-width: 61.25rem) {
+  .navPanel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25%;
+    padding: 10%;
+  }
 }
 
-@media (max-width: 960px) {
-  .nav > ul {
-    display: block;
-    display: none;
-    font-size: 1.25rem;
-    height: 100vh;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    left: 0;
-    padding: 3rem 0 0 0;
-    z-index: 1000;
+@supports ((-webkit-backdrop-filter: blur(.5rem)) or (backdrop-filter: blur(.5rem))) {
+  .navPanel {
+    background-color: var(--color-canvas-faded);
+    backdrop-filter: blur(.5rem);
   }
-  .nav > .navigation__button {
-    display: block;
-  }
-  .nav > .navigation__close {
-    display: block;
-  }
-  .nav li a {
-    color: var(--color-canvas-text);
-  }
-};
+}

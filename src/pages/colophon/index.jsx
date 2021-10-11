@@ -82,7 +82,7 @@ const Colophon = ({ lastUpdated }) => {
             <p>This site is not copy protected. Last modified on {lastUpdated}.</p>
           </section>
 
-          <p className={end}>&spades;</p>
+          <p className={end}>♠</p>
         </article>
       </Layout>
     </>

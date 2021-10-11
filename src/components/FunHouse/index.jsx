@@ -48,7 +48,7 @@ const FunHouse = () => {
               <img src="/images/dilettante/science-fiction-trails-3.jpg" alt="" />
               <div>
                 <h4>The Allegory of the Cave (and the Aliens Found Within)</h4>
-                <p>Appearing in issue #3 of <em>Science Fiction Trails</em>, “The Allegory of the Cave (and the Aliens Found Within)” was written to answer the question about why there were so many stories about aliens in caves in the Westerns United States, and why they existed in the first place. It delved into the Richard Sharpe Shaver mysteries series of fiction that originally appeared in <em>Amazing Stories</em> and aligned with UFO phenomena in the 40s.</p>
+                <p>Appearing in issue #3 of <em>Science Fiction Trails</em>, “The Allegory of the Cave (and the Aliens Found Within)” was written to answer why stories about aliens in caves in the Western United States was a fequently encountered trope, and why the trope existed in the first place. The article delved into the Richard Sharpe Shaver mystery series of fiction that originally appeared in <em>Amazing Stories</em> in the 40s and aligned with early UFO phenomena and mythology.</p>
               </div>
           </article>
         </article>
@@ -72,7 +72,7 @@ const FunHouse = () => {
               <p>A printable one page summary of the classic party game <strong>Werewolf</strong>, based on the rules as explained by Andrew Plotkin.</p>
               <a href="http://everydayweirdness.com/m/20090311/werewolf.pdf" aria-label="Download Werewolf Abridged PDF">Download PDF</a>
             </div>
-            <div style={{backgroundColor: 'var(--color-light-faded)'}}></div>
+            <div style={{backgroundColor: 'var(--color-light-faded)', backgroundImage: 'url(/images/dilettante/werewolf-abridged.png)', backgroundPosition: 'center -6.6rem', backgroundSize: 'cover', borderRadius: '.3rem', filter: 'contrast(20%)'}}></div>
         </article>
         {/* 
           The Unwrapping of a Mummy by Theophile Gautier

@@ -6,6 +6,10 @@
   padding: 2rem 0 4rem;
 }
 
+.funHouse img {
+  border-radius: .3rem;
+}
+
 .spread > section {
   margin-bottom: 2rem;
 }

@@ -1343,6 +1343,65 @@
         "author": "",
         "cover": "/images/books/eloquent-javascript.jpg",
         "isbn": "000000000"
+      },
+      {
+        "title": "Interactive Data Visualization for the Web",
+        "author": "",
+        "cover": "/images/books/interactive-data-visualization-for-the-web.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Programming 3D Applications",
+        "author": "",
+        "cover": "/images/books/programming-3d-applications.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Learning React",
+        "author": "",
+        "cover": "/images/books/learning-react.jpg",
+        "isbn": "000000000"
+      }
+    ]
+  },
+  "designShelf": {
+    "title": "Design Shelf",
+    "books":[
+      {
+        "title": "The Design of Everyday Things",
+        "author": "",
+        "cover": "/images/books/the-design-of-everyday-things.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Don’t Make Me Think",
+        "author": "",
+        "cover": "/images/books/dont-make-me-think.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "The Visual Display of Quantitative Information",
+        "author": "",
+        "cover": "/images/books/the-visual-display-of-quantitative-information.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Design for How People Think",
+        "author": "",
+        "cover": "/images/books/design-for-how-people-think.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Articulating Design Decisions",
+        "author": "",
+        "cover": "/images/books/articulating-design-decisions.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Designing for Behavior Change",
+        "author": "",
+        "cover": "/images/books/designing-for-behavior-change.jpg",
+        "isbn": "000000000"
       }
     ]
   },

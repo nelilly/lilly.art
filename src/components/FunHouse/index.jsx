@@ -72,7 +72,7 @@ const FunHouse = () => {
               <p>A printable one page summary of the classic party game <strong>Werewolf</strong>, based on the rules as explained by Andrew Plotkin.</p>
               <a href="http://everydayweirdness.com/m/20090311/werewolf.pdf" aria-label="Download Werewolf Abridged PDF">Download PDF</a>
             </div>
-            <div style={{backgroundColor: 'var(--color-light-faded)', backgroundImage: 'url(/images/dilettante/werewolf-abridged.png)', backgroundPosition: 'center -6.6rem', backgroundSize: 'cover', borderRadius: '.3rem', filter: 'contrast(20%)'}}></div>
+            <div style={{backgroundColor: 'var(--color-light-faded)', backgroundImage: 'url(/images/dilettante/werewolf-abridged.png)', backgroundPosition: 'center -6.6rem', backgroundSize: 'cover', borderRadius: '.3rem', filter: 'contrast(20%)', transform: 'scaleX(-100%)'}}></div>
         </article>
         {/* 
           The Unwrapping of a Mummy by Theophile Gautier

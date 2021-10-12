@@ -66,6 +66,9 @@
   background-color: var(--color-canvas-faded);
   /* background-color: hsla(0,0%,0%,.9); */
   color: var(--color-canvas-text);
+  display: grid;
+  grid-template-columns: 1fr 0 1fr;
+  grid-gap: 1rem;
   font-size: 1.5rem;
   height: 100vh;
   left: 0;
@@ -85,13 +88,11 @@
   width: 100vw;
   will-change: transform;
   z-index: 100;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
 }
 
 .navPanel > section {
   background-color: transparent;
+  transform-style: preserve-3d;
 }
 
 .navPanel h2 {
@@ -113,7 +114,14 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  perspective: 200rem;
+  perspective-origin: 100% 200%;
 }
+
+.navItem {
+  transform-style: preserve-3d;
+}
+
 
 .navLink {
   background-color: var(--color-canvas);
@@ -181,8 +189,8 @@
 @media (min-width: 61.25rem) {
   .navPanel {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 25%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
     padding: 10%;
   }
 }

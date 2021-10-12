@@ -1,0 +1,17 @@
+.chart {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.chartCaption {
+  text-align: left;
+}
+
+.chartGrid {
+  fill: var(--color-canvas-text-faded);
+}
+
+.chartValues {
+  font-size: 20px;
+  font-variation-settings: 'wght' 600;
+}

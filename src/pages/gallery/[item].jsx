@@ -8,6 +8,7 @@ import { gallery } from 'src/data/gallery.json';
 import {
   galleryItem,
   galleryItemTitle,
+  galleryItemImage,
   galleryItemAuthorship,
   galleryItemType,
   galleryItemTime,
@@ -55,7 +56,7 @@ const GalleryItem = ({ item: {title, authorship, date, role, tech, image, descri
             <p className={galleryItemAuthorship}>{authorship}{/* <Link href={`/author/${authorship}`}></Link> */}</p>
             <p className={galleryItemTime}>{formatDate(date, "short")}</p>
           </div>
-          <p><img src={image} alt="" /></p>
+          <img className={galleryItemImage} src={image} alt="" />
           <p className={galleryItemDescription}>{description}</p>
           <p className={galleryItemTags}>{tech.map((item, index) => <span key={item}>{item}{/* <Link href={`/role/${keyChange(item)}`}>{item}</Link> */}{index === (tech.length - 1) || ', '}</span>)}</p>
       </article>

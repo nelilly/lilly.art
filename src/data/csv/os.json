@@ -18,5 +18,9 @@
   {
     "label": "Unknown",
     "value": 1.93
+  },
+  {
+    "label": "Linux",
+    "value": 0.89
   }
 ]

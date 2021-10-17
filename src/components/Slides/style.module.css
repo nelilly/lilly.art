@@ -1,0 +1,28 @@
+.slides {
+  padding: 1rem 2rem 2rem;
+}
+
+.slide {
+  margin: 0;
+}
+
+.slide > img {
+  border-radius: .3rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 61.25rem) {
+  .slides {
+    padding: 2rem 4rem 4rem;
+  }
+  .slideList {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+  }
+  .slide > img {
+    height: 13rem;
+  }
+}

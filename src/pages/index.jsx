@@ -6,9 +6,21 @@ import Directory from 'src/components/Directory';
 import FunHouse from 'src/components/FunHouse';
 import RepoList from 'src/components/RepoList';
 import Gallery from 'src/components/Gallery';
+import Juvenilia from 'src/components/Juvenilia';
+import Slides from 'src/components/Slides';
 import Shelf from 'src/components/Shelf';
 
-import { gallery, repositories, artistShelf, developerShelf, designShelf } from 'src/data/gallery.json';
+import {
+  gallery,
+  repositories,
+  sketchSlides,
+  paintingSlides,
+  artistShelf,
+  developerShelf,
+  designShelf,
+} from 'src/data/gallery.json';
+
+import { designer, artist } from 'src/data/juvenilia.json';
 import { ARTIST, DESIGNER, DEVELOPER, DILETTANTE } from 'src/shared/constants/role';
 
 console.log('Thanks for visiting!');
@@ -53,7 +65,7 @@ const HomePage = () => {
           </ul>
         </section> */}
         {currentRole === DEVELOPER && <RepoList works={repositories} />}
-        {(currentRole === DEVELOPER || currentRole === DESIGNER) && <Directory works={gallery.slice(0, 4)} />}
+        {(currentRole === DEVELOPER || currentRole === DESIGNER) && <Directory works={gallery.slice(0, 4)} show={true} />}
         {/* <section>
           <h3>Widgets</h3>
           <section style={{padding: '2rem'}}>
@@ -91,53 +103,13 @@ const HomePage = () => {
           <h2>Electronic Media</h2>
           <p>Photo bashing, digital collages, generative art, responsive art, art as code, &amp; code as art.</p>
         </section> */}
-        <section style={{padding: '3rem 4rem 4rem'}}>
-          <h2>Sketching Out</h2>
-          <p>Pages from my sketchbook.</p>
-          <div style={{display: 'grid', gridTemplateColumns: '2fr repeat(3, 1fr)', gridTemplateRows: 'auto', gridGap: '1rem',}}>
-            <img src="/images/artist/sketchbook-studio.jpg" alt="" />
-            <img src="/images/artist/sketchbook-konowal.jpg" alt="" />
-            <img src="/images/artist/sketchbook-dome-01.jpg" alt="" />
-            <img src="/images/artist/sketchbook-raine.jpg" alt="" />
-
-            <img src="/images/artist/sketchbook-hangar.jpg" alt="" />
-            <img src="/images/artist/sketchbook-lamp.jpg" alt="" />
-            <img src="/images/artist/sketchbook-statue.jpg" alt="" />
-            <img src="/images/artist/sketchbook-fountain.jpg" alt="" />
-
-            <img src="/images/artist/sketchbook-dog.jpg" alt="" />
-            <img src="/images/artist/sketchbook-gamenight.jpg" alt="" />
-            <img src="/images/artist/sketchbook-basillica.jpg" alt="" />
-            <img src="/images/artist/sketchbook-dome.jpg" alt="" />
-          </div>
-        </section>
-        <section style={{padding: '3rem 4rem 4rem'}}>
-          <h2>Paintings</h2>
-          <p>Oils, mostly.</p>
-          <style>
-            {`div > img {
-              border-radius: .3rem;
-              height: 13rem;
-              width: 100%;
-              object-fit: cover;
-            }`}
-          </style>
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gridGap: '1rem',}}>
-            <img src="/images/artist/nuclear-landscape-00.jpg" alt="" />
-            <img src="/images/artist/egg-yellow-plate-02.jpg" alt="" />
-            <img src="/images/artist/in-the-walls-of-eryx-nathan-e-lilly.jpg" alt="" />
-            <img src="/images/artist/inside-cats-1-nathan-e-lilly.jpg" alt="" />
-            <img src="/images/artist/oil-chromatic-02.jpg" alt="" />
-            <img src="/images/artist/oil-chromatic-01.jpg" alt="" />
-            <img src="/images/artist/oil-low-value.jpg" alt="" />
-            <img src="/images/artist/oil-monochromatic.jpg" alt="" />
-          </div>
-        </section>
+        <Slides slides={sketchSlides.slides} title={sketchSlides.title} description={sketchSlides.description} />
+        <Slides slides={paintingSlides.slides} title={paintingSlides.title} description={paintingSlides.description} />
         </>}
         {(currentRole === ARTIST || currentRole === DESIGNER) && <Gallery works={gallery} />}
         {currentRole === DILETTANTE && <FunHouse />}
-        {currentRole === DESIGNER && <h2 style={{border: '1rem solid currentColor', margin: '4rem', textAlign: 'center'}}>Juvenilia: Design</h2>}
-        {currentRole === ARTIST && <h2 style={{border: '1rem solid currentColor', margin: '4rem', textAlign: 'center'}}>Juvenilia: Art</h2>}
+        {currentRole === DESIGNER && <Juvenilia title="Design" works={designer} />}
+        {currentRole === ARTIST && <Juvenilia title="Art" works={artist} />}
         {/* {currentRole === DILETANTE && <Shelf title="An Intermittent Journal" />} */}
         {currentRole === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}
         {currentRole === DESIGNER && <Shelf color="#000" canvas="#e24b27" title={designShelf.title} books={designShelf.books} />}

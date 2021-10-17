@@ -56,6 +56,10 @@
   background-image: var(--icon-tech);
 }
 
+.directoryItemTags > span:last-child {
+  white-space: nowrap;
+}
+
 .directoryItemTime {
   background-image: var(--icon-calendar);
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Repo from 'src/components/RepoItem';
+import RepoItem from 'src/components/RepoItem';
 import Link from 'next/link';
 import {
   repoList,
@@ -16,7 +16,7 @@ const RepoList = ({works}) => {
       <article className={repoList}>
         <h2 className={repoListTitle}>Code Repositories</h2>
         <section className={repoListContent}>
-          {works.map((repo) => <Repo key={repo.name} {...repo} />)}
+          {works.map((repo) => <RepoItem key={repo.name} {...repo} />)}
         </section>
         <a className={repoListFooter} href="https://github.com/nelilly?tab=repositories">View all repositories on GitHub</a>
       </article>

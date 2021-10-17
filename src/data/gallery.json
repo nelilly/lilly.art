@@ -72,11 +72,11 @@
     },
     {
       "date":"2020-07-11T09:47:59",
-      "title":"SpaceWesterns v3",
+      "title":"SpaceWesterns Magazine v3",
       "excerpt":"A free online magazine devoted to works with themes from the Western genre set in the vast frontiers Outer-space or having some element of extra-terrestrial travel. Think of it as Space Opera with Western-genre themes: it’s a little bit Country; it’s a little bit Space Patrol.",
       "description":"A free online magazine devoted to works with themes from the Western genre set in the vast frontiers Outer-space or having some element of extra-terrestrial travel. Think of it as Space Opera with Western-genre themes: it’s a little bit Country; it’s a little bit Space Patrol.",
       "image":"/images/development/2020-spacewesterns-v3_shard.jpg",
-      "imageSet":"spacewesterns-v3",
+      "imageSet":"spacewesterns-magazine-v3",
       "cover":"2020-spacewesterns-v3_cover.png",
       "authorship":"personal",
       "role":[
@@ -140,8 +140,8 @@
     {
       "date":"2018-03-29T15:09:14",
       "title":"Xfinity Service Status Map",
-      "excerpt":"Application to find outage information for Xfinity Internet, TV, & Voice services in your area.",
-      "description":"Application to find outage information for Xfinity Internet, TV, & Voice services in your area.",
+      "excerpt":"Micro-site using the Google Maps API to allow customers to find outage information for Xfinity Internet, TV, & Voice services in their area, also to provide information for devices & tips on troubleshooting.",
+      "description":"Micro-site using the Google Maps API to allow customers to find outage information for Xfinity Internet, TV, & Voice services in their area, also to provide information for devices & tips on troubleshooting.",
       "image":"/images/development/2018-xfinity-service-status-map_shard.jpg",
       "imageSet":"xfinity-service-status-map",
       "cover":"2018-comcast-service-status-map.png",
@@ -160,15 +160,14 @@
         "NPM",
         "Polymer",
         "Redux",
-        "SVG",
-        "Webpack"
+        "SVG"
       ]
     },
     {
       "date":"2018-01-29T15:03:32",
       "title":"Xfinity Store Locator",
-      "excerpt":"Application to find your local Xfinity Store to demo the latest products or perform other customer services.",
-      "description":"Application to find your local Xfinity Store to demo the latest products or perform other customer services.",
+      "excerpt":"Micro-site using the Google Maps API to find local Xfinity Retail Store and Service Center Locations where customers could demo the latest products, pick up and exchange their equipment, pay bills, or subscribe to Xfinity services. The site provided store hours, contact information and the latest deals & offers.",
+      "description":"Application using the Google Maps API to find local Xfinity Retail Store and Service Center Locations where customers could demo the latest products, pick up and exchange their equipment, pay bills, or subscribe to Xfinity services. The site provided store hours, contact information and the latest deals & offers.",
       "image":"/images/development/2017-xfinity-store-locator_shard.jpg",
       "imageSet":"xfinity-store-locator",
       "cover":"2017-xfinity-store-locator.png",
@@ -231,7 +230,6 @@
         "HTML5",
         "JavaScript",
         "jQuery",
-        "OOCSS",
         "React",
         "SASS",
         "SVG"
@@ -269,7 +267,7 @@
       "title":"Xfinity Help and Support 2015",
       "excerpt":"A wide variety of work, from creating data-usage charts to component-based design and pattern libraries.",
       "description":"A wide variety of work, from creating data-usage charts to component-based design and pattern libraries.",
-      "image":"/images/development/comcast-help-and-support-2015_shard.jpg",
+      "image":"/images/development/2016-xfinity-help-and-support-2016_cover.jpg",
       "imageSet":"comcast-help-and-support-2015",
       "cover":"2015-comcast-1.png",
       "authorship":"enterprise",
@@ -281,7 +279,6 @@
         "HTML5",
         "JavaScript",
         "jQuery",
-        "OOCSS",
         "Responsive",
         "SVG"
       ]
@@ -291,7 +288,7 @@
       "title":"Vanguard",
       "excerpt":"From 2010-2014 I worked on various elements, charts, and projects – including a component-based design pilot program – that appeared on the Vanguard site. I have no images from this period as Vanguard has strict NDA policies.",
       "description":"From 2010-2014 I worked on various elements, charts, and projects – including a component-based design pilot program – that appeared on the Vanguard site. I have no images from this period as Vanguard has strict NDA policies.",
-      "image":"/images/development/vanguard_shard.jpg",
+      "image":"/images/development/2013-vanguard.png",
       "imageSet":"vanguard",
       "cover":"2013-vanguard.png",
       "authorship":"enterprise",
@@ -313,7 +310,7 @@
       "title":"The Other Songs",
       "excerpt":"A website for singer and musician Matthew David.",
       "description":"A website for singer and musician Matthew David.",
-      "image":"/images/development/the-other-songs_shard.jpg",
+      "image":"/images/development/2009-theothersongs.png",
       "imageSet":"the-other-songs",
       "cover":"2009-theothersongs.png",
       "authorship":"commission",
@@ -337,7 +334,7 @@
       "title":"Everyday Weirdness",
       "excerpt":"An online daily Weird fiction magazine.",
       "description":"An online daily Weird fiction magazine.",
-      "image":"/images/development/everyday-weirdness_shard.jpg",
+      "image":"/images/development/2009-everydayweirdness_shard.webp",
       "imageSet":"everyday-weirdness",
       "cover":"2009-everydayweirdness.png",
       "authorship":"personal",
@@ -349,6 +346,7 @@
         "CSS2",
         "MySQL",
         "PHP",
+        "RSS",
         "XHTML"
       ]
     },
@@ -357,7 +355,7 @@
       "title":"Thaumatrope",
       "excerpt":"The first twitter fiction magazine.",
       "description":"The first twitter fiction magazine.",
-      "image":"/images/development/thaumatrope_shard.jpg",
+      "image":"/images/development/2008-thaumatrope_shard.webp",
       "imageSet":"thaumatrope",
       "cover":"2008-thaumatrope.png",
       "authorship":"personal",
@@ -369,6 +367,7 @@
         "CSS2",
         "MySQL",
         "PHP",
+        "RSS",
         "Twitter API",
         "XHTML"
       ]
@@ -378,7 +377,7 @@
       "title":"Philcon 2008 Program Book",
       "excerpt":"Program book for Philcon, The Philadelphia Conference on Science Fiction and Fantasy.",
       "description":"Program book for Philcon, The Philadelphia Conference on Science Fiction and Fantasy.",
-      "image":"/images/development/philcon-2008-programbook_shard.jpg",
+      "image":"/images/design/print/2008-philcon_program_00.png",
       "imageSet":"philcon-2008-programbook",
       "cover":"2008-philcon_program_00.png",
       "authorship":"commission",
@@ -396,7 +395,7 @@
       "title":"In the Walls of Eryx",
       "excerpt":"Illustration for Space Westerns Magazine.",
       "description":"Illustration for Space Westerns Magazine.",
-      "image":"/images/development/in-the-walls-of-eryx_shard.jpg",
+      "image":"/images/illustration/nathan-e-lilly-walls-of-eryx.jpg",
       "imageSet":"in-the-walls-of-eryx",
       "cover":"2008-In_the_Walls_of_Eryx_by_nelilly.jpg",
       "authorship":"personal",
@@ -412,7 +411,7 @@
       "title":"Last Taste of Manna",
       "excerpt":"Illustration for Space Westerns Magazine.",
       "description":"Illustration for Space Westerns Magazine.",
-      "image":"/images/development/last-taste-of-manna_shard.jpg",
+      "image":"/images/illustration/nathan-e-lilly-lasttasteofmanna.jpg",
       "imageSet":"last-taste-of-manna",
       "cover":"2008-Last_Taste_of_Manna_by_nelilly.jpg",
       "authorship":"personal",
@@ -428,7 +427,7 @@
       "title":"Kin",
       "excerpt":"Illustration for Space Westerns Magazine.",
       "description":"Illustration for Space Westerns Magazine.",
-      "image":"/images/development/kin_shard.jpg",
+      "image":"/images/illustration/nathan-e-lilly-kin.jpg",
       "imageSet":"kin",
       "cover":"2008-Kin_by_nelilly.jpg",
       "authorship":"personal",
@@ -442,9 +441,9 @@
     {
       "date":"2008-09-27T03:20:12",
       "title":"Parker Ford Baptist Church",
-      "excerpt":"",
-      "description":"",
-      "image":"/images/development/parker-ford-baptist-church_shard.jpg",
+      "excerpt":"Design and development for a local church with custom CMS.",
+      "description":"Calendar, schedule, directions, and other information for a local church that can be updated with a custom CMS.",
+      "image":"/images/development/2008-pfbc.png",
       "imageSet":"parker-ford-baptist-church",
       "cover":"2008-pfbc.png",
       "authorship":"commission",
@@ -465,7 +464,7 @@
       "title":"Lampreyhead",
       "excerpt":"Illustration of Tim W. Burke’s horror fiction character Lampreyhead.",
       "description":"Illustration of Tim W. Burke’s horror fiction character Lampreyhead.",
-      "image":"/images/development/lampreyhead_shard.jpg",
+      "image":"/images/illustration/2008-lampreyhead.png",
       "imageSet":"lampreyhead",
       "cover":"2008-lampreyhead.png",
       "authorship":"commission",
@@ -481,7 +480,7 @@
       "title":"Tim W. Burke",
       "excerpt":"Horror writer Tim W. Burke’s author website.",
       "description":"Horror writer Tim W. Burke’s author website.",
-      "image":"/images/development/tim-w-burke_shard.jpg",
+      "image":"/images/development/2008-tburke.png",
       "imageSet":"tim-w-burke",
       "cover":"2008-tburke.png",
       "authorship":"commission",
@@ -500,11 +499,11 @@
     },
     {
       "date":"2008-04-01T09:56:01",
-      "title":"SpaceWesterns.com v2",
+      "title":"SpaceWesterns Magazine v2",
       "excerpt":"An updated website for the first anniversary of Space Westerns Magazine.",
       "description":"An updated website for the first anniversary of Space Westerns Magazine.",
-      "image":"/images/development/spacewesterns-com-v2_shard.jpg",
-      "imageSet":"spacewesterns-com-v2",
+      "image":"/images/development/2008-spacewesterns.png",
+      "imageSet":"spacewesterns-magazine-v2",
       "cover":"2008-spacewesterns.png",
       "authorship":"personal",
       "role":[
@@ -516,7 +515,7 @@
         "Livejournal API",
         "MySQL",
         "PHP",
-        "podCast",
+        "PodCast",
         "RSS",
         "Twitter API",
         "Web 2.0",
@@ -528,7 +527,7 @@
       "title":"ConTainment",
       "excerpt":"A convention finder that allows users to search by postal code in the U.S. & Canada.",
       "description":"A convention finder that allows users to search by postal code in the U.S. & Canada.",
-      "image":"/images/development/containment_shard.jpg",
+      "image":"/images/development/2008-containment.png",
       "imageSet":"containment",
       "cover":"2008-containment.png",
       "authorship":"personal",
@@ -554,7 +553,7 @@
       "title":"They Were the Wind",
       "excerpt":"Illustration for Space Westerns Magazine.",
       "description":"Illustration for Space Westerns Magazine.",
-      "image":"/images/development/they-were-the-wind_shard.jpg",
+      "image":"/images/illustration/nathan-e-lilly-they-were-the-wind.jpg",
       "imageSet":"they-were-the-wind",
       "cover":"2008-They_Were_the_Wind_by_nelilly.png",
       "authorship":"personal",
@@ -570,7 +569,7 @@
       "title":"Leisure Equipment, Inc.",
       "excerpt":"A business website for a retailer of leisure vehicles.",
       "description":"A business website for a retailer of leisure vehicles.",
-      "image":"/images/development/leisure-equipment-inc_shard.jpg",
+      "image":"/images/development/2007-lei.png",
       "imageSet":"leisure-equipment-inc",
       "cover":"2007-lei.png",
       "authorship":"commission",
@@ -592,7 +591,7 @@
       "title":"GMAC Mortgage",
       "excerpt":"GMAC Mortgage website and affiliated properties.",
       "description":"GMAC Mortgage website and affiliated properties.",
-      "image":"/images/development/gmac-mortgage_shard.jpg",
+      "image":"/images/development/2007-gmacmortgage.png",
       "imageSet":"gmac-mortgage",
       "cover":"2007-gmacmortgage.png",
       "authorship":"enterprise",
@@ -609,11 +608,11 @@
     },
     {
       "date":"2007-04-01T18:06:18",
-      "title":"SpaceWesterns.com",
-      "excerpt":"An online magazine dedicated to the Space Western genre of fiction.",
-      "description":"An online magazine dedicated to the Space Western genre of fiction.",
-      "image":"/images/development/spacewesterns-com_shard.jpg",
-      "imageSet":"spacewesterns-com",
+      "title":"SpaceWesterns Magazine",
+      "excerpt":"A free online magazine devoted to works with themes from the Western genre set in the vast frontiers Outer-space or having some element of extra-terrestrial travel. Think of it as Space Opera with Western-genre themes: it’s a little bit Country; it’s a little bit Space Patrol.",
+      "description":"A free online magazine devoted to works with themes from the Western genre set in the vast frontiers Outer-space or having some element of extra-terrestrial travel. Think of it as Space Opera with Western-genre themes: it’s a little bit Country; it’s a little bit Space Patrol.",
+      "image":"/images/development/2007-spacewesterns.png",
+      "imageSet":"spacewesterns-magazine",
       "cover":"2007-spacewesterns.png",
       "authorship":"personal",
       "role":[
@@ -624,7 +623,7 @@
         "CSS2",
         "MySQL",
         "PHP",
-        "podCast",
+        "PodCast",
         "RSS",
         "Web 2.0",
         "XHTML"
@@ -634,9 +633,9 @@
       "date":"2006-11-10T03:37:14",
       "title":"Lawrence M. Schoen",
       "excerpt":"Psychologist and Science Fiction writer Lawrence M. Schoen’s author website.",
-      "description":"Psychologist and Science Fiction writer Lawrence M. Schoen’s author website.",
-      "image":"/images/development/lawrence-m-schoen_shard.jpg",
-      "imageSet":"lawrence-m-schoen",
+      "description":"Psychologist and Science Fiction writer Lawrence M. Schoen’s author website. Features included a custom CMS, and blog updates via the LiveJournal API.",
+      "image":"/images/development/2006-schoen.png",
+      "imageSet":"lawrence-m_-schoen",
       "cover":"2006-schoen.png",
       "authorship":"commission",
       "role":[
@@ -659,7 +658,7 @@
       "title":"Disney Card",
       "excerpt":"A Disney Credit Card Micro-site for Chase card services.",
       "description":"A Disney Credit Card Micro-site for Chase card services.",
-      "image":"/images/development/disney-card_shard.jpg",
+      "image":"/images/motion/2006-disney.png",
       "imageSet":"disney-card",
       "cover":"2006-disney.png",
       "authorship":"enterprise",
@@ -677,7 +676,7 @@
       "title":"Philcon 2006",
       "excerpt":"The 2006 (70th anniversary) Philadelphia science fiction convention website and panelist scheduling system.",
       "description":"The 2006 (70th anniversary) Philadelphia science fiction convention website and panelist scheduling system.",
-      "image":"/images/development/philcon-2006_shard.jpg",
+      "image":"/images/development/2006-philcon.png",
       "imageSet":"philcon-2006",
       "cover":"2006-philcon.png",
       "authorship":"commission",
@@ -700,7 +699,7 @@
       "title":"Paranormal Restraining Orders",
       "excerpt":"A novelty website where you can purchase restraining orders against paranormal entities.",
       "description":"A novelty website where you can purchase restraining orders against paranormal entities.",
-      "image":"/images/development/paranormal-restraining-orders_shard.jpg",
+      "image":"/images/development/2006-pro.png",
       "imageSet":"paranormal-restraining-orders",
       "cover":"2006-pro.png",
       "authorship":"commission",
@@ -723,7 +722,7 @@
       "title":"Philcon 2005",
       "excerpt":"The 2005 Philadelphia science fiction convention website and panelist scheduling system.",
       "description":"The 2005 Philadelphia science fiction convention website and panelist scheduling system.",
-      "image":"/images/development/philcon-2005_shard.jpg",
+      "image":"/images/development/2005-philcon.png",
       "imageSet":"philcon-2005",
       "cover":"2005-philcon.png",
       "authorship":"commission",
@@ -744,7 +743,7 @@
       "title":"Planet X Art",
       "excerpt":"Planet Xpo’s art store for original prints.",
       "description":"Planet Xpo’s art store for original prints.",
-      "image":"/images/development/planet-x-art_shard.jpg",
+      "image":"/images/development/2005-planetxart.png",
       "imageSet":"planet-x-art",
       "cover":"2005-planetxart.png",
       "authorship":"commission",
@@ -762,7 +761,7 @@
       "title":"Neulasta Banner",
       "excerpt":"Flash and JavaScript banner for the PointRoll advertising platform.",
       "description":"Flash and JavaScript banner for the PointRoll advertising platform.",
-      "image":"/images/development/neulasta-banner_shard.jpg",
+      "image":"/images/motion/2005-neulasta.png",
       "imageSet":"neulasta-banner",
       "cover":"2005-neulasta.png",
       "authorship":"commission",
@@ -779,7 +778,7 @@
       "title":"Similasan Banner",
       "excerpt":"Flash and JavaScript banner for the PointRoll advertising platform.",
       "description":"Flash and JavaScript banner for the PointRoll advertising platform.",
-      "image":"/images/development/similasan-banner_shard.jpg",
+      "image":"/images/motion/2005-similasan.png",
       "imageSet":"similasan-banner",
       "cover":"2005-similasan.png",
       "authorship":"commission",
@@ -796,7 +795,7 @@
       "title":"BestBuy Banner",
       "excerpt":"Flash and JavaScript banner for the PointRoll advertising platform.",
       "description":"Flash and JavaScript banner for the PointRoll advertising platform.",
-      "image":"/images/development/bestbuy-banner_shard.jpg",
+      "image":"/images/motion/2005-bestbuy.png",
       "imageSet":"bestbuy-banner",
       "cover":"2005-bestbuy.png",
       "authorship":"commission",
@@ -813,7 +812,7 @@
       "title":"Devitt Hand Engraving",
       "excerpt":"Website for Jack Devitt, Hand Engraver.",
       "description":"Website for Jack Devitt, Hand Engraver.",
-      "image":"/images/development/devitt-hand-engraving_shard.jpg",
+      "image":"/images/development/2005-devitt.png",
       "imageSet":"devitt-hand-engraving",
       "cover":"2005-devitt.png",
       "authorship":"commission",
@@ -831,8 +830,8 @@
       "title":"Walter’s Star",
       "excerpt":"A website for the campaign to get Walter Koenig a star on the Hollywood Walk of Fame.",
       "description":"A website for the campaign to get Walter Koenig a star on the Hollywood Walk of Fame.",
-      "image":"/images/development/walters-star_shard.jpg",
-      "imageSet":"walters-star",
+      "image":"/images/development/2005-walters-star.png",
+      "imageSet":"walter’s-star",
       "cover":"2005-walters-star.png",
       "authorship":"commission",
       "role":[
@@ -851,7 +850,7 @@
       "title":"James Doohan Farewell Tribute Program Book",
       "excerpt":"Program Book for the James Doohan Farewell Tribute",
       "description":"Program Book for the James Doohan Farewell Tribute",
-      "image":"/images/development/james-doohan-farewell-tribute-program-book_shard.jpg",
+      "image":"/images/design/print/2004-jamesdoohan-program.png",
       "imageSet":"james-doohan-farewell-tribute-program-book",
       "cover":"2004-jamesdoohan-program.png",
       "authorship":"commission",
@@ -869,7 +868,7 @@
       "title":"Spirits of Valley Forge",
       "excerpt":"Spirits of Valley Forge is an importer and distributor of alcoholic beverages located in the Phoenixville area.",
       "description":"Spirits of Valley Forge is an importer and distributor of alcoholic beverages located in the Phoenixville area.",
-      "image":"/images/development/spirits-of-valley-forge_shard.jpg",
+      "image":"/images/development/2004-spiritsofvalleyforge.png",
       "imageSet":"spirits-of-valley-forge",
       "cover":"2004-spiritsofvalleyforge.png",
       "authorship":"commission",
@@ -891,7 +890,7 @@
       "title":"Philcon 2004",
       "excerpt":"The 2004 Philadelphia science fiction convention website and panelist scheduling system.",
       "description":"The 2004 Philadelphia science fiction convention website and panelist scheduling system.",
-      "image":"/images/development/philcon-2004_shard.jpg",
+      "image":"/images/development/2004-philcon.png",
       "imageSet":"philcon-2004",
       "cover":"2004-philcon.png",
       "authorship":"commission",
@@ -912,7 +911,7 @@
       "title":"James Doohan Farewell Tribute",
       "excerpt":"Planet Xpo’s James Doohan Tribute convention.",
       "description":"Planet Xpo’s James Doohan Tribute convention.",
-      "image":"/images/development/james-doohan-farewell-tribute_shard.jpg",
+      "image":"/images/development/2004-planetxdoohan.png",
       "imageSet":"james-doohan-farewell-tribute",
       "cover":"2004-planetxdoohan.png",
       "authorship":"commission",
@@ -932,7 +931,7 @@
       "title":"2003 Nebula Awards",
       "excerpt":"Badges for the 2003 Science Fiction and Fantasy Writers Association’s Nebula Awards.",
       "description":"Badges for the 2003 Science Fiction and Fantasy Writers Association’s Nebula Awards.",
-      "image":"/images/development/2003-nebula-awards_shard.jpg",
+      "image":"/images/design/print/2003-nebulabadges-nominees.png",
       "imageSet":"2003-nebula-awards",
       "cover":"2003-nebulabadges-nominees.png",
       "authorship":"commission",
@@ -948,7 +947,7 @@
       "title":"Philcon 2003",
       "excerpt":"The 2003 Philadelphia science fiction convention website.",
       "description":"The 2003 Philadelphia science fiction convention website.",
-      "image":"/images/development/philcon-2003_shard.jpg",
+      "image":"/images/development/2003-philcon.png",
       "imageSet":"philcon-2003",
       "cover":"2003-philcon.png",
       "authorship":"commission",
@@ -966,7 +965,7 @@
       "title":"Philadelphia Science Fiction Society v2",
       "excerpt":"The website for The Philadelphia Science Fiction Society.",
       "description":"The website for The Philadelphia Science Fiction Society.",
-      "image":"/images/development/philadelphia-science-fiction-society-v2_shard.jpg",
+      "image":"/images/development/2003-psfs.png",
       "imageSet":"philadelphia-science-fiction-society-v2",
       "cover":"2003-psfs.png",
       "authorship":"commission",
@@ -987,7 +986,7 @@
       "title":"Portfolio Website v4",
       "excerpt":"The fourth version of my portfolio website. ",
       "description":"The fourth version of my portfolio website. ",
-      "image":"/images/development/portfolio-website-v4_shard.jpg",
+      "image":"/images/development/2002-nel04.png",
       "imageSet":"portfolio-website-v4",
       "cover":"2002-nel04.png",
       "authorship":"personal",
@@ -1007,7 +1006,7 @@
       "title":"e-Duction v2",
       "excerpt":"The website for e-Duction, a 0%-interest payroll deduction credit card.",
       "description":"The website for e-Duction, a 0%-interest payroll deduction credit card.",
-      "image":"/images/development/e-duction-v2_shard.jpg",
+      "image":"/images/development/2002-eduction.png",
       "imageSet":"e-duction-v2",
       "cover":"2002-eduction.png",
       "authorship":"enterprise",
@@ -1016,12 +1015,12 @@
         "UX Design"
       ],
       "tech":[
-        "Access",
         "ASP",
         "CSS1",
         "Excel",
         "HTML4",
         "JavaScript",
+        "Microsoft Access",
         "Web 1.0"
       ]
     },
@@ -1030,7 +1029,7 @@
       "title":"Philcon 2002",
       "excerpt":"The 2002 Philadelphia science fiction convention website.",
       "description":"The 2002 Philadelphia science fiction convention website.",
-      "image":"/images/development/philcon-2002_shard.jpg",
+      "image":"/images/development/2002-philcon.png",
       "imageSet":"philcon-2002",
       "cover":"2002-philcon.png",
       "authorship":"commission",
@@ -1048,21 +1047,21 @@
       "title":"e-Duction",
       "excerpt":"The website for e-Duction, a 0%-interest payroll deduction credit card.",
       "description":"The website for e-Duction, a 0%-interest payroll deduction credit card.",
-      "image":"/images/development/e-duction_shard.jpg",
+      "image":"/images/development/2001-eduction.png",
       "imageSet":"e-duction",
-      "cover":"2002-eduction.png",
+      "cover":"2001-eduction.png",
       "authorship":"enterprise",
       "role":[
         "Development",
         "UX Design"
       ],
       "tech":[
-        "Access",
         "ASP",
         "CSS1",
         "Excel",
         "HTML4",
         "JavaScript",
+        "Microsoft Access",
         "Web 1.0"
       ]
     },
@@ -1071,7 +1070,7 @@
       "title":"Deadman Walking",
       "excerpt":"James Keyes, a.k.a. Deadman Walking, a semi-professional wrestler website.",
       "description":"James Keyes, a.k.a. Deadman Walking, a semi-professional wrestler website.",
-      "image":"/images/development/deadman-walking_shard.jpg",
+      "image":"/images/development/2001-deadman.png",
       "imageSet":"deadman-walking",
       "cover":"2001-deadman.png",
       "authorship":"commission",
@@ -1090,7 +1089,7 @@
       "title":"Active Imagineering",
       "excerpt":"Role-playing Game convention website.",
       "description":"Role-playing Game convention website.",
-      "image":"/images/development/active-imagineering_shard.jpg",
+      "image":"/images/development/2002-activeimagineering.png",
       "imageSet":"active-imagineering",
       "cover":"2002-activeimagineering.png",
       "authorship":"commission",
@@ -1106,9 +1105,9 @@
     {
       "date":"2001-03-20T00:32:05",
       "title":"Philadelphia Science Fiction Society v1",
-      "excerpt":"The website for The Philadelphia Science Fiction Society",
-      "description":"The website for The Philadelphia Science Fiction Society",
-      "image":"/images/development/philadelphia-science-fiction-society-v1_shard.jpg",
+      "excerpt":"The website for The Philadelphia Science Fiction Society, the world’s second oldest science fiction fan group.",
+      "description":"The website for The Philadelphia Science Fiction Society, the world’s second oldest science fiction fan group.",
+      "image":"/images/development/2001-psfs.png",
       "imageSet":"philadelphia-science-fiction-society-v1",
       "cover":"2001-psfs.png",
       "authorship":"commission",
@@ -1125,9 +1124,9 @@
     {
       "date":"2000-09-03T09:49:14",
       "title":"Little Fears Trailer",
-      "excerpt":"A Flash Trailer for a Role-Playing Game company.",
-      "description":"A Flash Trailer for a Role-Playing Game company.",
-      "image":"/images/development/little-fears-trailer_shard.jpg",
+      "excerpt":"A Flash Trailer for a role-playing game company’s initial product.",
+      "description":"A Flash Trailer for a role-playing game company’s initial product.",
+      "image":"/images/motion/2000-littlefears_key20.png",
       "imageSet":"little-fears-trailer",
       "cover":"2000-littlefears_key20.png",
       "authorship":"commission",
@@ -1141,9 +1140,9 @@
     {
       "date":"2000-08-20T04:22:37",
       "title":"Nuketown",
-      "excerpt":"An amateur science fiction magazine.",
-      "description":"An amateur science fiction magazine.",
-      "image":"/images/development/nuketown_shard.jpg",
+      "excerpt":"Web design, motion graphics, branding, and other design work for an amateur science fiction magazine.",
+      "description":"Web design, motion graphics, branding, and other design work for an amateur science fiction magazine.",
+      "image":"/images/development/2000-nuketown.png",
       "imageSet":"nuketown",
       "cover":"2000-nuketown.png",
       "authorship":"commission",
@@ -1159,9 +1158,9 @@
     {
       "date":"2000-07-10T21:32:46",
       "title":"JSP Concepts",
-      "excerpt":"A website for a small local independent computer tutoring company. ",
-      "description":"A website for a small local independent computer tutoring company. ",
-      "image":"/images/development/jsp-concepts_shard.jpg",
+      "excerpt":"A website for a small local independent computer tutoring company that provided private on-on-one instruction to individual students in the use of graphic design applications.",
+      "description":"A website for a small local independent computer tutoring company that provided private on-on-one instruction to individual students in the use of graphic design applications.",
+      "image":"/images/development/2000-jspconcepts.jpg",
       "imageSet":"jsp-concepts",
       "cover":"2000-jspconcepts.png",
       "authorship":"commission",
@@ -1177,9 +1176,9 @@
     {
       "date":"1999-12-20T03:03:29",
       "title":"NAVSUP",
-      "excerpt":"Navy Supply (NAVSUP) website for the Fleet Material Supply Office.",
-      "description":"Navy Supply (NAVSUP) website for the Fleet Material Supply Office.",
-      "image":"/images/development/navsup_shard.jpg",
+      "excerpt":"Navy Supply (NAVSUP) website for the Fleet Material Supply Office. Redesign of the 4,000 page website.",
+      "description":"Navy Supply (NAVSUP) website for the Fleet Material Supply Office. Redesign of the 4,000 page website.",
+      "image":"/images/development/1999-navsup.png",
       "imageSet":"navsup",
       "cover":"1999-navsup.png",
       "authorship":"enterprise",
@@ -1196,7 +1195,7 @@
       "title":"Portfolio Website v3",
       "excerpt":"The third version of my portfolio site. ",
       "description":"The third version of my portfolio site. ",
-      "image":"/images/development/portfolio-website-v3_shard.jpg",
+      "image":"/images/development/1999-nel03.png",
       "imageSet":"portfolio-website-v3",
       "cover":"1999-nel03.png",
       "authorship":"personal",
@@ -1215,7 +1214,7 @@
       "title":"Ashley Graphics",
       "excerpt":"A website for a local screen printing company. ",
       "description":"A website for a local screen printing company. ",
-      "image":"/images/development/ashley-graphics_shard.jpg",
+      "image":"/images/development/1998-ashley.png",
       "imageSet":"ashley-graphics",
       "cover":"1998-ashley.png",
       "authorship":"commission",
@@ -1223,7 +1222,7 @@
         "UX Design"
       ],
       "tech":[
-        "HTML 4",
+        "HTML4",
         "Web 1.0",
         "Web Graphics"
       ]
@@ -1233,9 +1232,9 @@
       "title":"Early Portfolio Websites",
       "excerpt":"Early portfolio sites.",
       "description":"Early portfolio sites.",
-      "image":"/images/development/early-portfolio-websites_shard.jpg",
+      "image":"/images/development/1998-nel01.jpg",
       "imageSet":"early-portfolio-websites",
-      "cover":"1998-nel01.jpg",
+      "cover":"/images/development/1998-nel01.jpg",
       "authorship":"personal",
       "role":[
         "Motion Graphics",
@@ -1317,6 +1316,118 @@
       "id": "MBmjBB"
     }
   ],
+  "paintingSlides": {
+    "title": "Paintings",
+    "description": "Oils mostly.",
+    "slides": [
+      {
+        "title": "Nuclear Landscape",
+        "description": "",
+        "image": "/images/artist/nuclear-landscape-00.jpg"
+      },
+      {
+        "title": "Egg, Yellow Plate",
+        "description": "“A still life which I would set up would consist of a white tablecloth, an egg, and an ordinary yellow earthenware plate.” — John French Sloan, The Gist of Art",
+        "image": "/images/artist/egg-yellow-plate-02.jpg"
+      },
+      {
+        "title": "In the Walls of Eryx",
+        "description": "",
+        "image": "/images/artist/in-the-walls-of-eryx-nathan-e-lilly.jpg"
+      },
+      {
+        "title": "Inside Cats #1",
+        "description": "",
+        "image": "/images/artist/inside-cats-1-nathan-e-lilly.jpg"
+      },
+      {
+        "title": "Oils in All Pigments",
+        "description": "",
+        "image": "/images/artist/oil-chromatic-02.jpg"
+      },
+      {
+        "title": "Oils in Chromatic Pigments",
+        "description": "",
+        "image": "/images/artist/oil-chromatic-01.jpg"
+      },
+      {
+        "title": "Oils in Low Value Pigments",
+        "description": "",
+        "image": "/images/artist/oil-low-value.jpg"
+      },
+      {
+        "title": "Oils in Monochrome",
+        "description": "",
+        "image": "/images/artist/oil-monochromatic.jpg"
+      }
+    ]
+  },
+  "sketchSlides": {
+    "title": "Sketching Out",
+    "description": "Pages from my sketchbook, walking about.",
+    "slides": [
+      {
+        "title": "Studio",
+        "description": "",
+        "image": "/images/artist/sketchbook-studio.jpg"
+      },
+      {
+        "title": "Konowal on Arch Street",
+        "description": "",
+        "image": "/images/artist/sketchbook-konowal.jpg"
+      },
+      {
+        "title": "Dome 1",
+        "description": "",
+        "image": "/images/artist/sketchbook-dome-01.jpg"
+      },
+      {
+        "title": "Rain",
+        "description": "",
+        "image": "/images/artist/sketchbook-raine.jpg"
+      },
+      {
+        "title": "Hangar",
+        "description": "",
+        "image": "/images/artist/sketchbook-hangar.jpg"
+      },
+      {
+        "title": "Lamp",
+        "description": "",
+        "image": "/images/artist/sketchbook-lamp.jpg"
+      },
+      {
+        "title": "Statue",
+        "description": "",
+        "image": "/images/artist/sketchbook-statue.jpg"
+      },
+      {
+        "title": "Swann Memorial Fountain",
+        "description": "",
+        "image": "/images/artist/sketchbook-fountain.jpg"
+      },
+      {
+        "title": "Dog",
+        "description": "",
+        "image": "/images/artist/sketchbook-dog.jpg"
+      },
+      {
+        "title": "Game Night",
+        "description": "",
+        "image": "/images/artist/sketchbook-gamenight.jpg"
+      },
+      {
+        "title": "Basillica",
+        "description": "",
+        "image": "/images/artist/sketchbook-basillica.jpg"
+      },
+      {
+        "title": "Dome",
+        "description": "",
+        "image": "/images/artist/sketchbook-dome.jpg"
+      }
+    ]
+  },
   "developerShelf": {
     "title": "DevShelf",
     "books":[

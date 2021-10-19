@@ -12,8 +12,6 @@ import {
   gallery as galleryStyle,
 } from './style.module.css';
 
-console.log(gallery[0].tech)
-
 // console.log('Thanks for visiting!');
 
 const GalleryPage = () => {

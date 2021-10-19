@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Toggle from 'src/components/Toggle';
 import useLocalStorage from 'src/shared/hooks/useLocalStorage';
@@ -15,12 +16,15 @@ import {
   visible,
   navItem,
   navLink,
+  active,
 } from './style.module.css';
 import { DEVELOPER } from 'src/shared/constants/role';
 const KEYCODE_TAB = 9;
 const ESC = 27;
 
 const Nav = ({role, setRole}) => {
+  const router = useRouter();
+  const routed = (path) => router.pathname === path ? active : 'hrllo';
   const navOpenRef = useRef(null);
   const navCloseRef = useRef(null);
   const navPanelRef = useRef(null);
@@ -104,10 +108,10 @@ const Nav = ({role, setRole}) => {
         <button className={navigationClose} type="button" aria-expanded={!!open} aria-label="Close navigation menu" onClick={() => setOpen(!open)} ref={navCloseRef}><svg viewBox="0,0 100,100" height="40" width="40" stroke="currentColor" strokeWidth="10" strokeLinecap="round"><path d="M25,25 75,75 M25,75 75,25" fill="none" /></svg></button>
         <section className={primaryPanel}>
           <ul>
-            <li className={navItem}><Link href={'/'}><a className={navLink}>Home</a></Link></li>
-            <li className={navItem}><Link href={`/resume`}><a className={navLink}>Résumé</a></Link></li>
+            <li className={navItem}><Link href={'/'}><a className={`${navLink} ${routed('/')}`}>Home</a></Link></li>
+            <li className={navItem}><Link href={`/resume`}><a className={`${navLink} ${routed('/resume')}`}>Résumé</a></Link></li>
             <li className={navItem}>
-              <Link href={`/gallery`}><a className={navLink}>Gallery</a></Link>
+              <Link href={`/gallery`}><a className={`${navLink} ${routed('/gallery')}`}>Gallery</a></Link>
               {/*
               <ul>
                 <li><Link href="/development">Development</Link></li>
@@ -121,7 +125,7 @@ const Nav = ({role, setRole}) => {
               */}
             </li>
             <li className={navItem}>
-              <Link href={`/biography`}><a className={navLink}>Biography</a></Link>
+              <Link href={`/biography`}><a className={`${navLink} ${routed('/biography')}`}>Biography</a></Link>
                 {/*
                 <ul>
                   <li><Link href="/biography/timeline">Timeline</Link></li>
@@ -161,7 +165,7 @@ const Nav = ({role, setRole}) => {
               <Link href="https://journal.lilly.art/"><a className={navLink}>Journal <span aria-hidden="true">&#x27B6;</span></a></Link>
             </li>
             <li className={navItem}>
-              <Link href={`/colophon`}><a className={navLink}>Colophon</a></Link>
+              <Link href={`/colophon`}><a className={`${navLink} ${routed('/colophon')}`}>Colophon</a></Link>
             </li>
           </ul>
         </section>

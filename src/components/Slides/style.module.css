@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-.slide > img {
+.slide img {
   border-radius: .3rem;
   width: 100%;
   object-fit: cover;
@@ -22,7 +22,13 @@
     grid-template-rows: auto;
     grid-gap: 1rem;
   }
-  .slide > img {
+  .slide img {
+    width: 10rem;
     height: 13rem;
+  }
+
+  .slide:nth-child(1) img,
+  .slide:nth-child(4n+1) img {
+    width: 20rem;
   }
 }

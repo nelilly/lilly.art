@@ -18,6 +18,7 @@ import {
   artistShelf,
   developerShelf,
   designShelf,
+  dilettanteShelf,
 } from 'src/data/gallery.json';
 
 import { designer, artist } from 'src/data/juvenilia.json';
@@ -32,7 +33,7 @@ const HomePage = () => {
     <>
       <Head>
         <title>N.E.Lilly: portfolio of art, development, and design</title>
-        <meta property="og:title" content={'title'} key="title" />
+        <meta property="og:title" content="N.E.Lilly: portfolio of art, development, and design" key="title" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>
@@ -114,6 +115,7 @@ const HomePage = () => {
         {currentRole === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}
         {currentRole === DESIGNER && <Shelf color="#000" canvas="#e24b27" title={designShelf.title} books={designShelf.books} />}
         {currentRole === ARTIST && <Shelf color="#fff" canvas="#a00" title={artistShelf.title} books={artistShelf.books} />}
+        {currentRole === DILETTANTE && <Shelf color="#fff" canvas="#0a0" title={dilettanteShelf.title} books={dilettanteShelf.books} />}
       </Layout>
     </>
   )

@@ -19,7 +19,7 @@ const BioPage = () => {
     <>
       <Head>
         <title>N.E.Lilly: Biography</title>
-        <meta property="og:title" content={'title'} key="title" />
+        <meta property="og:title" content="N.E.Lilly: Biography" key="title" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>

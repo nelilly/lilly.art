@@ -161,7 +161,7 @@ code {
   }
 }
 
-.noMotion {
+.no-motion * {
   animation: none !important;
   animation-delay: -1ms !important;
   animation-duration: 1ms !important;

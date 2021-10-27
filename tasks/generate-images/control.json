@@ -1,0 +1,48 @@
+[
+  {
+    "name": "spacewesterns-magazine-v3",
+    "sizes": {
+      "shard": {
+        "height": 100,
+        "width": 100,
+        "postion": "top center",
+        "x": 100,
+        "y": 100
+      },
+      "thumbnail": {
+        "height": 600,
+        "width": 600,
+        "postion": "top center",
+        "x": 100,
+        "y": 100
+      },
+      "cover4x3": {
+        "height": 1200,
+        "width": 1600
+      },
+      "cover16x9": {
+        "height": 900,
+        "width": 1600
+      },
+      "full4x3": {
+        "height": 2400,
+        "width": 3200
+      },
+      "full16x9": {
+        "height": 1800,
+        "width": 3200
+      }      
+    }
+  },
+  {
+    "name": "spacewesterns-magazine-v2",
+    "sizes": {
+      "mobile": {
+        "height": 300,
+        "width": 400,
+        "x": 100,
+        "y": 100
+      }
+    }
+  }
+]

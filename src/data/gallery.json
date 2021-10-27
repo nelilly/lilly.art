@@ -268,7 +268,7 @@
       "excerpt":"A wide variety of work, from creating data-usage charts to component-based design and pattern libraries.",
       "description":"A wide variety of work, from creating data-usage charts to component-based design and pattern libraries.",
       "image":"/images/development/2015-xfinity-help-and-support-2015_cover.webp",
-      "imageSet":"comcast-help-and-support-2015",
+      "imageSet":"xfinity-help-and-support-2015",
       "cover":"2015-comcast-1.png",
       "authorship":"enterprise",
       "role":[
@@ -378,7 +378,7 @@
       "excerpt":"Program book for Philcon, The Philadelphia Conference on Science Fiction and Fantasy.",
       "description":"Program book for Philcon, The Philadelphia Conference on Science Fiction and Fantasy.",
       "image":"/images/design/print/2008-philcon_program_00.png",
-      "imageSet":"philcon-2008-programbook",
+      "imageSet":"philcon-2008-program-book",
       "cover":"2008-philcon_program_00.png",
       "authorship":"commission",
       "role":[
@@ -481,7 +481,7 @@
       "excerpt":"Horror writer Tim W. Burke’s author website.",
       "description":"Horror writer Tim W. Burke’s author website.",
       "image":"/images/development/2008-tburke_cover.webp",
-      "imageSet":"tim-w-burke",
+      "imageSet":"tim-w_-burke",
       "cover":"2008-tburke.png",
       "authorship":"commission",
       "role":[
@@ -566,11 +566,11 @@
     },
     {
       "date":"2007-05-19T20:41:13",
-      "title":"Leisure Equipment, Inc.",
+      "title":"Leisure Equipment",
       "excerpt":"An online brochure with custom content management system for a retailer of leisure vehicles: skidoos, motorcycles, quads, and more.",
       "description":"An online brochure with custom content management system for a retailer of leisure vehicles: skidoos, motorcycles, quads, and more.",
       "image":"/images/development/2007-leisure-equipment_cover.webp",
-      "imageSet":"leisure-equipment-inc",
+      "imageSet":"leisure-equipment",
       "cover":"2007-lei.png",
       "authorship":"commission",
       "role":[

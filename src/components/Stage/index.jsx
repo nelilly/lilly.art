@@ -97,7 +97,6 @@ const Stage = ({setRole, works}) => {
     type="button"
     className={stageOption}
     onClick={(event) => handleRole(event)}
-    // onKeyDown={changeTab}
     role="tab"
     disabled={isRole(currentRole, role)}
     value={role}>{role}</button></li>

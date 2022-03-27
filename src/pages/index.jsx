@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Layout from 'src/components/Layout';
-import Hero from 'src/components/Hero';
+// import Hero from 'src/components/Hero';
+// import Jumbotron from 'src/components/Jumbotron';
+import Stage from 'src/components/Stage';
 import Directory from 'src/components/Directory';
 import FunHouse from 'src/components/FunHouse';
 import RepoList from 'src/components/RepoList';
@@ -10,7 +12,8 @@ import Juvenilia from 'src/components/Juvenilia';
 import Slides from 'src/components/Slides';
 import Shelf from 'src/components/Shelf';
 
-import {
+import data from 'src/data/gallery.json';
+const {
   gallery,
   repositories,
   sketchSlides,
@@ -19,12 +22,12 @@ import {
   developerShelf,
   designShelf,
   dilettanteShelf,
-} from 'src/data/gallery.json';
+} = data;
+import juvenilia from 'src/data/juvenilia.json';
+import * as role from 'src/shared/constants/role';
+const { ARTIST, DESIGNER, DEVELOPER, DILETTANTE } = role;
 
-import { designer, artist } from 'src/data/juvenilia.json';
-import { ARTIST, DESIGNER, DEVELOPER, DILETTANTE } from 'src/shared/constants/role';
-
-console.log('Thanks for visiting!');
+console.log('Thanks for visiting! Check out the Colophon if you’re interested in how this site is put together: https://lilly.art/colophon');
 
 const HomePage = () => {
   const [currentRole, setCurrentRole] = useState('');
@@ -37,7 +40,9 @@ const HomePage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>
-        <Hero role={currentRole} setRole={setCurrentRole} works={gallery} />
+        {/* <Hero role={currentRole} setRole={setCurrentRole} works={gallery} /> */}
+        <Stage role={currentRole} setRole={setCurrentRole} works={gallery} />
+        {/* <Jumbotron role={currentRole} setRole={setCurrentRole} works={gallery} /> */}
         {/* It’s a fine line between design, illustration, and art. */}
         {/* Design is a discipline. Development is a discipline. Art is a discipline. */}
         {/* <section>
@@ -109,8 +114,8 @@ const HomePage = () => {
         </>}
         {(currentRole === ARTIST || currentRole === DESIGNER) && <Gallery works={gallery} />}
         {currentRole === DILETTANTE && <FunHouse />}
-        {currentRole === DESIGNER && <Juvenilia title="Design" works={designer} />}
-        {currentRole === ARTIST && <Juvenilia title="Art" works={artist} />}
+        {currentRole === DESIGNER && <Juvenilia title="Design" works={juvenilia.designer} />}
+        {currentRole === ARTIST && <Juvenilia title="Art" works={juvenilia.artist} />}
         {/* {currentRole === DILETANTE && <Shelf title="An Intermittent Journal" />} */}
         {currentRole === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}
         {currentRole === DESIGNER && <Shelf color="#000" canvas="#e24b27" title={designShelf.title} books={designShelf.books} />}

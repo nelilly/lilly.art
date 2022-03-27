@@ -69,7 +69,7 @@ const Footer = ({role, setRole}) => {
           </ul> */}
         </section>
         <section className={legal}>
-          <p>&copy;2021 N.E.Lilly</p>
+          <p>&copy;2022 N.E.Lilly</p>
         </section>
       </section>
     </footer>

@@ -7,12 +7,13 @@
   border: none;
   color: var(--color-canvas-text);
   cursor: pointer;
-  /* filter: drop-shadow(0 0 .1rem currentColor); */
   line-height: 0;
   outline: none;
   padding: 0;
   transition: 300ms transform ease-in-out;
   transition-property: border-color, color, transform;
+  position: relative;
+  z-index: 10;
 }
 
 .navigationClose {
@@ -32,7 +33,8 @@
 }
 
 .helmItem > svg {
-  fill: var(--color-canvas-text-faded);
+  fill: var(--color-canvas-text);
+  fill-opacity: .667;
   transform-origin: .989rem 1.085rem;
 }
 
@@ -64,17 +66,16 @@
 
 .navPanel {
   background-color: var(--color-canvas-faded);
-  /* background-color: hsla(0,0%,0%,.9); */
   color: var(--color-canvas-text);
   display: grid;
-  grid-template-columns: 1fr 0 1fr;
-  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
   font-size: 1.5rem;
   height: 100vh;
   left: 0;
   line-height: initial;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   overflow: auto;
   padding: 4rem 1rem;
   perspective: 200rem;
@@ -92,8 +93,8 @@
 
 .navPanel > section {
   background-color: transparent;
-  transform-style: preserve-3d;
-  perspective: 200rem;
+  /* transform-style: preserve-3d; */
+  /* perspective: 200rem; */
 }
 
 .navPanel h2 {
@@ -123,7 +124,6 @@
   transform-style: preserve-3d;
 }
 
-
 .navLink {
   background-color: var(--color-canvas);
   color: var(--color-canvas-text);
@@ -149,26 +149,27 @@
 
 .navLink[aria-current=page] {
   color: var(--color-canvas-text);
+  cursor: default;
   background-color: var(--color-anchor-canvas);
 }
 
 .primaryPanel .navLink {
-  transform: rotateY(33deg);
-  transform-origin: 80% 50%;
+  /* transform: rotateY(33deg); */
+  /* transform-origin: 80% 50%; */
   will-change: background-color, border, filter, transform;
 }
 
 .secondaryPanel > section {
-  transform: rotateY(-33deg);
-  transform-origin: 20% 50%;
+  /* transform: rotateY(-33deg); */
+  /* transform-origin: 20% 50%; */
   padding: 0 0 1rem;
 }
 
 .secondaryPanel .navLink {
   transition: transform 266ms ease-out;
   transition-property: background-color, border, filter, transform;
-  transform: rotateY(-33deg);
-  transform-origin: 20% 50%;
+  /* transform: rotateY(-33deg); */
+  /* transform-origin: 20% 50%; */
   will-change: background-color, border, filter, transform;
 }
 
@@ -197,9 +198,6 @@
 
 @media (min-width: 61.25rem) {
   .navPanel {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
     padding: 10%;
   }
 }

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { keyChange } from 'src/shared/functions/keyChange';
+import { formatDate } from 'src/shared/functions/formatDate';
 import {vh} from 'src/shared/styles/style.module.css';
 import { 
   card,
@@ -32,7 +33,7 @@ const Card = ({title, image, authorship, date, role, description, tech, currentS
             <p className={cardItemDescription}>{description}</p>
             <div className={cardItemDetails}>
               <p className={cardItemAuthorship}><Link href={`/author/${authorship}`}>{authorship}</Link></p>
-              <p className={cardItemTime}>{date}</p>
+              <p className={cardItemTime}>{formatDate(date, 'short')}</p>
               <div className={cardItemTags}>
                 <span className={vh}>Technology</span> {tech.map((item, index) => <span key={`dev_${keyChange(title)}_${keyChange(item)}`}><Link href={`/technology/${keyChange(item)}`}>{item}</Link>{index === (tech.length - 1) || ', '}</span>)}
               </div>

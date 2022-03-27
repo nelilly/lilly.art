@@ -1,10 +1,9 @@
-import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import RepoItem from 'src/components/RepoItem';
-import Link from 'next/link';
 import {
   repoList,
   repoListTitle,
+  repoImage,
   repoListContent,
   repoListFooter,
 } from './style.module.css';
@@ -14,7 +13,8 @@ const RepoList = ({works}) => {
   return (
     <>
       <article className={repoList}>
-        <h2 className={repoListTitle}>Code Repositories</h2>
+        <h2 className={repoListTitle}>The Good Parts</h2>
+        <img src="/images/danaus_chrysippus.webp" alt="danaus chrysippus" className={repoImage} />
         <section className={repoListContent}>
           {works.map((repo) => <RepoItem key={repo.name} {...repo} />)}
         </section>

@@ -13,7 +13,7 @@ const FunHouse = () => {
     <>
       <section className={funHouse}>
         <h2>The Dilettante’s Corner</h2>
-        <p>I wanted to be a professional dabbler but I just never could stick with it.</p>
+        <p>Being a dilettante is being a consumate dabbler. It’s “and the rest”; the Professor <em>and</em> Mary-Ann. It’s running, and hiking, and archaeology, and the technology behind art, and mental models of the self, and why magenta isn’t real, and nutrition in space, and why books are books, and why is there time. It’s everything you do that doesn’t fit into neat little categories. It’s things that you don’t have to do but you can’t not do. It’s what makes the juice worth the squeeze.</p>
         <article>
           <h3>A Zine Scene</h3>
           <p>Online magazines designed, developed, edited, and published by N.E.Lilly.</p>

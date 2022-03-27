@@ -152,13 +152,13 @@ const Nav = ({role, setRole}) => {
                 <ul>
                   <li><Link href="/biography/timeline">Timeline</Link></li>
                   <li><Link href="/biography/faqs">FAQs</Link></li>
+                  <li><Link href="/biography/links">Links</Link></li>
                   <li><Link href="/biography/mentors">Mentors</Link></li>
                 </ul>
                 */}
             </li>
           </ul>
         </section>
-        <section></section>
         <section className={secondaryPanel}>
           {/* <section style={{padding: '0 0 3rem'}}>
             <h2>Notifications</h2>

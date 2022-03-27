@@ -26,24 +26,25 @@
 @media (min-width: 61.25rem) {
   .connectionList {
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
+    padding: 0;
   }
 }
 
 .connectionItem {
-  display: block;
-  flex-basis: 25%;
+  display: block;  
 }
 
 .connectionLink {
-  background-color: var(--color-white);
+  background-color: var(--color-light);
   border-radius: 100%;
   color: var(--color-dark);
   display: inline-block;
   height: 3rem;
-  margin: .5rem;
+  /* margin: .5rem; */
   outline: none;
-  padding: 1px;
+  /* padding: 1px; */
   text-align: center;
   transition: background-color 200ms, color 200ms;
   width: 3rem;

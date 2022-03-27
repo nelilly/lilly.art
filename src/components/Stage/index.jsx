@@ -36,7 +36,7 @@ import {
   roleDabble,
 } from './style.module.css';
 
-const Stage = ({setRole, works}) => {
+const Stage = ({setRole}) => {
   // const [currentItem, setCurrentItem] = useState(1);
   const [currentRole, setCurrentRole] = useState('');
   useEffect(() => {
@@ -167,9 +167,4 @@ export default Stage;
 Stage.propTypes = {
   role: PropTypes.string.isRequired,
   setRole: PropTypes.func.isRequired,
-  works: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    image: PropTypes.string,
-  })).isRequired,
 };

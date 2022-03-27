@@ -1,6 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
 import {
   juvenilia,
   juveniliaTitle,

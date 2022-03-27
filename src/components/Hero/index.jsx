@@ -8,8 +8,8 @@ import {
   DILETTANTE,
 } from 'src/shared/constants/role';
 import Butterfly from 'src/components/Butterfly';
-import Cube from 'src/components/Cube';
-import Menu from 'src/components/Menu';
+// import Cube from 'src/components/Cube';
+// import Menu from 'src/components/Menu';
 import { keyChange } from 'src/shared/functions/keyChange';
 import { roleClass } from 'src/shared/functions/roleClass';
 // import Link from 'next/link';
@@ -26,14 +26,14 @@ import {
   heroOption,
   heroMenu,
   heroTabs,
-  heroPanel,
-  heroPlatform,
-  selected,
+  // heroPanel,
+  // heroPlatform,
+  // selected,
   roleDevelop,
   roleDesign,
   roleArt,
   roleDabble,
-  card,
+  // card,
   // cta,
   // featuredImage,
 } from './style.module.css';
@@ -55,7 +55,7 @@ import {
 //   event.preventDefault();
 // };
 
-const Hero = ({setRole, works}) => {
+const Hero = ({setRole}) => {
   // const [currentItem, setCurrentItem] = useState(1);
   const [currentRole, setCurrentRole] = useState('');
   useEffect(() => {
@@ -86,12 +86,12 @@ const Hero = ({setRole, works}) => {
     value={role}>{role}</button></li>
   });
 
-  const panels = roles.map((role) => (
-    <article className={`${heroPanel} ${currentRole === role ? selected : ''}`} tabIndex="0" role="tabpanel" id={keyChange(`panel_${role}`)} key={keyChange(`panel_${role}`)} aria-labelledby={keyChange(`tab_${role}`)}>
-    {role === DEVELOPER && (<Cube />)}
-    {/* {role === DESIGNER && (<Menu works={works} />)} */}
-    </article>
-  ));
+  // const panels = roles.map((role) => (
+  //   <article className={`${heroPanel} ${currentRole === role ? selected : ''}`} tabIndex="0" role="tabpanel" id={keyChange(`panel_${role}`)} key={keyChange(`panel_${role}`)} aria-labelledby={keyChange(`tab_${role}`)}>
+  //   {role === DEVELOPER && (<Cube />)}
+  //   {/* {role === DESIGNER && (<Menu works={works} />)} */}
+  //   </article>
+  // ));
 
 
   return (

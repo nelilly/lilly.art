@@ -1,5 +1,5 @@
 .gallery > h1 {
-  padding: 2rem 4rem 0;
+  padding: 1rem 2rem;
 }
 
 .galleryItem {
@@ -57,4 +57,10 @@
 
 .galleryItemDescription {
   /* margin-bottom: auto; */
+}
+
+@media (min-width: 640px) {
+  .gallery > h1 {
+    padding: 2rem 4rem;
+  }
 }

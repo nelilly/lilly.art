@@ -5,18 +5,20 @@ import {
   slidesTitle,
   slideList,
   slide,
+  split,
+  quarters,
 } from './style.module.css';
 
-const Slides = ({slides, title, description}) => {
+const Slides = ({slides, title, description, display}) => {
 
   return (
-    <article className={slidesStyle}>
+    <article className={`${slidesStyle} ${display === "split" ? split : quarters}`}>
       <h3 className={slidesTitle}>{title}</h3>
       <p>{description}</p>
       <div className={slideList}>
-        {slides.map(({title, image}) => (
+        {slides.map(({title, image, description}) => (
           <figure key={`slide_${keyChange(title)}}`} className={slide}>
-            <img src={image} alt={title} />
+            <img src={image} alt={title} title={`${title}${description && `: ${description}`}`} />
             {/* <figcaption>{title}</figcaption> */}
           </figure>)
         )}
@@ -34,4 +36,5 @@ Slides.propTypes = {
   })).isRequired,
   description: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  display: PropTypes.string,
 };

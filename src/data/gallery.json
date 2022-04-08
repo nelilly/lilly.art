@@ -1441,6 +1441,57 @@
       }
     ]
   },
+  "generativeSlides": {
+    "title": "Generative Art",
+    "description": "Art produced though computation, math, procedural generation, iterative processes, and fancy algorithms.",
+    "slides": [
+      {
+        "title": "Transformations Index 0",
+        "description": "",
+        "image": "/images/artist/generative/g005_transformations000.webp"
+      },
+      {
+        "title": "Mondrian B",
+        "description": "",
+        "image": "/images/artist/generative/g006_modrianB.webp"
+      },
+      {
+        "title": "Mondrian A",
+        "description": "",
+        "image": "/images/artist/generative/g006_modrianA.webp"
+      },
+      {
+        "title": "Threads of a Vengeful Ghost 002",
+        "description": "",
+        "image": "/images/artist/generative/g003_vengeful_ghost_002.webp"
+      },
+      {
+        "title": "Threads of a Vengeful Ghost 001",
+        "description": "",
+        "image": "/images/artist/generative/g003_vengeful_ghost_001.webp"
+      },
+      {
+        "title": "Threads of a Vengeful Ghost 000",
+        "description": "",
+        "image": "/images/artist/generative/g003_vengeful_ghost_000.webp"
+      },
+      {
+        "title": "Joy in Color 001",
+        "description": "",
+        "image": "/images/artist/generative/g002.webp"
+      },
+      {
+        "title": "Rainbow Labyrinth 001",
+        "description": "",
+        "image": "/images/artist/generative/g001.webp"
+      },
+      {
+        "title": "Columns 000",
+        "description": "",
+        "image": "/images/artist/generative/g000.webp"
+      }
+    ]
+  },
   "developerShelf": {
     "title": "DevShelf",
     "books":[

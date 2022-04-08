@@ -7,18 +7,25 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 1rem;
-  gap: 1rem;
+  margin: 0 calc(50% - 50vw);
+}
+
+.juveniliaItem {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
 }
 
 .juveniliaItemTitle {
+  display: none;
   font-size: .8rem;
-  margin-bottom: .5rem;
 }
 
 .juveniliaItemImage {
-  border-radius: .3rem;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
+  transform: scale(1.1);
 }
 
 @media (min-width: 61.25rem) {
@@ -30,8 +37,6 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
-    grid-gap: 1rem;
-    gap: 1rem;
   }
 
   .juveniliaItemImage {

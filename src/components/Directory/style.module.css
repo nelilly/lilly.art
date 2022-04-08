@@ -7,7 +7,7 @@
 }
 
 .directoryItemImage img {
-  border-radius: .3rem;
+  border-radius: .15rem;
   width: 100%;
   height: auto;
 }
@@ -89,7 +89,7 @@
     width: 100%;
   }
   .directoryItemImage img {
-    border-radius: .3rem;
+    border-radius: .15rem;
     width: 100%;
     height: auto;
     height: 19rem;

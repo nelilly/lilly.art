@@ -5,8 +5,9 @@ import Layout from 'src/components/Layout';
 import Directory from 'src/components/Directory';
 import Filter from 'src/components/Filter';
 import RepoList from 'src/components/RepoList';
+import filterRepos from 'src/shared/functions/filterRepos';
 
-import { gallery, repositories } from 'src/data/gallery.json';
+import { gallery } from 'src/data/gallery.json';
 
 import {
   gallery as galleryStyle,
@@ -75,8 +76,14 @@ const GalleryPage = () => {
     <>
       <Head>
         <title>N.E.Lilly: Gallery</title>
+        <link rel="canonical" href="https://lilly.art/gallery/" />
         <meta property="og:title" content="N.E.Lilly: Gallery" key="title" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta property="og:url" content="https://lilly.art/gallery/" />
+        <meta property="og:description" content="N.E.Lilly: Gallery." />
+        <meta property="og:image" content="https://lilly.art/images/og/home.webp" />
+        <meta property="twitter:image" content="https://lilly.art/images/og/home.webp" />
+        <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, gallery, portfolio, development, design, art, illustration" />
+        <meta name="description" content="N.E.Lilly: Gallery." />
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>
         <article className={galleryStyle}>
@@ -91,7 +98,7 @@ const GalleryPage = () => {
             categoryList={techList}
           />
           <Directory works={filteredList.slice(pageNumber * 10, (pageNumber * 10) + 10)} />
-          <RepoList works={repositories} />
+          <RepoList works={filterRepos(gallery)} />
         </article>
       </Layout>
     </>

@@ -19,8 +19,14 @@ const BioPage = () => {
     <>
       <Head>
         <title>N.E.Lilly: Biography</title>
+        <link rel="canonical" href="https://lilly.art/biography/" />
         <meta property="og:title" content="N.E.Lilly: Biography" key="title" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta property="og:url" content="https://lilly.art/biography/" />
+        <meta property="og:description" content="N.E.Lilly: Biography." />
+        <meta property="og:image" content="https://lilly.art/images/og/home.webp" />
+        <meta property="twitter:image" content="https://lilly.art/images/og/home.webp" />
+        <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, biography, portfolio, development, design, art, illustration" />
+        <meta name="description" content="N.E.Lilly: Biography." />
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>
         <article className={bio}>

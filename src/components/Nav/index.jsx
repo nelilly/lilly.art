@@ -52,7 +52,7 @@ const Nav = ({role, setRole}) => {
       theme === 'light' && document.querySelector('html').classList.remove("dark-theme");
     });
 
-    return <Toggle id={id} label={label} toggleValue={theme === 'dark'} toggleFunction={handleThemeToggle} />;
+    return <Toggle id={id} label={label} type="dark" toggleValue={theme === 'dark'} toggleFunction={handleThemeToggle} />;
   }
 
   ToggleTheme.propTypes = {
@@ -74,7 +74,7 @@ const Nav = ({role, setRole}) => {
       motion === 'motion' && document.querySelector('html').classList.remove("no-motion");
     });
 
-    return <Toggle id={id} label={label} toggleValue={motion === 'reduce'} toggleFunction={handleMotionToggle} />;
+    return <Toggle id={id} type="motion" label={label} toggleValue={motion === 'reduce'} toggleFunction={handleMotionToggle} />;
   }
 
   ToggleMotion.propTypes = {

@@ -1,19 +1,21 @@
 .toggle {
-  align-items: center;
+  /* background-image: linear-gradient(0deg, black 50%, white 50%); */
+  border: .1rem solid var(--color-canvas-text);
+  /* color: var(--color-canvas-text); */
   cursor: pointer;
-  display: flex;
   font-size: 1rem;
-  flex-wrap: wrap;
-  gap: 1ch;
+  /* height: 5rem; */
   margin-bottom: .5rem;
+  overflow: hidden;
+  padding: .5rem;
   position: relative;
+  text-align: right;
+  text-shadow: 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas);
+  transition: background-position 10s ease-in-out;
 }
 
-button.toggle {
-  background-color: transparent;
-  border: 0;
-  font: inherit;
-  padding: 0;
+.toggle.active {
+  background-position: top;
 }
 
 .toggle > input {
@@ -24,23 +26,32 @@ button.toggle {
 }
 
 .display {
-  --diameter: 1.25rem;
+  /* --diameter: 1.25rem;
   --offset: 0rem;
   align-items: center;
   background-color: #fbe4e200;
   background-color: #fff;
   border-radius: .333rem;
   border: 0.1rem solid currentColor;
-  box-sizing: content-box;
-  display: inline-flex;
-  height: calc(var(--diameter) + var(--offset) * 2);
-  justify-content: space-around;
+  box-sizing: content-box; */
+  display: block;
+  margin: -.5rem -.5rem -1.65rem;
   position: relative;
+  width: 100%;
+  height: 3rem;
+  z-index: -1;
+  /* display: none; */
+  /* height: calc(var(--diameter) + var(--offset) * 2);
+  justify-content: space-around;
   transition: 100ms;
-  width: calc(var(--diameter) * 2 + var(--offset) * 2);
+  width: calc(var(--diameter) * 2 + var(--offset) * 2); */
 }
 
-.display::before {
+.display > svg {
+  transition: transform 2s ease-in-out;
+}
+
+/* .display::before {
   background-color: #000;
   border-radius: .25rem;
   border: 0.10rem solid currentColor;
@@ -55,10 +66,10 @@ button.toggle {
   width: var(--diameter);
   will-change: transform;
   z-index: 2;
-}
+} */
 
 
-.toggle:focus .display,
+/* .toggle:focus .display,
 .toggle > input:focus + .display {
   outline: 1px dotted #212121;
   outline: 1px auto -webkit-focus-ring-color;
@@ -96,7 +107,7 @@ button.toggle {
 [dir="rtl"] .toggle[aria-pressed="true"] + .display::before,
 [dir="rtl"] .toggle > input:checked + .display::before {
   transform: translate(-100%, -50%);
-}
+} */
 
 .icon {
   display: inline-block;

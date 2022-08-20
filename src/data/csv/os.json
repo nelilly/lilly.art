@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Android",
+    "value": 40.2
+  },
+  {
+    "label": "Windows",
+    "value": 32.76
+  },
+  {
+    "label": "iOS",
+    "value": 15.91
+  },
+  {
+    "label": "OS X",
+    "value": 7.21
+  },
+  {
+    "label": "Unknown",
+    "value": 1.93
+  }
+]

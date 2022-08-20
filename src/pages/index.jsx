@@ -23,7 +23,7 @@ const HomePage = () => {
         <meta property="og:title" content={'title'} key="title" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
       </Head>
-      <Layout className="DarkLayout" role={currentRole} setRole={setCurrentRole}>
+      <Layout role={currentRole} setRole={setCurrentRole}>
         <Hero role={currentRole} setRole={setCurrentRole} works={gallery} />
         {/* It’s a fine line between design, illustration, and art. */}
         {/* Design is a discipline. Development is a discipline. Art is a discipline. */}
@@ -86,11 +86,20 @@ const HomePage = () => {
             <Shelf title={developerShelf.title} books={developerShelf.books} />
           </section>
         </section> */}
-        <section>
+        {/* {currentRole === ARTIST && 
+          <section>
+            <h2>Electronic Media</h2>
+            <p>Photo bashing, digital collages, generative art, responsize art, art as code, code as art.</p>
+            <h2>Sketchbook Gallery</h2>
+            <p>Sample pages from my sketchbook.</p>
+            <h2>Paintings</h2>
+            <p>Oils, mostly.</p>
+          </section>} */}
         {(currentRole === ARTIST || currentRole === DESIGNER) && <Gallery works={gallery} />}
-        </section>
         {currentRole === DILETTANTE && <FunHouse />}
-        {/* <Shelf title="An Intermittent Journal" /> */}
+        {/* {currentRole === DESIGNER && <h2 style={{border: '1rem solid currentColor', margin: '4rem', textAlign: 'center'}}>Juvenilia: Design</h2>}
+        {currentRole === ARTIST && <h2 style={{border: '1rem solid currentColor', margin: '4rem', textAlign: 'center'}}>Juvenilia: Art</h2>} */}
+        {/* {currentRole === DILETANTE && <Shelf title="An Intermittent Journal" />} */}
         {currentRole === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}
         {currentRole === DESIGNER && <Shelf color="#000" canvas="#e24b27" title={designShelf.title} books={designShelf.books} />}
         {currentRole === ARTIST && <Shelf color="#fff" canvas="#a00" title={artistShelf.title} books={artistShelf.books} />}

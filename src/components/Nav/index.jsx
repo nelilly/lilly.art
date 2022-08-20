@@ -13,6 +13,7 @@ import {
   secondaryPanel,
   span,
   visible,
+  navItem,
   navLink,
 } from './style.module.css';
 import { DEVELOPER } from 'src/shared/constants/role';
@@ -103,9 +104,9 @@ const Nav = ({role, setRole}) => {
         <button className={navigationClose} type="button" aria-expanded={!!open} aria-label="Close navigation menu" onClick={() => setOpen(!open)} ref={navCloseRef}><svg viewBox="0,0 100,100" height="40" width="40" stroke="currentColor" strokeWidth="10" strokeLinecap="round"><path d="M25,25 75,75 M25,75 75,25" fill="none" /></svg></button>
         <section className={primaryPanel}>
           <ul>
-            <li><Link href={'/'}><a className={navLink}>Home</a></Link></li>
-            <li><Link href={`/resume`}><a className={navLink}>Résumé</a></Link></li>
-            <li>
+            <li className={navItem}><Link href={'/'}><a className={navLink}>Home</a></Link></li>
+            <li className={navItem}><Link href={`/resume`}><a className={navLink}>Résumé</a></Link></li>
+            <li className={navItem}>
               <Link href={`/gallery`}><a className={navLink}>Gallery</a></Link>
               {/*
               <ul>
@@ -119,18 +120,19 @@ const Nav = ({role, setRole}) => {
               </ul>
               */}
             </li>
-            <li>
+            <li className={navItem}>
               <Link href={`/biography`}><a className={navLink}>Biography</a></Link>
-              <ul>
                 {/*
-                <li><Link href="/biography/timeline">Timeline</Link></li>
-                <li><Link href="/biography/faqs">Timeline</Link></li>
-                <li><Link href="/biography/mentors">Mentors</Link></li>
+                <ul>
+                  <li><Link href="/biography/timeline">Timeline</Link></li>
+                  <li><Link href="/biography/faqs">FAQs</Link></li>
+                  <li><Link href="/biography/mentors">Mentors</Link></li>
+                </ul>
                 */}
-              </ul>
             </li>
           </ul>
         </section>
+        <section></section>
         <section className={secondaryPanel}>
           {/* <section style={{padding: '0 0 3rem'}}>
             <h2>Notifications</h2>
@@ -155,10 +157,10 @@ const Nav = ({role, setRole}) => {
             {/* <Toggle id="navToggleMotion" label="No/Unnecessary Motion" toggleValue={motionPref} toggleFunction={setMotionPref} /> */}
           </section>
           <ul>
-            <li>
+            <li className={navItem}>
               <Link href="https://journal.lilly.art/"><a className={navLink}>Journal <span aria-hidden="true">&#x27B6;</span></a></Link>
             </li>
-            <li>
+            <li className={navItem}>
               <Link href={`/colophon`}><a className={navLink}>Colophon</a></Link>
             </li>
           </ul>

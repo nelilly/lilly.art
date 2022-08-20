@@ -13,13 +13,10 @@
 .siteHeader.home {
   margin-bottom: -3rem;
 }
+
 .home .helm {
   border: none;
 }
-/* .home > nav > nav {
-  position: absolute;
-  z-index: 10;
-} */
 
 .siteId {
   color: var(--color-canvas-text);

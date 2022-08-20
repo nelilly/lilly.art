@@ -1261,13 +1261,13 @@
       "name": "svg-zoo",
       "link": "https://github.com/nelilly/svg-zoo",
       "description": "SVG ZOO: an establishment that maintains a collection of wild SVGs for study, conservation, and display to the public.",
-      "tech": ["SVG", "HTML5", "JavaScript"]
+      "tech": ["SVG", "Education", "HTML5", "JavaScript"]
     },
     {
       "name": "html-hobbyist",
       "link": "https://github.com/nelilly/html-hobbyist",
       "description": "An HTML-first site to learn HTML to build your website, fanzine, or personal site.",
-      "tech": ["HTML5", "CSS", "JavaScript"]
+      "tech": ["HTML5", "Education", "CSS", "JavaScript"]
     },
     {
       "name": "Comcast.github.io",
@@ -1285,31 +1285,31 @@
       "name": "inaccessible-website",
       "link": "https://github.com/nelilly/inaccessible-website",
       "description": "A website to help designers and developers understand how to test for and remediate potential accessibility issues.",
-      "tech": ["Accessibility", "Next.js", "React", "JavaScript"]
+      "tech": ["Accessibility", "Education", "Next.js", "React", "JavaScript"]
     },
     {
       "name": "a11y-workflow",
       "link": "https://github.com/nelilly/a11y-workflow",
       "description": "Guidelines, recommendations, and NPM package suggestions to implement automated accessibility testing into a workflow.",
-      "tech": ["Accessibility", "JavaScript"]
+      "tech": ["Accessibility", "Education", "JavaScript"]
     },
     {
       "name": "a11y-manual-testing",
       "link": "https://github.com/nelilly/a11y-manual-testing",
       "description": "Guidelines and recommendations for setting up a manual accessibility testing environment.",
-      "tech": ["Accessibility", "JavaScript"]
+      "tech": ["Accessibility", "Education", "JavaScript"]
     },
     {
       "name": "100-days-of-node",
       "link": "https://github.com/nelilly/100-days-of-node",
       "description": "A Node.js curriculum for 100 days of code.",
-      "tech": ["Education", "JavaScript", "Node"]
+      "tech": ["JavaScript", "Education", "Node"]
     },
     {
       "name": "learning-javascript",
       "link": "https://github.com/nelilly/learning-javascript",
       "description": "A 12 week introduction to JavaScript curriculum for weekly JavaScript Discussion Group sessions.",
-      "tech": ["Education", "JavaScript"]
+      "tech": ["JavaScript", "Education"]
     }
   ],
   "snippets": [

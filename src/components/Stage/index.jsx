@@ -30,6 +30,8 @@ import {
   stageGreeting,
   stageHello,
   stageQuote,
+  stageQuoteBody,
+  stageQuoteCite,
   roleDevelop,
   roleDesign,
   roleArt,
@@ -130,32 +132,32 @@ const Stage = ({setRole}) => {
       {currentRole === 'a Developer' && <div className={stageGreeting}>
         <p className={stageHello}>“Hello World”</p>
         <blockquote className={stageQuote}>
-          <p style={{margin: '0 .4rem .6rem 0'}}>“Do a spinning globe. A spinning globe sells it every time.”</p>
-          <cite style={{margin: '0 .8rem 0 0'}}>– The World Wide Web, 1996</cite>
+          <p className={stageQuoteBody}>Do a spinning globe. A spinning globe sells it every time.</p>
+          <cite className={stageQuoteCite}>– The World Wide Web, 1996</cite>
         </blockquote>
       </div>}
 
       {currentRole === 'a Designer' && <div className={stageGreeting}>
         <p className={stageHello}>“Hello World”</p>
         <blockquote className={stageQuote}>
-          <p style={{margin: '0 .4rem .6rem 0'}}>“It’s not just what it looks like and feels like. Design is how it works.”</p>
-          <cite style={{margin: '0 .8rem 0 0'}}>– An apple salesman, 2003</cite>
+          <p className={stageQuoteBody}>It’s not just what it looks like and feels like. Design is how it works.</p>
+          <cite className={stageQuoteCite}>– An apple salesman, 2003</cite>
         </blockquote>
       </div>}
 
       {currentRole === 'an Artist' && <div className={stageGreeting}>
         <p className={stageHello}>“Hello World”</p>
         <blockquote className={stageQuote}>
-          <p style={{margin: '0 .4rem .6rem 0'}}>“All works of Art are self-portraits.”</p>
-          <cite style={{margin: '0 .8rem 0 0'}}>– Joseph Ducreux (probably), 1793</cite>
+          <p className={stageQuoteBody}>All works of Art are self-portraits.</p>
+          <cite className={stageQuoteCite}>– Joseph Ducreux (probably), 1793</cite>
         </blockquote>
       </div>}
 
       {currentRole === 'a Dilettante' && <div className={stageGreeting}>
         <p className={stageHello}>“Hello World”</p>
         <blockquote className={stageQuote}>
-          <p style={{margin: '0 .4rem .6rem 0'}}>“I wanted to be a professional dabbler but I just never could stick with it.”</p>
-          <cite style={{margin: '0 .8rem 0 0'}}>– I’m in this photo and I don’t like it, 2017</cite>
+          <p className={stageQuoteBody}>I wanted to be a professional dabbler but I just never could stick with it.</p>
+          <cite className={stageQuoteCite}>– I’m in this photo and I don’t like it, 2017</cite>
         </blockquote>
       </div>}
     </header>

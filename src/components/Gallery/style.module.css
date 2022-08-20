@@ -3,7 +3,7 @@
 }
 
 .galleryContainer {
-  border-radius: .3rem;
+  /* border-radius: .3rem; */
   overflow: hidden;
 }
 
@@ -24,6 +24,10 @@
   transform: scale(1.1);
 }
 
+.galleryItem > figcaption {
+  display: none;
+}
+
 .galleryFooter {
   border-bottom: .2rem solid var(--color-canvas-text-faded);
   display: block;
@@ -36,8 +40,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 1rem;
-  gap: 1rem;
+  /* gap: 1rem; */
+  margin: 0 calc(50% - 50vw);
 }
 
 @media (min-width: 640px) {
@@ -45,8 +49,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 1rem;
-    gap: 1rem;
   }
 }
 

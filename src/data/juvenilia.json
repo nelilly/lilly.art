@@ -1,4 +1,71 @@
 {
+  "life": [
+    {
+      "title": "Classmate Sketches",
+      "url": "/images/artist/juvenilia/life/sketch-01.jpg",
+      "description": "Pencil and ballpoint pen."
+    },
+    {
+      "title": "Contrast Studies",
+      "url": "/images/artist/juvenilia/life/charcoal-00.jpg",
+      "description": ""
+    },
+    {
+      "title": "Quick Poses",
+      "url": "/images/artist/juvenilia/life/charcoal-01.jpg",
+      "description": ""
+    },
+    {
+      "title": "Study in Charcoal",
+      "url": "/images/artist/juvenilia/life/charcoal-02.jpg",
+      "description": ""
+    },
+    {
+      "title": "Study in Charcoal",
+      "url": "/images/artist/juvenilia/life/charcoal-10.jpg",
+      "description": ""
+    },
+    {
+      "title": "Reduction in Charcoal",
+      "url": "/images/artist/juvenilia/life/charcoal-11.jpg",
+      "description": ""
+    },
+    {
+      "title": "Reduction in Charcoal",
+      "url": "/images/artist/juvenilia/life/charcoal-12.jpg",
+      "description": ""
+    },
+    {
+      "title": "Charcoal",
+      "url": "/images/artist/juvenilia/life/charcoal-20.jpg",
+      "description": ""
+    },
+    {
+      "title": "Lobby in the Museum",
+      "url": "/images/artist/juvenilia/life/museum-01.jpg",
+      "description": ""
+    },
+    {
+      "title": "Sculpture in the Museum",
+      "url": "/images/artist/juvenilia/life/museum-02.jpg",
+      "description": ""
+    },
+    {
+      "title": "Figure in the Museum",
+      "url": "/images/artist/juvenilia/life/museum-03.jpg",
+      "description": ""
+    },
+    {
+      "title": "Watercolor Nude",
+      "url": "/images/artist/juvenilia/life/watercolor-01.jpg",
+      "description": ""
+    },
+    {
+      "title": "Watercolor in the Museum Garden",
+      "url": "/images/artist/juvenilia/life/watercolor-02.jpg",
+      "description": "A quick study."
+    }
+  ],
   "artist": [
     {
       "title": "Conflict in the Sky",

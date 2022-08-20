@@ -12,17 +12,17 @@ import Juvenilia from 'src/components/Juvenilia';
 import Slides from 'src/components/Slides';
 import Shelf from 'src/components/Shelf';
 
-import data from 'src/data/gallery.json';
-const {
+import {
   gallery,
   repositories,
+  generativeSlides,
   sketchSlides,
   paintingSlides,
   artistShelf,
   developerShelf,
   designShelf,
   dilettanteShelf,
-} = data;
+} from 'src/data/gallery.json';
 import juvenilia from 'src/data/juvenilia.json';
 import * as role from 'src/shared/constants/role';
 const { ARTIST, DESIGNER, DEVELOPER, DILETTANTE } = role;
@@ -105,17 +105,19 @@ const HomePage = () => {
           </section>
         </section> */}
         {currentRole === ARTIST && <>
-        {/* <section style={{padding: '3rem 4rem 4rem'}}>
-          <h2>Electronic Media</h2>
-          <p>Photo bashing, digital collages, generative art, responsive art, art as code, &amp; code as art.</p>
-        </section> */}
+        <section style={{padding: '3rem 4rem 3rem'}}>
+          <h2>Topics in Art</h2>
+          <p>Traditional sketches, paintings, electronic media, photo bashing, digital collages, generative art, responsive art, 3d art, art as code, &amp; code as art.</p>
+        </section>
+
+        <Slides slides={generativeSlides.slides} title={generativeSlides.title} description={generativeSlides.description} display="split" />
         <Slides slides={sketchSlides.slides} title={sketchSlides.title} description={sketchSlides.description} />
         <Slides slides={paintingSlides.slides} title={paintingSlides.title} description={paintingSlides.description} />
         </>}
         {(currentRole === ARTIST || currentRole === DESIGNER) && <Gallery works={gallery} />}
         {currentRole === DILETTANTE && <FunHouse />}
         {currentRole === DESIGNER && <Juvenilia title="Design" works={juvenilia.designer} />}
-        {currentRole === ARTIST && <Juvenilia title="Art" works={juvenilia.artist} />}
+        {currentRole === ARTIST && <><Juvenilia title="Life Drawing" description="Sketches and studies from the early years." works={juvenilia.life} /><Juvenilia title="Art" description="Personal works from the early years." works={juvenilia.artist} /></>}
         {/* {currentRole === DILETANTE && <Shelf title="An Intermittent Journal" />} */}
         {currentRole === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}
         {currentRole === DESIGNER && <Shelf color="#000" canvas="#e24b27" title={designShelf.title} books={designShelf.books} />}

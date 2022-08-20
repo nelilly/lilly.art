@@ -11,7 +11,9 @@ import {
   open as openStyle,
   primaryPanel,
   secondaryPanel,
+  span,
   visible,
+  navLink,
 } from './style.module.css';
 import { DEVELOPER } from 'src/shared/constants/role';
 const KEYCODE_TAB = 9;
@@ -101,10 +103,10 @@ const Nav = ({role, setRole}) => {
         <button className={navigationClose} type="button" aria-expanded={!!open} aria-label="Close navigation menu" onClick={() => setOpen(!open)} ref={navCloseRef}><svg viewBox="0,0 100,100" height="40" width="40" stroke="currentColor" strokeWidth="10" strokeLinecap="round"><path d="M25,25 75,75 M25,75 75,25" fill="none" /></svg></button>
         <section className={primaryPanel}>
           <ul>
-            <li><Link href={'/'}>Home</Link></li>
-            <li><Link href={`/resume`}>Résumé</Link></li>
+            <li><Link href={'/'}><a className={navLink}>Home</a></Link></li>
+            <li><Link href={`/resume`}><a className={navLink}>Résumé</a></Link></li>
             <li>
-              <Link href={`/gallery`}>Gallery</Link>
+              <Link href={`/gallery`}><a className={navLink}>Gallery</a></Link>
               {/*
               <ul>
                 <li><Link href="/development">Development</Link></li>
@@ -118,7 +120,7 @@ const Nav = ({role, setRole}) => {
               */}
             </li>
             <li>
-              <Link href={`/biography`}>Biography</Link>
+              <Link href={`/biography`}><a className={navLink}>Biography</a></Link>
               <ul>
                 {/*
                 <li><Link href="/biography/timeline">Timeline</Link></li>
@@ -129,7 +131,6 @@ const Nav = ({role, setRole}) => {
             </li>
           </ul>
         </section>
-        <section></section>
         <section className={secondaryPanel}>
           {/* <section style={{padding: '0 0 3rem'}}>
             <h2>Notifications</h2>
@@ -149,16 +150,16 @@ const Nav = ({role, setRole}) => {
           </section> */}
           <section>
             <h2>Settings</h2>
-            <p>Role: {currentRole}</p>
+            <p>Role: <span className={span}>{currentRole}</span></p>
             <ToggleTheme id="navToggleDarkMode" label="Dark mode" />
             {/* <Toggle id="navToggleMotion" label="No/Unnecessary Motion" toggleValue={motionPref} toggleFunction={setMotionPref} /> */}
           </section>
           <ul>
             <li>
-              <Link href="https://journal.lilly.art/"><a>Journal <span aria-hidden="true">&#x27B6;</span></a></Link>
+              <Link href="https://journal.lilly.art/"><a className={navLink}>Journal <span aria-hidden="true">&#x27B6;</span></a></Link>
             </li>
             <li>
-              <Link href={`/colophon`}>Colophon</Link>
+              <Link href={`/colophon`}><a className={navLink}>Colophon</a></Link>
             </li>
           </ul>
         </section>

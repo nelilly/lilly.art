@@ -10,17 +10,18 @@
   z-index: 1000; */
 
   background-color: #6660;
+  display: inline-block;
   width: 200px;
   height: 200px;
   outline: none;
   /* perspective: 3000px; */
+  margin-right: -200px;
   position: absolute;
   transform: scale(.5);
   transform-origin: -4.5rem -3rem;
   transition: transform 1s ease-in;
   /* transform: translateZ(0px) rotate3d(1, 1, -1, 45deg) translate3d(-20px, -150px, -100px) scale(.6); */
   /* z-index: 1000; */
-  display: inline-block;
 }
 
 .butterfly {

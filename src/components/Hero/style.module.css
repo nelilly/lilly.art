@@ -131,8 +131,6 @@
 
 .heroNavlist {
   background-color: #fff;
-  /* border: .1rem solid #f3c474; */
-  /* border: 3px solid #f3c474; */
   box-shadow: 0 0 .3rem #0006, 0 .6rem 1rem #0006;
   border-radius: .3rem;
   display: none;
@@ -190,7 +188,6 @@
   transition: 1s text-shadow ease-in-out;
 }
 
-
 @media (min-width: 640px) {
   .heroTitle {
     font-size: 3rem;
@@ -201,25 +198,15 @@
   }
 }
 
-
-
-
-
-
-
-
 .heroTabs {
   padding: 1rem;
 }
-
-
 
 @media (min-width: 640px) {
   .hero {
     /* height: 56.25vw; *//* 16:9 */
     /* height: 30rem; */
     height: 10rem;
-    /* overflow: hidden; */
     padding: 0;
     position: relative;
     width: 100vw;
@@ -227,10 +214,9 @@
 
   .heroTabs {
     top: 0;
-    display: flex;
+    display: block;
     height: 6rem;
-    /* justify-content: space-around; */
-    padding: 3rem;
+    padding: 3rem 0 0 3rem;
     position: absolute;
     width: 100%;
     z-index: 10;
@@ -238,11 +224,6 @@
     transform-origin: left top;
     transition: transform 500ms;
   }
-
-  /* .heroTabs:hover,
-  .heroTabs:focus-within {
-    transform: scale(1);
-  } */
 
   .heroTab {
     background-color: transparent;

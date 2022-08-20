@@ -8,7 +8,7 @@ import RepoList from 'src/components/RepoList';
 import Gallery from 'src/components/Gallery';
 import Shelf from 'src/components/Shelf';
 
-import { gallery, repositories, artistShelf, developerShelf } from 'src/data/gallery.json';
+import { gallery, repositories, artistShelf, developerShelf, designShelf } from 'src/data/gallery.json';
 import { ARTIST, DESIGNER, DEVELOPER, DILETTANTE } from 'src/shared/constants/role';
 
 console.log('Thanks for visiting!');
@@ -25,6 +25,8 @@ const HomePage = () => {
       </Head>
       <Layout className="DarkLayout" role={currentRole} setRole={setCurrentRole}>
         <Hero role={currentRole} setRole={setCurrentRole} works={gallery} />
+        {/* It’s a fine line between design, illustration, and art. */}
+        {/* Design is a discipline. Development is a discipline. Art is a discipline. */}
         {/* <section>
           <h1>PROCESS</h1>
           <p>Whether it’s developing an application or painting an illustration a creator tends to go though many of the same steps.</p>
@@ -89,8 +91,9 @@ const HomePage = () => {
         </section>
         {currentRole === DILETTANTE && <FunHouse />}
         {/* <Shelf title="An Intermittent Journal" /> */}
-        {currentRole === ARTIST && <Shelf color="#fff" canvas="#a00" title={artistShelf.title} books={artistShelf.books} />}
         {currentRole === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}
+        {currentRole === DESIGNER && <Shelf color="#000" canvas="#e24b27" title={designShelf.title} books={designShelf.books} />}
+        {currentRole === ARTIST && <Shelf color="#fff" canvas="#a00" title={artistShelf.title} books={artistShelf.books} />}
       </Layout>
     </>
   )

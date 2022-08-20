@@ -7,6 +7,7 @@
 }
 
 .directoryItemImage img {
+  border: 1px solid #7777;
   border-radius: .15rem;
   width: 100%;
   height: auto;

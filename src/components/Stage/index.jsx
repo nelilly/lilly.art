@@ -66,8 +66,8 @@ const Stage = () => {
   return (
     <header className={`${stage}`}>
       <div  className={stageHeader}>
-        <img src="/lilly3_swan.svg" className={stageTitleImage} height="160" width="160" />
-        <h1 className={stageTitle}> N.E.Lilly</h1>
+        <img src="/lilly3_swan.svg" className={stageTitleImage} height="160" width="160" alt="" />
+        <h1 className={stageTitle}>N.E.Lilly</h1>
         <p className={stageTag}>Amateur Dilettante. Professional UI.</p>
       </div>
 

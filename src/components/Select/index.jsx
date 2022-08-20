@@ -32,8 +32,10 @@ const Select = () => {
   if (!mounted) return null;
 
   const handleRole = (event) => {
-    //Object.assign(settings, {role: event.target.value})
-    setSettings({role: event.target.value});
+    setSettings({
+      ...settings,
+      role: event.target.value,
+    });
   }
 
   const isRole = (role, value) => role === value;

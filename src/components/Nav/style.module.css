@@ -139,12 +139,17 @@
 
 .navLink:hover,
 .navLink:focus,
-.navLink.active {
+.navLink[aria-current=page] {
   background-color: var(--color-canvas-text);
   color: var(--color-canvas);
   border: .15rem solid var(--color-canvas-text);
   transform: rotateY(0deg);
   z-index: 1;
+}
+
+.navLink[aria-current=page] {
+  color: var(--color-canvas-text);
+  background-color: var(--color-anchor-canvas);
 }
 
 .primaryPanel .navLink {
@@ -169,10 +174,10 @@
 
 .primaryPanel .navLink:hover,
 .primaryPanel .navLink:focus,
-.primaryPanel .navLink.active,
+.primaryPanel .navLink[aria-current=page],
 .secondaryPanel .navLink:hover,
 .secondaryPanel .navLink:focus,
-.secondaryPanel .navLink.active {
+.secondaryPanel .navLink[aria-current=page] {
   transform: rotateY(0deg);
   z-index: 1;
 }

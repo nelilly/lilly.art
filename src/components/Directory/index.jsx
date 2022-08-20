@@ -56,6 +56,6 @@ const Directory = ({show, works}) => {
 export default Directory;
 
 Directory.propTypes = {
-  show: PropTypes.bool.isRequired,
+  show: PropTypes.bool,
   works: PropTypes.array.isRequired,
 };

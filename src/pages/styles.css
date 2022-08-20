@@ -20,6 +20,7 @@
   --color-canvas-faded: var(--color-light-faded);
 
   --color-anchor: hsl(0, 90%, 45%);
+  --color-anchor-canvas: hsl(0, 90%, 58%);
   --color-anchor-focus: hsl(0, 90%, 22%);
   --color-anchor-active: hsl(0, 90%, 22%);
   --color-anchor-visited: hsl(0, 90%, 22%);
@@ -46,6 +47,7 @@
   --color-canvas-faded: var(--color-dark-faded);
   --color-anchor: hsl(0, 90%, 58%);
   --color-anchor-focus: hsl(0, 90%, 77%);
+  --color-anchor-canvas: hsl(0, 90%, 33%);
 
   --icon-profile: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' height='15' width='15' viewBox='0,0 10,10' fill='%23fff'%3e%3ccircle cx='5' cy='3' r='3' /%3e%3cpath d='M 0 10 A 5 5 180 0 1 10 10' /%3e%3c/svg%3e");
   --icon-tech: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' height='15' width='15' viewBox='0,0 10,10' fill='%23fff'%3e%3cpath d='M0,3h10M0,5h10M0,7h10M3,0v10M5,0v10M7,0v10' fill='none' stroke='%23fff' stroke-width='1' /%3e%3crect x='2' y='2' height='6' width='6' fill='%23000' stroke='%23fff' stroke-width='1' /%3e%3crect x='3' y='3' height='4' width='4' /%3e%3c/svg%3e");

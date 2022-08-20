@@ -4,6 +4,7 @@ import {
   chartCaption,
   chartGrid,
   chartValues,
+  you,
 } from './style.module.css';
 
 const BarChart = ({ title, details, userValue, chartData }) => {
@@ -41,7 +42,7 @@ const BarChart = ({ title, details, userValue, chartData }) => {
               return (
               <g key={label}>
                 <rect x={`${xPos(count, index) - barWidth / 2}%`} y={`${99 - value}%`} height={`${value}%`} stroke="currentColor" strokeWidth=".5" width={`${barWidth}%`} />
-                {isLabel(label, userValue) && <><circle cx={`${xPos(count, index)}%`} cy={`${90.5 - value}%`} r="20" fill="#0088ff" /><text x={`${xPos(count, index)}%`} y={`${91 - value}%`} textAnchor="middle" alignmentBaseline="middle" fill="var(--color-canvas)" aria-label={`You use ${label} ${title}`}>You</text></>}
+                {isLabel(label, userValue) && <><circle cx={`${xPos(count, index)}%`} cy={`${90.5 - value}%`} r="20" fill="#0088ff" /><text x={`${xPos(count, index)}%`} y={`${91 - value}%`} textAnchor="middle" alignmentBaseline="middle" fill="var(--color-canvas)" className={you} aria-label={`You use ${label} ${title}`}>You</text></>}
               </g>)
               }
               )

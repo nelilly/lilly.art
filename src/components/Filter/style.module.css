@@ -1,0 +1,14 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+
+@media (min-width: 61.25rem) {
+  .filter {
+    padding: 2rem 4rem;
+  }
+}

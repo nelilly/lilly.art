@@ -18,7 +18,7 @@ import {
   directoryFooter,
 } from './style.module.css';
 
-const Directory = ({works}) => {
+const Directory = ({show, works}) => {
 
   return (
     <>
@@ -47,7 +47,7 @@ const Directory = ({works}) => {
           </article>
           )
         }
-        {works.length < 5 && <Link href="/gallery/"><a className={directoryFooter}>View the entire Gallery</a></Link>}
+        {show && <Link href="/gallery/"><a className={directoryFooter}>View the entire Gallery</a></Link>}
       </article>
     </>
   );
@@ -56,5 +56,6 @@ const Directory = ({works}) => {
 export default Directory;
 
 Directory.propTypes = {
+  show: PropTypes.bool.isRequired,
   works: PropTypes.array.isRequired,
 };

@@ -91,6 +91,7 @@
   outline: none;
   padding: .5rem 1rem;
   text-align: left;
+  text-transform: unset;
   white-space: nowrap;
   width: 100%;
 }
@@ -120,8 +121,14 @@
   outline: none;
   padding: 0;
   text-shadow: 0 0 0 #0000, 0 0 0 #0000;
+  text-transform: unset;
   transition: 1s text-shadow ease-in-out;
   width: auto;
+}
+
+.heroTrigger:hover,
+.heroTrigger:focus {
+  color: inherit;
 }
 
 .heroMenu:hover .heroNavlist,

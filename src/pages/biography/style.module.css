@@ -12,8 +12,29 @@
   word-spacing: 0.025rem;
 }
 
+.quote {
+  border-left: .3rem double var(--color-canvas-text);
+  border-radius: .5rem;
+  border-right: .3rem double var(--color-canvas-text);
+  letter-spacing: -0.02rem;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  word-spacing: 0.025rem;
+}
+
+.quoteCitation {
+  margin: 0;
+  text-align: right;
+}
+
 @media (min-width: 640px) {
   .bioSubtitle {
     font-size: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1.3rem;
+    margin: 2rem 0;
+    padding: 2rem 3rem;
   }
 }

@@ -5,6 +5,8 @@ import Layout from 'src/components/Layout';
 import {
   bio,
   bioSubtitle,
+  quote,
+  quoteCitation,
 } from './style.module.css';
 
 // console.log('Thanks for visiting!');
@@ -30,6 +32,10 @@ const BioPage = () => {
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>
         <article className={bio}>
+          <blockquote className={quote}>
+            <p>From time to time I have been asked for a biography, but there has been nothing eventful in my life. There have been ups and downs, but the main thing about it has been my work. What more do you want to know about an artist when you have his work? Even Giotto and Rembrandt were just simple men. There is very little known about Shakespeare. He was so simple they didn’t notice him.</p>
+            <p className={quoteCitation}>&mdash; John French Sloane, The Gist of Art</p>
+          </blockquote>
           <h1>I’m Nathan E. Lilly</h1>
           <p className={bioSubtitle}>I’ve used my artistic training to become a software developer for Fortune 100 companies in the technology, media, and finance industries.</p>
           <p>I grew up in the Kensington neighborhood of Philadelphia where I attended Mastbaum AVTS to earn a Commercial Art diploma. At Lock Haven University I was a founding student in the Electronic Media program and lab, earning Bachelor of Arts degrees in Fine Art (concentration in Electronic Media) and Philosophy. After college I briefly worked in graphic design before I began building websites &mdash; incrementing my skills from graphics, to coding, to programming, to full-stack development &mdash; at companies ranging from the U.S. Navy Fleet Material Supply Office, JP Morgan Chase, GMAC Mortgage, The Vanguard Group, and Comcast NBCUniversal.</p>

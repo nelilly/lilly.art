@@ -1,0 +1,36 @@
+.repoList {
+  padding: 1rem 2rem 2rem;
+}
+
+.repoListTitle {
+  margin: 0 0 1rem;
+}
+
+.repoListContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.repoListFooter {
+    border-bottom: .2rem solid var(--color-canvas-text-faded);
+    display: block;
+    margin: 1rem 0 0;
+    padding: 1rem;
+    text-align: right;
+}
+
+@media (min-width: 61.25rem) {
+  .repoList {
+    padding: 2rem 4rem 4rem;
+  }
+  .repoListContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    gap: 1rem;
+  }
+}

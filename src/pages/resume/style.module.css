@@ -1,0 +1,64 @@
+.resume {
+  padding: 3rem 1.5rem 6rem 1rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.resumeSection {
+  padding: 0 0 3rem;
+}
+
+.resumeSection > h2 {
+  padding-bottom: .2rem;
+}
+
+.experienceSection {
+  padding-top: 2rem;
+}
+
+.cover {
+  border-bottom: .2rem solid var(--color-canvas-text-faded);
+}
+
+.position {
+  margin-bottom: 2rem;
+  padding: 0 0 .1rem 1rem;
+  border-left: .2rem solid var(--color-canvas-text-faded);
+}
+
+.details {
+  border-bottom: .1rem solid var(--color-canvas-text-faded);
+}
+
+.title,
+.location,
+.duration {
+  margin: 0;
+}
+
+@media (min-width: 61.25rem) {
+  .details {
+    border-bottom: .1rem solid var(--color-canvas-text-faded);
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+  }
+
+  .employer {}
+
+  .title {
+    margin: 0 0 .5rem;
+  }
+
+  .location {
+    margin: 0;
+  }
+
+  .duration {
+    margin: 0;
+    text-align: right;
+  }
+}
+
+.description {
+  margin: .5rem 0 2rem;
+}

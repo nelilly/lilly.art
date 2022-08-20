@@ -33,16 +33,5 @@
         "width": 3200
       }      
     }
-  },
-  {
-    "name": "spacewesterns-magazine-v2",
-    "sizes": {
-      "mobile": {
-        "height": 300,
-        "width": 400,
-        "x": 100,
-        "y": 100
-      }
-    }
   }
 ]

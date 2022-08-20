@@ -57,7 +57,7 @@ const ResumePage = () => {
                 <p className={description}>Collaborate with UX designers and back-end developers in a fast-paced Agile driven environment to create and enhance user interfaces, components, and page designs for high-volume, large-scale web applications using HTML5, CSS3, JavaScript (ES6), and Javascript UI technologies and frameworks (including MERN, AWS/Serverless, React.js, Polymer, JQuery, JSON); Work with various CMSs and IDEs; Required intimate knowledge of web standards, accessibility, responsive device support, browser rendering, and cross-browser support.</p>
               </section>
               <section className={position}>
-                <h3 className={employer}>The Judge Group (for Comcast NBCUniversal)</h3>
+                <h3 className={employer}>The Judge Group <span>for Comcast NBCUniversal</span></h3>
                 <div className={details}>
                   <p className={title}>Senior Front-End Developer</p>
                   <p className={location}>Philadelphia, PA</p>
@@ -66,7 +66,7 @@ const ResumePage = () => {
                 <p className={description}>Collaborate with UX designers and back-end developers in a fast-paced Agile driven environment to create and enhance user interfaces for high-volume, large-scale web applications; Develop advanced interactive page features using HTML5, JavaScript, JQuery and custom code; Work with Sitecore CMS, Visual Studio, and Team Foundation Server (TFS); Experience rendering page designs for large-scale, public-facing websites using HTML, CSS, and Javascript UI technologies (including JQuery, React.js, Polymer, AJAX, JSON, MVC, MVVM, Knockout.js); Required intimate knowledge of web standards, accessibility, responsive device support, browser rendering, and cross-browser support.</p>
               </section>
               <section className={position}>
-                <h3 className={employer}>LiquidHub (for The Vanguard Group)</h3>
+                <h3 className={employer}>LiquidHub <span>for The Vanguard Group</span></h3>
                 <div className={details}>
                   <p className={title}>Senior UI Designer</p>
                   <p className={location}>Malvern, PA</p>
@@ -75,7 +75,7 @@ const ResumePage = () => {
                 <p className={description}>Responsible for User Interaction development (UX), user interface design of website prototypes, and component based design solutions using Dreamweaver, XML, Cascading Style Sheets, JavaScript, HTML, JSF, Photoshop, Illustrator, and RIAs (Rich Internet Applications using tools like AJAX, Flash) in an Agile project management environment for the User Centered Design group of a premier investment management company. Provide senior level user interface design services, which include the analysis of complex user and business workflows and the design and documentation of highly usable interfaces (web, mobile, or client/server), reflecting knowledge of the user’s tasks, information hierarchy and usability best practices. Create detailed user interface designs, including prototyping, for external (web/mobile) and internal (client/server) applications. Support the creation of visual elements, components and templates. Recommend viable, effective design/code solutions which supported underlying performance thresholds. Maintain technical knowledge around company UCD practices, use of templates &amp; components, and prototype process.</p>
               </section>
               <section className={position}>
-                <h3 className={employer}>Freelance (for various clients)</h3>
+                <h3 className={employer}>Freelance <span>for various clients</span></h3>
                 <div className={details}>
                   <p className={title}>Lead Developer</p>
                   <p className={location}>Philadelphia, PA</p>
@@ -93,7 +93,7 @@ const ResumePage = () => {
                 <p className={description}>Work closely with business/marketing staff to answer questions and understand project expectations; Assure code quality and test all projects, including web usability and accessibility; Develop and maintain web sites using HTML, CSS, JavaScript, Dreamweaver, Flash, and XML. Sites included GMAC Mortgage, Ditech, and various internal applications.</p>
               </section>
               <section className={position}>
-                <h3 className={employer}>Kelly Professional Services (for J.P.Morgan Chase)</h3>
+                <h3 className={employer}>Kelly Professional Services <span>for J.P.Morgan Chase</span></h3>
                 <div className={details}>
                   <p className={title}>Web Technician</p>
                   <p className={location}>Wilmington, DE</p>
@@ -117,10 +117,19 @@ const ResumePage = () => {
                   <p className={location}>Philadelphia, PA</p>
                   <p className={duration}>2/2001 - 9/2001</p>
                 </div>
-                <p className={description}>Instruction of continuing education students in web development methods and technologies in a university class format.</p>
+                <p className={description}>Instruction of continuing education students in web development methods and technologies, including web graphics, HTML, CSS, JavaScript, Flash, and multimedia, in a university class format.</p>
               </section>
               <section className={position}>
-                <h3 className={employer}>JFC ProTemps (for TSR Inc. &amp; NavSup FMSO)</h3>
+                <h3 className={employer}>JSP Concepts</h3>
+                <div className={details}>
+                  <p className={title}>Tutor</p>
+                  <p className={location}>Camp Hill, PA</p>
+                  <p className={duration}>2/1997 - 10/2001</p>
+                </div>
+                <p className={description}>Private on-on-one instruction with individual students in the use of graphic design applications.</p>
+              </section>
+              <section className={position}>
+                <h3 className={employer}>JFC ProTemps <span>for TSR Inc. &amp; NavSup FMSO</span></h3>
                 <div className={details}>
                   <p className={title}>Web Developer</p>
                   <p className={location}>Camp Hill, PA</p>

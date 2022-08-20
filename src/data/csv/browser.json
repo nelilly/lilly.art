@@ -18,5 +18,9 @@
   {
     "label": "Edge",
     "value": 3.14
+  },
+  {
+    "label": "Opera",
+    "value": 2.16
   }
 ]

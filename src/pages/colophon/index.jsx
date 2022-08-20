@@ -46,6 +46,7 @@ const browserName = ( userAgent ) => {
 }
 
 const os = (platform) => {
+  if(platform === false || platform === null){ return 'Unknown'}
   if(platform.indexOf('Linux') > -1){ return 'Linux'}
   if(platform.indexOf('iP') > -1){ return 'iOS'}
   if(platform.indexOf('Mac') > -1){ return 'OS X'}
@@ -56,10 +57,9 @@ const os = (platform) => {
 }
 
 const device = ( userAgent ) => {
-  if(userAgent.indexOf('Mobile') > -1){ return 'Mobile'}
-  if(userAgent.indexOf('Tablet') > -1){ return 'Tablet'}
-  if(userAgent.indexOf('Desktop') > -1){ return 'Desktop'}
-  if(userAgent.indexOf('Console') > -1){ return 'Console'}
+  if((/nintendo|playstation|psp|xbox/i.test(userAgent.toLowerCase()))){ return 'Console'}
+  if((/(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|xoom|sch-i800|pixel c|sm-t827r4|playbook|silk|(puffin(?!.*(IP|AP|WP))))/i.test(userAgent.toLowerCase()))){ return 'Tablet'}
+  if((/mobile|ipad|phone|ipod|android|blackberry|mini|windows\sce|palm/i.test(userAgent.toLowerCase()))){ return 'Mobile'}
 
   return 'Desktop';
 }
@@ -134,15 +134,15 @@ const Colophon = ({ lastUpdated }) => {
           <section>
             <p>A colophon is a page at the back of a book, originating from the Greek word for “summit”. The purpose of a colophon is to give the reader information about the book&rsquo;s authorship and construction methods. It is the final touch put on the work.</p>
             <p>This site was designed and developed using <a href="https://jamstack.org/">JAM stack principles</a>, the <a href="https://reactjs.org/">React</a> library with <a href="https://nextjs.org/">Next.js</a> and served on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
-            <p>It is currently displayed on {browser.os} operating system in {browser.browserFamily} browser using {browser.rendering} rendering engine with a screen size of {browser.width} × {browser.height} and document size of {browser.innerWidth} × {browser.innerHeight} (if your browser is being honest).</p>
+            <p>It is currently displayed on {browser.os} operating system in {browser.browserFamily} browser using {browser.rendering} rendering engine with a screen size of {browser.width}×{browser.height} and document size of {browser.innerWidth}×{browser.innerHeight} (if your browser is being honest).</p>
             
             <h2>User Comparison</h2>
-            <BarChart title="Operating System" details="The Android platform is the worldwide leader, followed closely by Windows." userValue={browser.os} chartData={osData} />
-            <BarChart title="Browser" details="Chrome maintains the lion’s share of the browser market." userValue={browser.browserFamily} chartData={browserData} />
+            <BarChart title="Operating System" details="The Android operating system is the current usage leader, followed closely by Windows and the combined iOS/OSX operating systems." userValue={browser.os} chartData={osData} />
+            <BarChart title="Browser" details="Chrome maintains the vast majority of the browser market worldwide, while use of Internet Explorer has dropped to less that 1%." userValue={browser.browserFamily} chartData={browserData} />
             <BarChart title="Screen Resolution" details="Screen resolution is highly fractured, underscoring the importance of using proper responsive techniques." userValue={`${browser.width}×${browser.height}`} chartData={resolutionData} />
-            <BarChart title="Devices" details="Mobile devices are increasingly important, while the use of game consoles for Internet access languishes." userValue={browser.device} chartData={deviceData} />
-
-            <p>Your reported user agent string is: <code>{browser.userAgent}</code></p>
+            <BarChart title="Devices" details="Globally, mobile devices are increasingly important while the use of game consoles for Internet access languishes." userValue={browser.device} chartData={deviceData} />
+            {/* <p>Your reported user agent string is: <code>{browser.userAgent}</code></p> */}
+            <p>Source: <a href="https://statcounter.com/">Statcounter</a> Worldwide statistics (Aug 2020).</p>
 
             <h2>Navigation Icon</h2>
             <figure style={{textAlign: 'center', margin: '1rem 0'}}>

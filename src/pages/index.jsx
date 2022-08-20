@@ -86,19 +86,58 @@ const HomePage = () => {
             <Shelf title={developerShelf.title} books={developerShelf.books} />
           </section>
         </section> */}
-        {/* {currentRole === ARTIST && 
-          <section>
-            <h2>Electronic Media</h2>
-            <p>Photo bashing, digital collages, generative art, responsize art, art as code, code as art.</p>
-            <h2>Sketchbook Gallery</h2>
-            <p>Sample pages from my sketchbook.</p>
-            <h2>Paintings</h2>
-            <p>Oils, mostly.</p>
-          </section>} */}
+        {currentRole === ARTIST && <>
+        {/* <section style={{padding: '3rem 4rem 4rem'}}>
+          <h2>Electronic Media</h2>
+          <p>Photo bashing, digital collages, generative art, responsive art, art as code, &amp; code as art.</p>
+        </section> */}
+        <section style={{padding: '3rem 4rem 4rem'}}>
+          <h2>Sketching Out</h2>
+          <p>Pages from my sketchbook.</p>
+          <div style={{display: 'grid', gridTemplateColumns: '2fr repeat(3, 1fr)', gridTemplateRows: 'auto', gridGap: '1rem',}}>
+            <img src="/images/artist/sketchbook-studio.jpg" alt="" />
+            <img src="/images/artist/sketchbook-konowal.jpg" alt="" />
+            <img src="/images/artist/sketchbook-dome-01.jpg" alt="" />
+            <img src="/images/artist/sketchbook-raine.jpg" alt="" />
+
+            <img src="/images/artist/sketchbook-hangar.jpg" alt="" />
+            <img src="/images/artist/sketchbook-lamp.jpg" alt="" />
+            <img src="/images/artist/sketchbook-statue.jpg" alt="" />
+            <img src="/images/artist/sketchbook-fountain.jpg" alt="" />
+
+            <img src="/images/artist/sketchbook-dog.jpg" alt="" />
+            <img src="/images/artist/sketchbook-gamenight.jpg" alt="" />
+            <img src="/images/artist/sketchbook-basillica.jpg" alt="" />
+            <img src="/images/artist/sketchbook-dome.jpg" alt="" />
+          </div>
+        </section>
+        <section style={{padding: '3rem 4rem 4rem'}}>
+          <h2>Paintings</h2>
+          <p>Oils, mostly.</p>
+          <style>
+            {`div > img {
+              border-radius: .3rem;
+              height: 13rem;
+              width: 100%;
+              object-fit: cover;
+            }`}
+          </style>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gridGap: '1rem',}}>
+            <img src="/images/artist/nuclear-landscape-00.jpg" alt="" />
+            <img src="/images/artist/egg-yellow-plate-02.jpg" alt="" />
+            <img src="/images/artist/in-the-walls-of-eryx-nathan-e-lilly.jpg" alt="" />
+            <img src="/images/artist/inside-cats-1-nathan-e-lilly.jpg" alt="" />
+            <img src="/images/artist/oil-chromatic-02.jpg" alt="" />
+            <img src="/images/artist/oil-chromatic-01.jpg" alt="" />
+            <img src="/images/artist/oil-low-value.jpg" alt="" />
+            <img src="/images/artist/oil-monochromatic.jpg" alt="" />
+          </div>
+        </section>
+        </>}
         {(currentRole === ARTIST || currentRole === DESIGNER) && <Gallery works={gallery} />}
         {currentRole === DILETTANTE && <FunHouse />}
-        {/* {currentRole === DESIGNER && <h2 style={{border: '1rem solid currentColor', margin: '4rem', textAlign: 'center'}}>Juvenilia: Design</h2>}
-        {currentRole === ARTIST && <h2 style={{border: '1rem solid currentColor', margin: '4rem', textAlign: 'center'}}>Juvenilia: Art</h2>} */}
+        {currentRole === DESIGNER && <h2 style={{border: '1rem solid currentColor', margin: '4rem', textAlign: 'center'}}>Juvenilia: Design</h2>}
+        {currentRole === ARTIST && <h2 style={{border: '1rem solid currentColor', margin: '4rem', textAlign: 'center'}}>Juvenilia: Art</h2>}
         {/* {currentRole === DILETANTE && <Shelf title="An Intermittent Journal" />} */}
         {currentRole === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}
         {currentRole === DESIGNER && <Shelf color="#000" canvas="#e24b27" title={designShelf.title} books={designShelf.books} />}

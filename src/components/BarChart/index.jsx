@@ -7,7 +7,7 @@ import {
 } from './style.module.css';
 
 const BarChart = ({ title, details, userValue, chartData }) => {
-  const xPos = (count, index) => (index * 100 / count) + (barWidth - count) * 2;
+  const xPos = (count, index) => (index * 100 / count) + (barWidth - count) * 2 + 1;
   const otherValue = chartData.map(({value}) => value).reduce((previousValue, currentValue) => previousValue + currentValue);
   const newChartData = [...chartData, {label: 'Other', value: 100 - otherValue}]
   const count = newChartData.length;
@@ -41,18 +41,18 @@ const BarChart = ({ title, details, userValue, chartData }) => {
               return (
               <g key={label}>
                 <rect x={`${xPos(count, index) - barWidth / 2}%`} y={`${99 - value}%`} height={`${value}%`} stroke="currentColor" strokeWidth=".5" width={`${barWidth}%`} />
-                {isLabel(label, userValue) && <><circle cx={`${xPos(count, index)}%`} cy={`${90.5 - value}%`} r="20" fill="#0088ff" /><text x={`${xPos(count, index)}%`} y={`${91 - value}%`} textAnchor="middle" alignmentBaseline="middle" fill="var(--color-canvas)">You</text></>}
+                {isLabel(label, userValue) && <><circle cx={`${xPos(count, index)}%`} cy={`${90.5 - value}%`} r="20" fill="#0088ff" /><text x={`${xPos(count, index)}%`} y={`${91 - value}%`} textAnchor="middle" alignmentBaseline="middle" fill="var(--color-canvas)" aria-label={`You use ${label} ${title}`}>You</text></>}
               </g>)
               }
               )
             }
           </svg>
-          <g>
-            {newChartData.map(({label}, index) => <text key={label} x={`${xPos(count, index)}%`} y="91%" textAnchor="middle">{label}</text> )}
-          </g>
-          <g className={chartValues}>
-            {newChartData.map(({label, value}, index) => <text key={label} x={`${xPos(count, index)}%`} y="97%" textAnchor="middle">{`${value.toFixed(2)}%`}</text> )}
-          </g>
+            {newChartData.map(({label, value}, index) => 
+            <g key={label}>
+              <text x={`${xPos(count, index)}%`} y="91%" textAnchor="middle">{label}</text>
+              <text x={`${xPos(count, index)}%`} y="97%" textAnchor="middle" className={chartValues}>{`${value.toFixed(2)}%`}</text>
+            </g>
+            )}
         </svg>
       </figure>
     </>

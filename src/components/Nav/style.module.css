@@ -93,6 +93,7 @@
 .navPanel > section {
   background-color: transparent;
   transform-style: preserve-3d;
+  perspective: 200rem;
 }
 
 .navPanel h2 {

@@ -79,6 +79,7 @@
 .jumbotronOption {
   border: none;
   background: transparent;
+  color: var(--color-canvas);
   cursor: pointer;
   font-family: "Fira Sans Extra Condensed", sans-serif;
   font-size: 1.5rem;
@@ -86,6 +87,7 @@
   outline: none;
   padding: .5rem 1rem;
   text-align: left;
+  text-transform: initial;
   white-space: nowrap;
   width: 100%;
 }
@@ -93,6 +95,10 @@
 .jumbotronOption:hover,
 .jumbotronOption:focus {
   color: #fff;
+}
+
+.jumbotronNav:hover,
+.jumbotronNav:focus {
   background-color: #666;
 }
 
@@ -114,6 +120,7 @@
   outline: none;
   padding: 0;
   text-shadow: 0 0 0 #0000, 0 0 0 #0000;
+  text-transform: initial;
   transition: 1s text-shadow ease-in-out;
   width: auto;
 }

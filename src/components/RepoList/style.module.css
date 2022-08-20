@@ -1,9 +1,21 @@
 .repoList {
   padding: 1rem 2rem 2rem;
+  text-align: center;
 }
 
 .repoListTitle {
   margin: 0 0 1rem;
+}
+
+.repoImage {
+  aspect-ratio: 4 / 3;
+  /* float: left; */
+  /* position: sticky; */
+  margin: 0 auto;
+  /* top: 6rem; */
+  pointer-events: none;
+  transform: translate(0, -4rem);
+  width: 30rem;
 }
 
 .repoListContent {
@@ -12,23 +24,46 @@
   grid-template-rows: auto;
   grid-gap: 1rem;
   gap: 1rem;
+  text-align: left;
 }
 
 .repoListFooter {
-    border-bottom: .2rem solid var(--color-canvas-text-faded);
+    /* border-bottom: .2rem solid var(--color-canvas-text-faded); */
     display: block;
     margin: 1rem 0 0;
+    outline: none;
     padding: 1rem;
     text-align: right;
 }
 
-@media (min-width: 61.25rem) {
+.repoListFooter:after {
+  display: inline-block;
+  content: '>';
+  padding: 0 0 0 .5rem;
+  transition: 334ms transform ease-in-out;
+}
+
+.repoListFooter:hover:after,
+.repoListFooter:focus:after {
+  transform: translate(1rem, 0);
+}
+
+@media (min-width: 960px) {
   .repoList {
     padding: 2rem 4rem 4rem;
+    text-align: left;
   }
+
+  .repoImage {
+    float: left;
+    position: sticky;
+    top: 6rem;
+    transform: translate(-9.5rem, -4rem);
+  }
+
   .repoListContent {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     grid-template-rows: auto;
     grid-gap: 1rem;
     gap: 1rem;

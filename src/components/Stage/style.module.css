@@ -1,0 +1,343 @@
+.stage {
+  /* background-color: #f5f1d9; */
+  /* background-image: linear-gradient(-135deg, #d6c6a8 0%, #f5f1d9 60%, #d6c6a8 100%); */
+  /* background-position: 60vw 25vw, 0 0; */
+  /* background-repeat: no-repeat; */
+  /* background-size: 36.4rem 19.25rem, 100% 100%; */
+  /* background-position: left; */
+  /* background-size: cover; */
+  aspect-ratio: 16 / 9;
+  border-bottom: .1rem solid var(--color-canvas-text);
+  display: flex;
+  flex-direction: column;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  max-width: 100vw;
+  padding: 1rem 2rem;
+  text-shadow: 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas), 0px 0px .1rem var(--color-canvas);
+  transition: 1s background-color ease-in-out;
+  transition-property: background-color, color;
+}
+
+.stageTitle {
+  color: currentColor;
+  font-size: 3rem;
+  font-variation-settings: 'wght' 566;
+  line-height: .9;
+  transition: 1s text-shadow ease-in-out;
+}
+
+.stageTitleImage {
+  float: left;
+  height: 5rem;
+  vertical-align: middle;
+  width: 5rem;
+  margin: 0 .8rem 2rem 0;
+}
+
+.stageTag {
+  font-size: .6rem;
+  font-variation-settings: 'wght' 500;
+  letter-spacing: -.667px;
+}
+
+.stageGlobe {
+  aspect-ratio: 16 / 9;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.stageGreeting {
+  text-align: right;
+  margin-top: auto;
+  line-height: 1;
+}
+
+.stageHello {
+  font-size: 6rem;
+  font-variation-settings: 'wght' 460;
+  line-height: .9;
+}
+
+.stageQuote {
+  color: var(--color-anchor);
+  margin: 0 2rem 4rem 0;
+  font-variation-settings: 'wght' 460;
+}
+
+.stage.roleDevelop {
+  
+}
+
+.stage:not(.roleDevelop) .scene {
+  opacity: 0;
+}
+
+.stage.roleDevelop .stageTitle {
+  /* text-shadow: 0 .1rem .05rem #000, 0 .1rem .05rem #000; */
+}
+
+.stage.roleDevelop .stageTagline {
+  /* text-shadow: 0 .1rem .05rem #000, 0 .1rem .05rem #000; */
+}
+
+.stage.roleDevelop .stageTrigger {
+  /* border-bottom: .1rem dashed #fff; */
+  /* text-shadow: 0 .1rem .05rem #000, 0 .1rem .05rem #000; */
+}
+
+.stage.roleDesign {
+}
+
+.stage.roleArt {
+}
+
+.stage.roleDabble {
+}
+
+
+
+
+
+
+/* HERO MENU */
+.stageMenu {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.stageOption {
+  border: none;
+  background: transparent;
+  color: #222;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-variation-settings: 'wght' 600;
+  font-weight: 800;
+  outline: none;
+  padding: .5rem 1rem;
+  text-align: left;
+  /* text-transform: unset; */
+  white-space: nowrap;
+  width: 100%;
+}
+
+.stageOption:hover,
+.stageOption:focus {
+  color: #fff;
+  background-color: #666;
+}
+
+.stageOption[disabled] {
+  color: #aaa;
+  cursor: default;
+  background-color: #666;
+}
+
+.stageTrigger {
+  background: transparent;
+  border: none;
+  /* border-bottom: .15rem dashed currentColor; */
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-variation-settings: 'wght' 600;
+  outline: none;
+  padding: 0;
+  text-shadow: 0 0 0 #0000, 0 0 0 #0000;
+  /* text-transform: unset; */
+  transition: 1s text-shadow ease-in-out;
+  width: auto;
+}
+
+.stageTrigger:hover,
+.stageTrigger:focus {
+  color: #666666;
+}
+
+.stageMenu:hover .stageNavlist,
+.stageMenu:focus-within .stageNavlist {
+  display: block;
+}
+
+.stageNavlist {
+  background-color: #fff;
+  box-shadow: 0 0 .3rem #0006, 0 .6rem 1rem #0006;
+  border-radius: .3rem;
+  display: none;
+  list-style: none;
+  outline: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+
+.stageNav {
+  padding: 0;
+  line-height: 1;
+}
+
+.stageNav:hover,
+.stageNav:focus {
+  background-color: #666;
+}
+
+.stageSelect {
+  border: none;
+  border-bottom: .1rem dashed #000;
+  background: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.stageSelect:focus {
+  border-bottom: .1rem solid #000;
+}
+
+.stageSelect::-ms-expand {
+  display: none;
+}
+
+.stageSelect option {
+  font-size: 1rem;
+}
+
+.stageTagline {
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 0 0 0 #0000, 0 0 0 #0000;
+  transition: 1s text-shadow ease-in-out;
+}
+
+.stageTabs {
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .stage {
+    /* height: 56.25vw; *//* 16:9 */
+    /* height: 30rem; */
+    /* padding: 0; */
+    position: relative;
+    /* width: 100vw; */
+  }
+
+  .stageTitle {
+    font-size: 4rem;
+  }
+
+  .stageTitle > img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .stageTag {
+    font-size: .8rem;
+  }
+
+  .stageTagline {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 900;
+    justify-content: space-between;
+    width: 10rem;
+  }
+
+  .stageTabs {
+    top: 0;
+    display: inline-block;
+    /* height: 6rem; */
+    /* padding: 3rem 0 0 3rem; */
+    position: absolute;
+    right: 4rem;
+    /* transform: scale(.7); */
+    /* transform-origin: left top; */
+    transition: transform 500ms;
+    /* width: 100%; */
+    z-index: 10;
+  }
+
+  .stage.roleDevelop .stageTagline:before {
+    content: "{/}";
+    display: inline-block;
+    padding: 0 .5rem 0 0;
+  }
+
+  .stage.roleDesign .stageTagline:before {
+    content: "<?>";
+    display: inline-block;
+    padding: 0 .5rem 0 0;
+  }
+
+  .stage.roleArt .stageTagline:before {
+    content: "“!”";
+    display: inline-block;
+    padding: 0 .5rem 0 0;
+  }
+
+  .stage.roleDabble .stageTagline:before {
+    content: "(*)";
+    display: inline-block;
+    padding: 0 .5rem 0 0;
+  }
+
+
+  .stageTagline:hover:before {
+    color: #666666;
+  }
+
+  .stageTab {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0 solid rgba(0,0,0,0);
+    border-top: .5rem solid rgba(0,0,0,0);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1r4m;
+
+  font-weight: 400;
+    padding: 1rem .5rem 2rem;
+    outline: none;
+    transition: .3s transform ease-out, .3s border ease-out;
+    transform: translateY(.45rem) scale(.85);
+    width: 16.666%;
+  }
+
+  .stageTab:hover,
+  .stageTab:focus,
+  .stageTab.selected {
+    border-bottom-width: .5rem;
+    border-top-width: 0;
+    transform: translateY(.35rem) scale(.9);
+  }
+
+  .stageTab.selected:hover,
+  .stageTab.selected:focus {
+    transform: translateY(0rem) scale(1);
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(1.1) rotate(1deg);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

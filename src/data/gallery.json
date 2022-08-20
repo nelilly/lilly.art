@@ -66,6 +66,7 @@
         "HTML5",
         "JavaScript",
         "PHP",
+        "Accessibility",
         "React",
         "WordPress"
       ]
@@ -89,6 +90,7 @@
         "JavaScript",
         "MySQL",
         "PHP",
+        "Accessibility",
         "WordPress"
       ]
     },
@@ -109,6 +111,7 @@
         "Git",
         "HTML5",
         "JavaScript",
+        "Accessibility",
         "Nginx",
         "Node",
         "NPM",
@@ -155,6 +158,7 @@
         "Google Maps API",
         "HTML5",
         "JavaScript",
+        "Accessibility",
         "Nginx",
         "Node",
         "NPM",
@@ -181,6 +185,7 @@
         "Google Maps API",
         "HTML5",
         "JavaScript",
+        "Accessibility",
         "Nginx",
         "Node",
         "NPM",
@@ -206,6 +211,7 @@
         "Git",
         "HTML5",
         "JavaScript",
+        "Accessibility",
         "Nginx",
         "Node",
         "NPM",
@@ -229,6 +235,7 @@
         "CSS3",
         "HTML5",
         "JavaScript",
+        "Accessibility",
         "jQuery",
         "React",
         "SASS",
@@ -1251,22 +1258,28 @@
   ],
   "repositories": [
     {
+      "name": "svg-zoo",
+      "link": "https://github.com/nelilly/svg-zoo",
+      "description": "SVG ZOO: an establishment that maintains a collection of wild SVGs for study, conservation, and display to the public.",
+      "tech": ["SVG", "HTML5", "JavaScript"]
+    },
+    {
+      "name": "html-hobbyist",
+      "link": "https://github.com/nelilly/html-hobbyist",
+      "description": "An HTML-first site to learn HTML to build your website, fanzine, or personal site.",
+      "tech": ["HTML5", "CSS", "JavaScript"]
+    },
+    {
       "name": "Comcast.github.io",
       "link": "https://github.com/nelilly/comcast.github.io-1",
       "description": "A revamp and redesign of the Comcast Open Source Software website.",
-      "tech": ["Next.js", "React", "JavaScript"]
+      "tech": ["Next.js", "React", "JavaScript", "GraphQL"]
     },
     {
-      "name": "100-days-of-node",
-      "link": "https://github.com/nelilly/100-days-of-node",
-      "description": "A Node.js curriculum for 100 days of code.",
-      "tech": ["Education", "JavaScript", "Node"]
-    },
-    {
-      "name": "learning-javascript",
-      "link": "https://github.com/nelilly/learning-javascript",
-      "description": "A 12 week introduction to JavaScript curriculum for weekly JavaScript Discussion Group sessions.",
-      "tech": ["Education", "JavaScript"]
+      "name": "running-of-the-jaynes",
+      "link": "https://github.com/nelilly/running-of-the-jaynes",
+      "description": "A custom race bib application for a charity 5k.",
+      "tech": ["Canvas API", "HTML5", "JavaScript"]
     },
     {
       "name": "inaccessible-website",
@@ -1287,16 +1300,16 @@
       "tech": ["Accessibility", "JavaScript"]
     },
     {
-      "name": "svg-zoo",
-      "link": "https://github.com/nelilly/svg-zoo",
-      "description": "SVG ZOO: an establishment that maintains a collection of wild SVGs for study, conservation, and display to the public.",
-      "tech": ["SVG", "HTML5", "JavaScript"]
+      "name": "100-days-of-node",
+      "link": "https://github.com/nelilly/100-days-of-node",
+      "description": "A Node.js curriculum for 100 days of code.",
+      "tech": ["Education", "JavaScript", "Node"]
     },
     {
-      "name": "running-of-the-jaynes",
-      "link": "https://github.com/nelilly/running-of-the-jaynes",
-      "description": "A custom race bib application for a charity 5k.",
-      "tech": ["Canvas API", "HTML5", "JavaScript"]
+      "name": "learning-javascript",
+      "link": "https://github.com/nelilly/learning-javascript",
+      "description": "A 12 week introduction to JavaScript curriculum for weekly JavaScript Discussion Group sessions.",
+      "tech": ["Education", "JavaScript"]
     }
   ],
   "snippets": [

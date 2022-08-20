@@ -143,7 +143,8 @@ const Colophon = ({ lastUpdated }) => {
             <BarChart title="Devices" details="Globally, mobile devices are increasingly important while the use of game consoles for Internet access languishes." userValue={browser.device} chartData={deviceData} />
             {/* <p>Your reported user agent string is: <code>{browser.userAgent}</code></p> */}
             <p>Source: <a href="https://statcounter.com/">Statcounter</a> Worldwide statistics (Aug 2020).</p>
-
+          </section>
+          <section>
             <h2>Navigation Icon</h2>
             <figure style={{textAlign: 'center', margin: '1rem 0'}}>
               <figcaption style={{textAlign: 'left'}}><p>The main navigation icon is a ship’s wheel in homage to Netscape Navigator, the inherent nautical theme of the World Wide Web, and because I hate the hamburger.</p></figcaption>
@@ -151,8 +152,15 @@ const Colophon = ({ lastUpdated }) => {
                 <use href="#helm" height="100" width="100" />
               </svg>
             </figure>
-            <p>This site is not copy protected. Last modified on {lastUpdated}.</p>
           </section>
+          <section>
+            <h2>N.E.Lilly Logo</h2>
+            <figure style={{textAlign: 'center', margin: '1rem 0'}}>
+              <figcaption style={{textAlign: 'left'}}><p>The site logo is a minimalist design by N.E.Lilly based on the coat of arms of Thomas Lilly of Bromsgrove (1502 - 1572), as described in Burke’s General Armory. <q>3 white lilies on a field of red, with a swan crest.</q></p></figcaption>
+              <img src="/lilly3_swan.svg" height="200" width="200" alt="3 white lilies on a field of red, with a swan crest." />
+            </figure>
+          </section>
+          <p>This site is not copy protected. Last modified on {lastUpdated}.</p>
 
           <p className={end}>♠</p>
         </article>

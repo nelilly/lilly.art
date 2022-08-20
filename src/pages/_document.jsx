@@ -23,11 +23,10 @@ class MyDocument extends Document {
           <meta name="author" content="Nathan E. Lilly" />
           <meta name="color-scheme" content="light dark" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
-          {/* <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,300i,400,400i,500,500i" rel="stylesheet" /> */}
-          {/* <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" /> */}
+          <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-          <link rel="shortcut icon" href="/favicons/favicon.ico" />
+          <link rel="shortcut icon" href="/favicons/favicon.ico" sizes="any" />
+          <link rel="icon" href="/lilly3_swan.svg" type="image/svg+xml" />
           <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
           <link rel="manifest" href="/favicons/site.webmanifest" />
           <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#a00" />

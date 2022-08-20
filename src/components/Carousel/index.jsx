@@ -107,7 +107,7 @@ const Carousel = ({slides}) => {
   useEffect(() => {
     let angle = theta * currentRotation * -1;
     setCarouselRotation(`translateZ(${-radius}px) ${rotateFn}(${angle}deg)`);
-  }, [currentSlide, radius, rotateFn, theta]);
+  }, [currentRotation, currentSlide, radius, rotateFn, theta]);
 
 
   const advanceCarousel = (number) => {

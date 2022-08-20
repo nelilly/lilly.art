@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="lilly-arms-swan" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:url(#SVGID_00000109718441888429434390000004215167467074875583_);}
+	.st3{fill:url(#SVGID_00000066489585842177230070000002495469476217827231_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="125" y1="250" x2="125" y2="0" gradientTransform="matrix(1 0 0 -1 0 250)">
+	<stop  offset="0" style="stop-color:#770000"/>
+	<stop  offset="1" style="stop-color:#AA0000"/>
+</linearGradient>
+<rect class="st0" width="250" height="250"/>
+<polygon class="st1" points="27,74.8 27,214 125.7,143 229,214 229,74.8 "/>
+<linearGradient id="SVGID_00000114775659298745927770000018007328501334248363_" gradientUnits="userSpaceOnUse" x1="37.7" y1="125" x2="119.1" y2="125">
+	<stop  offset="0" style="stop-color:#770000"/>
+	<stop  offset="1" style="stop-color:#AA0000"/>
+</linearGradient>
+<path style="fill:url(#SVGID_00000114775659298745927770000018007328501334248363_);" d="M78.4,164c22.5,0,18.2-41.6,40.7-41.6
+	c0-9.5-16.5-18.2-27.7-3.5c0-15.6-0.9-22.5-13-32.9c-12.1,10.4-13,17.3-13,32.9c-11.3-14.7-27.7-6.1-27.7,3.5
+	C60.2,122.4,55.9,164,78.4,164z"/>
+<linearGradient id="SVGID_00000118396309132967605970000014012658541614790065_" gradientUnits="userSpaceOnUse" x1="130.9" y1="125" x2="212.3" y2="125">
+	<stop  offset="0" style="stop-color:#770000"/>
+	<stop  offset="1" style="stop-color:#AA0000"/>
+</linearGradient>
+<path style="fill:url(#SVGID_00000118396309132967605970000014012658541614790065_);" d="M171.6,164c22.5,0,18.2-41.6,40.7-41.6
+	c0-9.5-16.5-18.2-27.7-3.5c0-15.6-0.9-22.5-13-32.9c-12.1,10.4-13,17.3-13,32.9c-11.3-14.7-27.7-6.1-27.7,3.5
+	C153.4,122.4,149,164,171.6,164z"/>
+<path class="st1" d="M125,229.4c22.5,0,18.2-41.6,40.7-41.6c0-9.5-16.5-18.2-27.7-3.5c0-15.6-0.9-22.5-13-32.9
+	c-12.1,10.4-13,17.3-13,32.9c-11.3-14.7-27.7-6.1-27.7,3.5C106.8,187.9,102.5,229.4,125,229.4z"/>
+</svg>

@@ -6,18 +6,18 @@
   --color-white: hsl(0, 0%, 100%);
   --color-light-blue: hsl(217, 37%, 85%);
   --color-light: hsl(51, 58%, 91%);
-  --color-dark: hsl(217, 37%, 11%);
-  --color-dark: #28303d;
+  --color-dark: hsl(217, 37%, 5%);
+  /* --color-dark: #28303d; */
   --color-black: hsl(0, 0%, 0%);
   --color-light-faded: hsla(0, 100%, 100%, .5);
-  --color-dark-faded: hsla(217, 37%, 11%, .5);
+  --color-dark-faded: hsla(217, 37%, 5%, .5);
 
   --color-canvas-text: var(--color-dark);
   --color-canvas: var(--color-light);
   --color-canvas-text-faded: var(--color-dark-faded);
   --color-canvas-faded: var(--color-light-faded);
 
-  --color-anchor: hsl(0, 90%, 58%);
+  --color-anchor: hsl(0, 90%, 45%);
   --color-anchor-focus: hsl(0, 90%, 22%);
 
   --icon-profile: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' height='15' width='15' view-box='0,0 10,10' fill='%23000'%3e%3ccircle cx='5' cy='3' r='3' /%3e%3cpath d='M 0 10 A 5 5 180 0 1 10 10' /%3e%3c/svg%3e");
@@ -39,6 +39,7 @@
   --color-canvas: var(--color-dark);
   --color-canvas-text-faded: var(--color-light-faded);
   --color-canvas-faded: var(--color-dark-faded);
+  --color-anchor: hsl(0, 90%, 58%);
   --color-anchor-focus: hsl(0, 90%, 77%);
 
   --icon-profile: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' height='15' width='15' view-box='0,0 10,10' fill='%23fff'%3e%3ccircle cx='5' cy='3' r='3' /%3e%3cpath d='M 0 10 A 5 5 180 0 1 10 10' /%3e%3c/svg%3e");

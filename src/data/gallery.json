@@ -5,7 +5,7 @@
       "title":"Comcast Open Source Software",
       "excerpt":"A redesign and rearchitecture of the Comcast Open Source Software website. New features include increased adherence to corporate brand standards, a virtual conference, and a rearchitecture to take advantage of some of the latest features available through GitHub as a data source.",
       "description":"A redesign and rearchitecture of the Comcast Open Source Software website. New features include increased adherence to corporate brand standards, a virtual conference, and a rearchitecture to take advantage of some of the latest features available through GitHub as a data source.",
-      "image":"/images/development/2021-comcast-open-source-software_shard.jpg",
+      "image":"/images/development/2021-comcast-open-source-software_cover.png",
       "imageSet":"comcast-open-source-software",
       "cover":"2021-comcast-open-source-software_cover.png",
       "authorship":"enterprise",
@@ -51,7 +51,7 @@
       "title":"Comcast Corporate WordPress Theme",
       "excerpt":"A Comcast corporate branded WordPress theme developed as a Comcast Inner Source project and adopted by internal teams, such as the Comcast Accessibility organization and the Comcast Security Guild.",
       "description":"A Comcast corporate branded WordPress theme developed as a Comcast Inner Source project and adopted by internal teams, such as the Comcast Accessibility organization and the Comcast Cyber Security Guild.",
-      "image":"/images/development/2020-comcast-corporate-wordpress-theme_shard.jpg",
+      "image":"/images/development/2020-comcast-corporate-wordpress-theme_cover.png",
       "imageSet":"comcast-corporate-wordpress-theme",
       "cover":"2020-ComcastBrandUIWPTheme.png",
       "authorship":"enterprise",
@@ -75,7 +75,7 @@
       "title":"SpaceWesterns Magazine v3",
       "excerpt":"A free online magazine devoted to works with themes from the Western genre set in the vast frontiers Outer-space or having some element of extra-terrestrial travel. Think of it as Space Opera with Western-genre themes: it’s a little bit Country; it’s a little bit Space Patrol.",
       "description":"A free online magazine devoted to works with themes from the Western genre set in the vast frontiers Outer-space or having some element of extra-terrestrial travel. Think of it as Space Opera with Western-genre themes: it’s a little bit Country; it’s a little bit Space Patrol.",
-      "image":"/images/development/2020-spacewesterns-v3_shard.jpg",
+      "image":"/images/development/2020-spacewesterns-v3_cover.jpg",
       "imageSet":"spacewesterns-magazine-v3",
       "cover":"2020-spacewesterns-v3_cover.png",
       "authorship":"personal",
@@ -1479,6 +1479,12 @@
     "title": "Design Shelf",
     "books":[
       {
+        "title": "Websites That Work",
+        "author": "",
+        "cover": "/images/books/websites-that-work.jpg",
+        "isbn": "000000000"
+      },
+      {
         "title": "The Design of Everyday Things",
         "author": "",
         "cover": "/images/books/the-design-of-everyday-things.jpg",
@@ -1547,6 +1553,59 @@
         "title": "Flow: The Psychology of Optimum Experience",
         "author": "",
         "cover": "/images/books/flow.jpg",
+        "isbn": "000000000"
+      }
+    ]
+  },
+  "dilettanteShelf": {
+    "title": "Mélange",
+    "books":[
+      {
+        "title": "A Brief History of the Philosophy of Time",
+        "author": "Betty Edwards",
+        "cover": "/images/books/a-brief-history-of-the-philosophy-of-time.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Greek Models of Mind and Self",
+        "author": "",
+        "cover": "/images/books/greek-models-of-mind-and-self.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "How to Think Like a Neandertal",
+        "author": "",
+        "cover": "/images/books/how-to-think-like-a-neandertal.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "The Book",
+        "author": "",
+        "cover": "/images/books/the-book.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Born to Run",
+        "author": "",
+        "cover": "/images/books/born-to-run.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Ancient Egypt",
+        "author": "",
+        "cover": "/images/books/ancient-egypt.jpeg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Nutrition in Spaceflight and Weightlessness Models",
+        "author": "",
+        "cover": "/images/books/nutrition-in-spaceflight-and-weightlessness-models.jpg",
+        "isbn": "000000000"
+      },
+      {
+        "title": "Carnival Secrets",
+        "author": "",
+        "cover": "/images/books/carnival-secrets.jpg",
         "isbn": "000000000"
       }
     ]

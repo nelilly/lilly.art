@@ -31,6 +31,7 @@ const Nav = ({role, setRole}) => {
   const [currentRole, setCurrentRole] = useState('');
   // const [motionPref, setMotionPref] = useState('');
   const [theme, setTheme] = useLocalStorage('theme', '');
+  const [motion, setMotion] = useLocalStorage('motion', '');
 
   useEffect(() => {
     setCurrentRole(localStorage.getItem('role', role) || DEVELOPER);
@@ -55,6 +56,28 @@ const Nav = ({role, setRole}) => {
   }
 
   ToggleTheme.propTypes = {
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+  };
+
+  const handleMotionToggle = (value) => {
+    setMotion(value ? 'reduce' : 'motion');
+  };
+  
+  const ToggleMotion = ({id, label}) => {
+    useEffect(() => {
+      if (motion === '' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        setMotion('reduce');
+        document.querySelector('html').classList.add("no-motion");
+      }
+      motion === 'reduce' && document.querySelector('html').classList.add("no-motion");
+      motion === 'motion' && document.querySelector('html').classList.remove("no-motion");
+    });
+
+    return <Toggle id={id} label={label} toggleValue={motion === 'reduce'} toggleFunction={handleMotionToggle} />;
+  }
+
+  ToggleMotion.propTypes = {
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
   };
@@ -107,7 +130,7 @@ const Nav = ({role, setRole}) => {
         <button className={navigationClose} type="button" aria-expanded={!!open} aria-label="Close navigation menu" onClick={() => setOpen(!open)} ref={navCloseRef}><svg viewBox="0,0 100,100" height="40" width="40" stroke="currentColor" strokeWidth="10" strokeLinecap="round"><path d="M25,25 75,75 M25,75 75,25" fill="none" /></svg></button>
         <section className={primaryPanel}>
           <ul>
-            <li className={navItem}><Link href={'/'}><a className={navLink} aria-current={routed('/')}>Home</a></Link></li>
+            <li className={navItem}><Link href={'/'}><a className={navLink} aria-current={routed('/')}><svg height="1.9rem" width="1.9rem" style={{verticalAlign: 'middle'}}><use href="#lilly-arms" height="1.9rem" width="1.9rem" /></svg> Home</a></Link></li>
             <li className={navItem}><Link href={`/resume`}><a className={navLink} aria-current={routed('/resume')}>Résumé</a></Link></li>
             <li className={navItem}>
               <Link href={`/gallery`}><a className={navLink} aria-current={routed('/gallery')}>Gallery</a></Link>
@@ -157,7 +180,7 @@ const Nav = ({role, setRole}) => {
             <h2>Settings</h2>
             <p>Role: <span className={span}>{currentRole}</span></p>
             <ToggleTheme id="navToggleDarkMode" label="Dark mode" />
-            {/* <Toggle id="navToggleMotion" label="No/Unnecessary Motion" toggleValue={motionPref} toggleFunction={setMotionPref} /> */}
+            <ToggleMotion id="navToggleMotion" label="Reduce Motion" />
           </section>
           <ul>
             <li className={navItem}>

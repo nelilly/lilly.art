@@ -109,7 +109,7 @@ const Colophon = ({ lastUpdated }) => {
     <>
       <Head>
         <title>N.E.Lilly: Colophon</title>
-        <meta property="og:title" content={'title'} key="title" />
+        <meta property="og:title" content="N.E.Lilly: Colophon" key="title" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>

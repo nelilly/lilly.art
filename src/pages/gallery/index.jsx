@@ -75,7 +75,7 @@ const GalleryPage = () => {
     <>
       <Head>
         <title>N.E.Lilly: Gallery</title>
-        <meta property="og:title" content={'title'} key="title" />
+        <meta property="og:title" content="N.E.Lilly: Gallery" key="title" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>

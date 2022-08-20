@@ -99,7 +99,6 @@
 .heroOption:hover,
 .heroOption:focus {
   color: #fff;
-  background-color: #666;
 }
 
 .heroOption[disabled] {
@@ -152,6 +151,10 @@
 .heroNav {
   padding: 0;
   line-height: 1;
+}
+
+.heroNav:hover {
+  background-color: #666;
 }
 
 .heroSelect {

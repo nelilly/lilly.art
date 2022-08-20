@@ -6,7 +6,7 @@
   padding: 2rem 0 0;
 }
 
-.directoryItemImage > img {
+.directoryItemImage img {
   border-radius: .3rem;
   width: 100%;
   height: auto;
@@ -87,6 +87,15 @@
 
   .directoryItemImage {
     width: 100%;
+  }
+  .directoryItemImage img {
+    border-radius: .3rem;
+    width: 100%;
+    height: auto;
+    height: 18rem;
+    width: 40rem;
+    object-fit: cover;
+    object-position: top;
   }
 
   .directoryItemCaption {

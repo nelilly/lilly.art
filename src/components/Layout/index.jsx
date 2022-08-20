@@ -19,7 +19,7 @@ const Layout = ({ children, role, setRole  }) => {
     <header className={`${siteHeader}`}>
       <nav className={helm}>
         <a href="/" className={siteId}>
-          <svg className={siteLogo} viewBox="-25,-25 150,150" height="36" width="36">
+          <svg id="lilly-arms" className={siteLogo} viewBox="-25,-25 150,150" height="36" width="36">
             <defs>
               <linearGradient id="redGradient">
                 <stop offset="0%" stopColor="#700"/>

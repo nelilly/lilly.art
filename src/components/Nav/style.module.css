@@ -138,7 +138,8 @@
 }
 
 .navLink:hover,
-.navLink:focus {
+.navLink:focus,
+.navLink.active {
   background-color: var(--color-canvas-text);
   color: var(--color-canvas);
   border: .15rem solid var(--color-canvas-text);
@@ -168,8 +169,10 @@
 
 .primaryPanel .navLink:hover,
 .primaryPanel .navLink:focus,
+.primaryPanel .navLink.active,
 .secondaryPanel .navLink:hover,
-.secondaryPanel .navLink:focus {
+.secondaryPanel .navLink:focus,
+.secondaryPanel .navLink.active {
   transform: rotateY(0deg);
   z-index: 1;
 }

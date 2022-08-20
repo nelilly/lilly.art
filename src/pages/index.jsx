@@ -14,7 +14,6 @@ import Shelf from 'src/components/Shelf';
 
 import {
   gallery,
-  repositories,
   generativeSlides,
   sketchSlides,
   paintingSlides,
@@ -26,6 +25,8 @@ import {
 import juvenilia from 'src/data/juvenilia.json';
 import * as role from 'src/shared/constants/role';
 const { ARTIST, DESIGNER, DEVELOPER, DILETTANTE } = role;
+import filterRole from 'src/shared/functions/filterRole';
+import filterRepos from 'src/shared/functions/filterRepos';
 
 console.log('Thanks for visiting! Check out the Colophon if you’re interested in how this site is put together: https://lilly.art/colophon');
 
@@ -36,8 +37,14 @@ const HomePage = () => {
     <>
       <Head>
         <title>N.E.Lilly: portfolio of art, development, and design</title>
+        <link rel="canonical" href="https://lilly.art/" />
         <meta property="og:title" content="N.E.Lilly: portfolio of art, development, and design" key="title" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta property="og:url" content="https://lilly.art/" />
+        <meta property="og:description" content="N.E.Lilly: portfolio of art, development, and design." />
+        <meta property="og:image" content="https://lilly.art/images/og/home.webp" />
+        <meta property="twitter:image" content="https://lilly.art/images/og/home.webp" />
+        <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, portfolio, development, design, art, illustration" />
+        <meta name="description" content="N.E.Lilly: portfolio of art, development, and design." />
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>
         {/* <Hero role={currentRole} setRole={setCurrentRole} works={gallery} /> */}
@@ -52,9 +59,10 @@ const HomePage = () => {
             <li>Concept/Exploration/Workshops</li>
             <li>Mood board</li>
             <li>Outline</li>
-            <li>Style Guide/Design Systems</li>
-            <li>Ümwelt</li>
+            <li>Style Guide/Design Systems/Technique</li>
             <li>Personas</li>
+            <li>Ümwelt</li>
+            <li>Journey Map</li>
             <li>Wireframe</li>
             <li>Prototype</li>
             <li>Architecture</li>
@@ -70,8 +78,9 @@ const HomePage = () => {
             <li>Building Accessibility Testing Into Your Workflow</li>
           </ul>
         </section> */}
-        {currentRole === DEVELOPER && <RepoList works={repositories} />}
-        {(currentRole === DEVELOPER || currentRole === DESIGNER) && <Directory works={gallery.slice(0, 4)} show={true} />}
+        {currentRole === DEVELOPER && <RepoList works={filterRepos(gallery)} />}
+        {currentRole === DEVELOPER && <Directory works={filterRole(gallery, "Development").slice(0, 10)} show={true} />}
+        {currentRole === DESIGNER && <Directory works={filterRole(gallery, "UX Design").slice(0, 10)} show={true} />}
         {/* <section>
           <h3>Widgets</h3>
           <section style={{padding: '2rem'}}>
@@ -114,7 +123,7 @@ const HomePage = () => {
         <Slides slides={sketchSlides.slides} title={sketchSlides.title} description={sketchSlides.description} />
         <Slides slides={paintingSlides.slides} title={paintingSlides.title} description={paintingSlides.description} />
         </>}
-        {(currentRole === ARTIST || currentRole === DESIGNER) && <Gallery works={gallery} />}
+        {(currentRole === ARTIST || currentRole === DESIGNER) && <Gallery works={filterRole(gallery, "Illustration")} />}
         {currentRole === DILETTANTE && <FunHouse />}
         {currentRole === DESIGNER && <Juvenilia title="Design" works={juvenilia.designer} />}
         {currentRole === ARTIST && <><Juvenilia title="Life Drawing" description="Sketches and studies from the early years." works={juvenilia.life} /><Juvenilia title="Art" description="Personal works from the early years." works={juvenilia.artist} /></>}

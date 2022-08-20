@@ -109,8 +109,14 @@ const Colophon = ({ lastUpdated }) => {
     <>
       <Head>
         <title>N.E.Lilly: Colophon</title>
+        <link rel="canonical" href="https://lilly.art/colophon/" />
         <meta property="og:title" content="N.E.Lilly: Colophon" key="title" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta property="og:url" content="https://lilly.art/colophon/" />
+        <meta property="og:description" content="N.E.Lilly: Colophon." />
+        <meta property="og:image" content="https://lilly.art/images/og/home.webp" />
+        <meta property="twitter:image" content="https://lilly.art/images/og/home.webp" />
+        <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, colophon, portfolio, development, design, art, illustration" />
+        <meta name="description" content="N.E.Lilly: Colophon." />
       </Head>
       <Layout role={currentRole} setRole={setCurrentRole}>
         <article className={colophon}>

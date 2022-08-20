@@ -16,7 +16,7 @@ const RepoList = ({works}) => {
         <h2 className={repoListTitle}>The Good Parts</h2>
         <img src="/images/danaus_chrysippus.webp" alt="danaus chrysippus" className={repoImage} />
         <section className={repoListContent}>
-          {works.map((repo) => <RepoItem key={repo.name} {...repo} />)}
+          {works.map((repo) => <RepoItem key={repo.repository.name} name={repo.repository.name} link={repo.repository.link} description={repo.description} tech={repo.tech} />)}
         </section>
         <a className={repoListFooter} href="https://github.com/nelilly?tab=repositories">View all repositories on GitHub</a>
       </article>

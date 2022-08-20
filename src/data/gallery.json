@@ -1,10 +1,75 @@
 {
   "gallery": [
     {
+      "date":"2022-01-25T10:00:00",
+      "title":"HTML Hobbyist",
+      "url":"https://www.html-hobbyist.com",
+      "excerpt":"Part tutorial, part historical document: an HTML-first site built in the yesterweb style providing web design information to help people learn to build a website, fanzine, or personal site.",
+      "description":"Part tutorial, part historical document: an HTML-first site built in the yesterweb style providing web design information to help people learn to build a website, fanzine, or personal site.",
+      "repository": {
+        "name": "html-hobbyist",
+        "link": "https://github.com/nelilly/html-hobbyist"
+      },
+      "image":"/images/development/2022-htmlhobbyist_cover.webp",
+      "imageSet":"html-hobbyist",
+      "cover":"2022-htmlhobbyist_cover.webp",
+      "authorship":"personal",
+      "role":[
+        "Development",
+        "UX Design",
+        "Graphic Design"
+      ],
+      "tech":[
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Next.js",
+        "React",
+        "Git",
+        "Accessibility"
+      ]
+    },
+    {
+      "date":"2021-12-01T10:23:19",
+      "title":"SVG ZOO",
+      "url":"https://nelilly.github.io/svg-zoo/",
+      "excerpt":"SVG ZOO: an establishment that maintains a collection of wild SVGs for study, conservation, and display to the public.",
+      "description":"SVG ZOO: an establishment that maintains a collection of wild SVGs for study, conservation, and display to the public.",
+      "repository" : {
+        "name": "svg-zoo",
+        "link": "https://github.com/nelilly/svg-zoo"
+      },
+      "image":"/images/development/2021-svgzoo_cover.webp",
+      "imageSet":"svg-zoo",
+      "cover":"2021-svgzoo_cover.png",
+      "authorship":"personal",
+      "role":[
+        "Development",
+        "UX Design",
+        "Graphic Design"
+      ],
+      "tech":[
+        "SVG",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Next.js",
+        "React",
+        "Git",
+        "Accessibility"
+      ]
+    },
+    {
       "date":"2021-08-11T12:00:00",
       "title":"Comcast Open Source Software",
+      "url":"https://comcast.github.io/",
       "excerpt":"A redesign and rearchitecture of the Comcast Open Source Software website. New features include increased adherence to corporate brand standards, a virtual conference, and a rearchitecture to take advantage of some of the latest features available through GitHub as a data source.",
       "description":"A redesign and rearchitecture of the Comcast Open Source Software website. New features include increased adherence to corporate brand standards, a virtual conference, and a rearchitecture to take advantage of some of the latest features available through GitHub as a data source.",
+      "repository" : 
+      {
+        "name": "Comcast.github.io",
+        "link": "https://github.com/nelilly/comcast.github.io"
+      },
       "image":"/images/development/2021-comcast-open-source-software_cover.webp",
       "imageSet":"comcast-open-source-software",
       "cover":"2021-comcast-open-source-software_cover.png",
@@ -26,8 +91,13 @@
     {
       "date":"2020-11-01T10:23:19",
       "title":"Inaccessible Sites",
+      "url":"https://nelilly.github.io/inaccessible-website/",
       "excerpt":"A showcase of accessibility (A11Y) issues to allow developers to learn how to find and fix them. Used in conjunction with an accessibility workshop.",
       "description":"A site created to showcase accessibility (A11Y) issues and allow developers to learn how to fix them. Used in conjunction with an accessibility workshop.",
+      "repository" : {
+        "name": "inaccessible-website",
+        "link": "https://github.com/nelilly/inaccessible-website"
+      },
       "image":"/images/development/2019-inaccessible-sites_cover.webp",
       "imageSet":"inaccessible-sites",
       "cover":"2019-inaccessible-art_cover.png",
@@ -82,12 +152,14 @@
       "authorship":"personal",
       "role":[
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "CSS3",
         "HTML5",
         "JavaScript",
+        "SVG",
         "MySQL",
         "PHP",
         "Accessibility",
@@ -95,8 +167,80 @@
       ]
     },
     {
+      "date":"2020-06-11T09:47:59",
+      "title":"Running of the Jaynes",
+      "excerpt":"A custom race bib application for a charity 5k.",
+      "description":"A custom race bib application for a charity 5k benefiting Equality Now.",
+      "repository": {
+        "name": "running-of-the-jaynes",
+        "link": "https://github.com/nelilly/running-of-the-jaynes"
+      },
+      "image":"/images/design/2021-running-of-the-jaynes-bib-2021.webp",
+      "imageSet":"running-of-the-jaynes",
+      "cover":"2021-running-of-the-jaynes-bib-2021.webp",
+      "authorship":"personal",
+      "role":[
+        "Development",
+        "Graphic Design"
+      ],
+      "tech":[
+        "Canvas API",
+        "JavaScript",
+        "HTML5"
+      ]
+    },
+    {
+      "date":"2019-10-07T12:00:00",
+      "title":"Accessibility Workflow",
+      "excerpt":"Guidelines, recommendations, and NPM package suggestions to implement automated accessibility testing into a workflow.",
+      "description":"Guidelines, recommendations, and NPM package suggestions to implement automated accessibility testing into a workflow.",
+      "repository" : 
+      {
+        "name": "a11y-workflow",
+        "link": "https://github.com/nelilly/a11y-workflow"
+      },
+      "image":"/images/role_developer.svg",
+      "imageSet":"accessibility-workflow",
+      "cover":"role_developer.svg",
+      "authorship":"personal",
+      "role":[
+        "Development"
+      ],
+      "tech":[
+        "Accessibility",
+        "Testing",
+        "NPM",
+        "Workflow",
+        "Webpack"
+      ]
+    },
+    {
+      "date":"2019-10-02T12:00:00",
+      "title":"Accessibility Manual Testing",
+      "excerpt":"Guidelines and recommendations for setting up a manual accessibility testing environment.",
+      "description":"Guidelines and recommendations for setting up a manual accessibility testing environment.",
+      "repository" : 
+      {
+        "name": "a11y-manual-testing",
+        "link": "https://github.com/nelilly/a11y-manual-testing"
+      },
+      "image":"/images/role_developer.svg",
+      "imageSet":"accessibility-manual-testing",
+      "cover":"role_developer.svg",
+      "authorship":"personal",
+      "role":[
+        "Development"
+      ],
+      "tech":[
+        "Accessibility",
+        "Testing",
+        "Workflow"
+      ]
+    },
+    {
       "date":"2019-08-29T15:41:58",
       "title":"Xfinity Help and Support 2019",
+      "url":"https://www.xfinity.com/support/",
       "excerpt":"A redesign and rearchitecture of the Xfinity customer service site that provides Help and Support for Xfinity Internet, TV, Voice, Home and other services to a React‑based UI architecture.",
       "description":"A redesign and rearchitecture of the Xfinity customer service site that provides Help and Support for Xfinity Internet, TV, Voice, Home and other services to a React‑based UI architecture.",
       "image":"/images/development/2019-xfinity-help-and-support-2019_cover.webp",
@@ -118,7 +262,8 @@
         "React",
         "Redux",
         "SASS",
-        "Webpack"
+        "Webpack",
+        "Docker"
       ]
     },
     {
@@ -216,7 +361,29 @@
         "Node",
         "NPM",
         "Polymer",
-        "Redux"
+        "Redux",
+        "Docker"
+      ]
+    },
+    {
+      "date":"2017-02-14T12:00:00",
+      "title":"Learning JavaScript",
+      "excerpt":"A 12 week introduction to JavaScript curriculum for weekly JavaScript Discussion Group sessions.",
+      "description":"A 12 week introduction to JavaScript curriculum for weekly JavaScript Discussion Group sessions.",
+      "repository" : 
+      {
+        "name": "learning-javascript",
+        "link": "https://github.com/nelilly/learning-javascript"
+      },
+      "image":"/images/role_developer.svg",
+      "imageSet":"learning-javascript",
+      "cover":"role_developer.svg",
+      "authorship":"personal",
+      "role":[
+        "Development"
+      ],
+      "tech":[
+        "JavaScript"
       ]
     },
     {
@@ -245,6 +412,7 @@
     {
       "date":"2015-01-30T03:18:07",
       "title":"ConTainment v2",
+      "url":"http://containment.greententacles.com/",
       "excerpt":"A mobile, responsive convention finder that allows users to find the nearest conventions with a search by postal code in the U.S. & Canada.",
       "description":"A mobile, responsive convention finder that allows users to find the nearest conventions with a search by postal code in the U.S. & Canada.",
       "image":"/images/development/2015-containment-v2_cover.webp",
@@ -253,7 +421,8 @@
       "authorship":"personal",
       "role":[
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "AJaX",
@@ -339,6 +508,7 @@
     {
       "date":"2009-01-01T18:10:36",
       "title":"Everyday Weirdness",
+      "url":"http://everydayweirdness.com/",
       "excerpt":"An online daily Weird fiction magazine.",
       "description":"An online daily Weird fiction magazine.",
       "image":"/images/development/2009-everydayweirdness_cover.webp",
@@ -347,7 +517,8 @@
       "authorship":"personal",
       "role":[
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "CSS2",
@@ -360,6 +531,7 @@
     {
       "date":"2008-12-12T03:33:47",
       "title":"Thaumatrope",
+      "url":"https://thaumatrop.greententacles.com/",
       "excerpt":"The first twitter fiction magazine.",
       "description":"The first twitter fiction magazine.",
       "image":"/images/development/2008-thaumatrope_cover.webp",
@@ -467,6 +639,22 @@
       ]
     },
     {
+      "date":"2008-08-03T12:12:12",
+      "title":"Horse Thieves",
+      "excerpt":"Illustration for Space Westerns Magazine.",
+      "description":"Illustration for Space Westerns Magazine.",
+      "image":"/images/illustration/nathan-e-lilly-horsethieves.jpg",
+      "imageSet":"in-the-walls-of-eryx",
+      "cover":"nathan-e-lilly-horsethieves.jpg",
+      "authorship":"personal",
+      "role":[
+        "Illustration"
+      ],
+      "tech":[
+        
+      ]
+    },
+    {
       "date":"2008-07-29T02:53:25",
       "title":"Lampreyhead",
       "excerpt":"Illustration of Tim W. Burke’s horror fiction character Lampreyhead.",
@@ -493,7 +681,8 @@
       "authorship":"commission",
       "role":[
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "CSS2",
@@ -502,6 +691,22 @@
         "PHP",
         "Web 2.0",
         "XHTML"
+      ]
+    },
+    {
+      "date":"2008-04-06T04:51:33",
+      "title":"Craphound",
+      "excerpt":"Illustration for Space Westerns Magazine.",
+      "description":"Illustration for Space Westerns Magazine.",
+      "image":"/images/illustration/nathan-e-lilly-craphound.jpg",
+      "imageSet":"in-the-walls-of-eryx",
+      "cover":"nathan-e-lilly-craphound.jpg",
+      "authorship":"personal",
+      "role":[
+        "Illustration"
+      ],
+      "tech":[
+        
       ]
     },
     {
@@ -515,7 +720,8 @@
       "authorship":"personal",
       "role":[
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "CSS2",
@@ -545,7 +751,6 @@
       "tech":[
         "AJaX",
         "CSS2",
-        "DHTML",
         "Google Maps API",
         "JavaScript",
         "MySQL",
@@ -553,6 +758,38 @@
         "Twitter API",
         "Web 2.0",
         "XHTML"
+      ]
+    },
+    {
+      "date":"2007-12-02T12:12:12",
+      "title":"The Clone Wrangler’s Bride",
+      "excerpt":"Illustration for Space Westerns Magazine.",
+      "description":"Illustration for Space Westerns Magazine.",
+      "image":"/images/illustration/nathan-e-lilly-clonewrangler.jpg",
+      "imageSet":"in-the-walls-of-eryx",
+      "cover":"nathan-e-lilly-clonewrangler.jpg",
+      "authorship":"personal",
+      "role":[
+        "Illustration"
+      ],
+      "tech":[
+        
+      ]
+    },
+    {
+      "date":"2007-11-25T12:12:12",
+      "title":"Space Western Limerick Contest",
+      "excerpt":"Illustration for Space Westerns Magazine.",
+      "description":"Illustration for Space Westerns Magazine.",
+      "image":"/images/illustration/nathan-e-lilly-limerick2007.jpg",
+      "imageSet":"in-the-walls-of-eryx",
+      "cover":"nathan-e-lilly-limerick2007.jpg",
+      "authorship":"personal",
+      "role":[
+        "Illustration"
+      ],
+      "tech":[
+        
       ]
     },
     {
@@ -624,7 +861,8 @@
       "authorship":"personal",
       "role":[
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "CSS2",
@@ -690,7 +928,8 @@
       "role":[
         "Motion Graphics",
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "CSS2",
@@ -712,7 +951,8 @@
       "authorship":"commission",
       "role":[
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "CSS2",
@@ -1019,7 +1259,8 @@
       "authorship":"enterprise",
       "role":[
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "ASP",
@@ -1060,7 +1301,8 @@
       "authorship":"enterprise",
       "role":[
         "Development",
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "ASP",
@@ -1082,7 +1324,8 @@
       "cover":"2001-deadman.png",
       "authorship":"commission",
       "role":[
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "CSS1",
@@ -1154,7 +1397,8 @@
       "cover":"2000-nuketown.png",
       "authorship":"commission",
       "role":[
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "CSS1",
@@ -1226,7 +1470,8 @@
       "cover":"1998-ashley.png",
       "authorship":"commission",
       "role":[
-        "UX Design"
+        "UX Design",
+        "Graphic Design"
       ],
       "tech":[
         "HTML4",
@@ -1254,62 +1499,6 @@
         "Web 1.0",
         "Web Graphics"
       ]
-    }
-  ],
-  "repositories": [
-    {
-      "name": "svg-zoo",
-      "link": "https://github.com/nelilly/svg-zoo",
-      "description": "SVG ZOO: an establishment that maintains a collection of wild SVGs for study, conservation, and display to the public.",
-      "tech": ["SVG", "Education", "HTML5", "JavaScript"]
-    },
-    {
-      "name": "html-hobbyist",
-      "link": "https://github.com/nelilly/html-hobbyist",
-      "description": "An HTML-first site to learn HTML to build your website, fanzine, or personal site.",
-      "tech": ["HTML5", "Education", "CSS", "JavaScript"]
-    },
-    {
-      "name": "Comcast.github.io",
-      "link": "https://github.com/nelilly/comcast.github.io-1",
-      "description": "A revamp and redesign of the Comcast Open Source Software website.",
-      "tech": ["Next.js", "React", "JavaScript", "GraphQL"]
-    },
-    {
-      "name": "running-of-the-jaynes",
-      "link": "https://github.com/nelilly/running-of-the-jaynes",
-      "description": "A custom race bib application for a charity 5k.",
-      "tech": ["Canvas API", "HTML5", "JavaScript"]
-    },
-    {
-      "name": "inaccessible-website",
-      "link": "https://github.com/nelilly/inaccessible-website",
-      "description": "A website to help designers and developers understand how to test for and remediate potential accessibility issues.",
-      "tech": ["Accessibility", "Education", "Next.js", "React", "JavaScript"]
-    },
-    {
-      "name": "a11y-workflow",
-      "link": "https://github.com/nelilly/a11y-workflow",
-      "description": "Guidelines, recommendations, and NPM package suggestions to implement automated accessibility testing into a workflow.",
-      "tech": ["Accessibility", "Education", "JavaScript"]
-    },
-    {
-      "name": "a11y-manual-testing",
-      "link": "https://github.com/nelilly/a11y-manual-testing",
-      "description": "Guidelines and recommendations for setting up a manual accessibility testing environment.",
-      "tech": ["Accessibility", "Education", "JavaScript"]
-    },
-    {
-      "name": "100-days-of-node",
-      "link": "https://github.com/nelilly/100-days-of-node",
-      "description": "A Node.js curriculum for 100 days of code.",
-      "tech": ["JavaScript", "Education", "Node"]
-    },
-    {
-      "name": "learning-javascript",
-      "link": "https://github.com/nelilly/learning-javascript",
-      "description": "A 12 week introduction to JavaScript curriculum for weekly JavaScript Discussion Group sessions.",
-      "tech": ["JavaScript", "Education"]
     }
   ],
   "snippets": [

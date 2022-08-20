@@ -34,7 +34,7 @@ export const getStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-const GalleryItem = ({ item: {title, authorship, date, role, tech, image, description} }) => {
+const GalleryItem = ({ item: {title, authorship, date, role, tech, image, imageSet, description} }) => {
   const [currentRole, setCurrentRole] = useState('');
   useEffect(() => {
     setCurrentRole(localStorage.getItem('role', currentRole) || DEVELOPER);
@@ -44,8 +44,15 @@ const GalleryItem = ({ item: {title, authorship, date, role, tech, image, descri
   <>
     <Head>
       <title>N.E.Lilly: {title}</title>
-      <meta property="og:title" content={title} key="title" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+      <meta property="og:title" content={`${title} - N.E.Lilly`} key="title" />
+      <link rel="canonical" href={`https://lilly.art/gallery/${imageSet}`} />
+      <meta property="og:title" content={`${title} - N.E.Lilly`} key="title" />
+      <meta property="og:url" content={`https://lilly.art/gallery/${imageSet}`} />
+      <meta property="og:description" content={`${title}: ${description} - N.E.Lilly`} />
+      <meta property="og:image" content="https://lilly.art/images/og/home.webp" />
+      <meta property="twitter:image" content="https://lilly.art/images/og/home.webp" />
+      <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, gallery, portfolio, development, design, art, illustration" />
+      <meta name="description" content={`${title}: ${description} - N.E.Lilly`} />
     </Head>
     <Layout role={currentRole} setRole={setCurrentRole}>
       <article className={galleryItem}>
@@ -70,6 +77,7 @@ GalleryItem.propTypes = {
     date: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image: PropTypes.string,
+    imageSet: PropTypes.string,
     role: PropTypes.array.isRequired,
     tech: PropTypes.array.isRequired,
     title: PropTypes.string.isRequired,

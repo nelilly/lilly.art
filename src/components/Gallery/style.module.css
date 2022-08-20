@@ -62,6 +62,10 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .galleryContainer {
+    max-height: 13.5rem;
+  }
+
 
   .galleryTitle {
     margin: 0 0 1rem;

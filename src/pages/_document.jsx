@@ -15,11 +15,8 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charSet="utf-8" />
           <meta httpEquiv="Content-Type" content="text/html" />
           <meta httpEquiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
-          <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, portfolio, development" /> 
-          <meta name="description" content="N.E.Lilly public portfolio of art, development, &amp; design." />
           <meta name="author" content="Nathan E. Lilly" />
           <meta name="color-scheme" content="light dark" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />

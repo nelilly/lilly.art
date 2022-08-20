@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import Link from 'next/link';
 import { keyChange } from 'src/shared/functions/keyChange';
 import {
   repoItem,

@@ -1,18 +1,17 @@
-import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
-import Toggle from 'src/components/Toggle';
+// import Link from 'next/link';
+// import Toggle from 'src/components/Toggle';
 import { 
   menu,
   menuPanel,
   menuItem,
-  dark as darkStyle,
+  // dark as darkStyle,
 } from './style.module.css';
-import { DEVELOPER } from 'src/shared/constants/role';
-import { gallery, repositories, artistShelf, developerShelf } from 'src/data/gallery.json';
+// import { DEVELOPER } from 'src/shared/constants/role';
+// import { gallery, repositories, artistShelf, developerShelf } from 'src/data/gallery.json';
 import useMousePosition from 'src/shared/hooks/useMousePosition';
-const KEYCODE_TAB = 9;
-const ESC = 27;
+// const KEYCODE_TAB = 9;
+// const ESC = 27;
 
 const Menu = ({works}) => {
   // const [currentRole, setCurrentRole] = useState('');

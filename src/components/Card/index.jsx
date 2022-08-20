@@ -6,7 +6,6 @@ import {vh} from 'src/shared/styles/style.module.css';
 import { 
   card,
   cardItem,
-  cardItemImage,
   cardItemCaption,
   cardItemTitle,
   cardItemType,
@@ -19,7 +18,7 @@ import {
   inactive,
 } from './style.module.css';
 
-const Card = ({title, image, authorship, date, role, description, tech, currentSlide, index}) => {
+const Card = ({title, authorship, date, role, description, tech, currentSlide, index}) => {
 
   return (
     <>

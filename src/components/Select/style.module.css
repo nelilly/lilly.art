@@ -1,0 +1,173 @@
+/* HERO MENU */
+
+.select {
+  padding: 0;
+}
+.selectMenu {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.selectOption {
+  border: none;
+  background: transparent;
+  color: #222;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-variation-settings: 'wght' 600;
+  font-weight: 600;
+  outline: none;
+  padding: .5rem 1rem;
+  text-align: left;
+  /* text-transform: unset; */
+  white-space: nowrap;
+  width: 100%;
+}
+
+.selectOption:hover,
+.selectOption:focus {
+  color: #fff;
+  background-color: #666;
+}
+
+.selectOption[disabled] {
+  color: #aaa;
+  cursor: default;
+  background-color: #666;
+}
+
+.selectTrigger {
+  background: transparent;
+  border: none;
+  /* border-bottom: .15rem dashed currentColor; */
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-variation-settings: 'wght' 500;
+  font-weight: 500;
+  outline: none;
+  padding: 0;
+  text-shadow: 0 0 0 #0000, 0 0 0 #0000;
+  /* text-transform: unset; */
+  transition: 1s text-shadow ease-in-out;
+  width: auto;
+}
+
+.selectTrigger:hover,
+.selectTrigger:focus {
+  color: #666666;
+}
+
+.selectMenu:hover .selectNavlist,
+.selectMenu:focus-within .selectNavlist {
+  display: block;
+}
+
+.selectNavlist {
+  background-color: #fff;
+  box-shadow: 0 0 .3rem #0006, 0 .6rem 1rem #0006;
+  border-radius: .3rem;
+  display: none;
+  list-style: none;
+  outline: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+
+.selectNav {
+  padding: 0;
+  line-height: 1;
+}
+
+.selectNav:hover,
+.selectNav:focus {
+  background-color: #666;
+}
+
+.selectSelect {
+  border: none;
+  border-bottom: .1rem dashed #000;
+  background: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.selectSelect:focus {
+  border-bottom: .1rem solid #000;
+}
+
+.selectSelect::-ms-expand {
+  display: none;
+}
+
+.selectSelect option {
+  font-size: 1rem;
+}
+
+.selectLabel {
+  /* font-weight: 500; */
+  margin: 0;
+  text-shadow: 0 0 0 #0000, 0 0 0 #0000;
+  transition: 1s text-shadow ease-in-out;
+}
+
+.selectLabel {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  justify-content: space-between;
+  margin: 0 0 0 auto;
+  padding: 0;
+  width: 10rem;
+}
+
+.selectLabel:hover:before,
+.selectLabel:focus-within:before {
+  color: #666666;
+}
+
+.select.roleDevelop .selectLabel:before {
+  content: "{/}";
+  display: inline-block;
+  padding: 0 .5rem 0 0;
+}
+
+.select.roleDesign .selectLabel:before {
+  content: "<?>";
+  display: inline-block;
+  padding: 0 .5rem 0 0;
+}
+
+.select.roleArt .selectLabel:before {
+  content: "“!”";
+  display: inline-block;
+  padding: 0 .5rem 0 0;
+}
+
+.select.roleDabble .selectLabel:before {
+  content: "(*)";
+  display: inline-block;
+  padding: 0 .5rem 0 0;
+}
+
+@media (min-width: 640px) {
+  .select {
+    display: inline-block;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 10;
+  }
+}

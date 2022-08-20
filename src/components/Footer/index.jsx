@@ -1,6 +1,3 @@
-import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { DEVELOPER } from 'src/shared/constants/role';
 import Link from 'next/link';
 import { 
   siteFooter,
@@ -13,12 +10,7 @@ import {
   legal,
 } from './style.module.css';
 
-const Footer = ({role, setRole}) => {
-  const [currentRole, setCurrentRole] = useState('');
-  useEffect(() => {
-    setCurrentRole(localStorage.getItem('role', role) || DEVELOPER)
-    setRole(currentRole);
-  }, [role, setRole, currentRole, setCurrentRole]);
+const Footer = () => {
 
   return (
     <footer className={`${siteFooter}`}>
@@ -77,8 +69,3 @@ const Footer = ({role, setRole}) => {
 };
 
 export default Footer;
-
-Footer.propTypes = {
-  role: PropTypes.string.isRequired,
-  setRole: PropTypes.func.isRequired,
-};

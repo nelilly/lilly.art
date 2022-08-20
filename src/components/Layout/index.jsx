@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
+import { useSettingsContext } from 'src/shared/context/Settings';
 import Nav from 'src/components/Nav';
 import Footer from 'src/components/Footer';
 
@@ -14,9 +15,10 @@ import {
   helm,
 } from './style.module.css';
 
-const Layout = ({ children, role, setRole  }) => {
+const Layout = ({ children  }) => {
   const router = useRouter();
   const routed = (path) => router.pathname === path ? 'page' : '';
+  const [{role}] = useSettingsContext();
   
   return (
   <>
@@ -32,11 +34,11 @@ const Layout = ({ children, role, setRole  }) => {
           </svg>
           <div className={siteTitle}>N.E.Lilly <p className={siteSubtitle}>{role}</p></div>
         </a>
-        <Nav role={role} setRole={setRole} />
+        <Nav />
       </nav>
     </header>
     <main id="main" className={`${main}`}>{children}</main>
-    <Footer role={role} setRole={setRole} />
+    <Footer />
   </>
 );
 };
@@ -48,6 +50,4 @@ Layout.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
-  role: PropTypes.string.isRequired,
-  setRole: PropTypes.func.isRequired,
 };

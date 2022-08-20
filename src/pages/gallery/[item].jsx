@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
-import { DEVELOPER } from 'src/shared/constants/role';
 import { formatDate } from 'src/shared/functions/formatDate';
 import Head from 'next/head';
 import Layout from 'src/components/Layout';
@@ -35,10 +33,6 @@ export const getStaticPaths = async () => {
 };
 
 const GalleryItem = ({ item: {title, authorship, date, role, tech, image, imageSet, description} }) => {
-  const [currentRole, setCurrentRole] = useState('');
-  useEffect(() => {
-    setCurrentRole(localStorage.getItem('role', currentRole) || DEVELOPER);
-  }, [currentRole, setCurrentRole]);
 
   return (
   <>
@@ -54,7 +48,7 @@ const GalleryItem = ({ item: {title, authorship, date, role, tech, image, imageS
       <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, gallery, portfolio, development, design, art, illustration" />
       <meta name="description" content={`${title}: ${description} - N.E.Lilly`} />
     </Head>
-    <Layout role={currentRole} setRole={setCurrentRole}>
+    <Layout>
       <article className={galleryItem}>
           <h1 className={galleryItemTitle}>{title}</h1>
 

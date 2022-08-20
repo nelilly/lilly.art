@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { DEVELOPER } from 'src/shared/constants/role';
+import { useState } from 'react';
 import Head from 'next/head';
 import Layout from 'src/components/Layout';
 import Directory from 'src/components/Directory';
@@ -18,11 +17,6 @@ import {
 // console.log('Thanks for visiting!');
 
 const GalleryPage = () => {
-  const [currentRole, setCurrentRole] = useState('');
-  useEffect(() => {
-    setCurrentRole(localStorage.getItem('role', currentRole) || DEVELOPER);
-  }, [currentRole, setCurrentRole]);
-
   const [keyword, setKeyword] = useState(null);
   const [pageNumber, setPageNumber] = useState(0);
   const [projectLanguage, setLanguage] = useState(null);
@@ -85,7 +79,7 @@ const GalleryPage = () => {
         <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, gallery, portfolio, development, design, art, illustration" />
         <meta name="description" content="N.E.Lilly: Gallery." />
       </Head>
-      <Layout role={currentRole} setRole={setCurrentRole}>
+      <Layout>
         <article className={galleryStyle}>
           <h1>Gallery</h1>
           <Filter

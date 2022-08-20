@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import { DEVELOPER } from 'src/shared/constants/role';
 import Head from 'next/head';
 import Layout from 'src/components/Layout';
 import {
@@ -19,10 +17,6 @@ import {
 // console.log('Thanks for visiting!');
 
 const ResumePage = () => {
-  const [currentRole, setCurrentRole] = useState('');
-  useEffect(() => {
-    setCurrentRole(localStorage.getItem('role', currentRole) || DEVELOPER);
-  }, [currentRole, setCurrentRole]);
   
   return (
     <>
@@ -37,7 +31,7 @@ const ResumePage = () => {
         <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, resume, portfolio, development, design, art, illustration" />
         <meta name="description" content="N.E.Lilly: Résumé." />
       </Head>
-      <Layout role={currentRole} setRole={setCurrentRole}>
+      <Layout>
         <article className={resume}>
           <section className={`${resumeSection} ${cover}`}>
             <h1>Nathan E. Lilly</h1>

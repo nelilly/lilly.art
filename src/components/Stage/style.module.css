@@ -93,121 +93,6 @@
   opacity: 0;
 }
 
-.stage.roleDevelop .stageTitle {
-  /* text-shadow: 0 .1rem .05rem #000, 0 .1rem .05rem #000; */
-}
-
-.stage.roleDevelop .stageTagline {
-  /* text-shadow: 0 .1rem .05rem #000, 0 .1rem .05rem #000; */
-}
-
-.stage.roleDevelop .stageTrigger {
-  /* border-bottom: .1rem dashed #fff; */
-  /* text-shadow: 0 .1rem .05rem #000, 0 .1rem .05rem #000; */
-}
-
-.stage.roleDesign {
-}
-
-.stage.roleArt {
-}
-
-.stage.roleDabble {
-}
-
-
-
-
-
-
-/* HERO MENU */
-.stageMenu {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-}
-
-.stageOption {
-  border: none;
-  background: transparent;
-  color: #222;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-variation-settings: 'wght' 600;
-  font-weight: 600;
-  outline: none;
-  padding: .5rem 1rem;
-  text-align: left;
-  /* text-transform: unset; */
-  white-space: nowrap;
-  width: 100%;
-}
-
-.stageOption:hover,
-.stageOption:focus {
-  color: #fff;
-  background-color: #666;
-}
-
-.stageOption[disabled] {
-  color: #aaa;
-  cursor: default;
-  background-color: #666;
-}
-
-.stageTrigger {
-  background: transparent;
-  border: none;
-  /* border-bottom: .15rem dashed currentColor; */
-  color: inherit;
-  cursor: pointer;
-  display: inline-block;
-  font-family: inherit;
-  font-size: inherit;
-  font-variation-settings: 'wght' 500;
-  font-weight: 500;
-  outline: none;
-  padding: 0;
-  text-shadow: 0 0 0 #0000, 0 0 0 #0000;
-  /* text-transform: unset; */
-  transition: 1s text-shadow ease-in-out;
-  width: auto;
-}
-
-.stageTrigger:hover,
-.stageTrigger:focus {
-  color: #666666;
-}
-
-.stageMenu:hover .stageNavlist,
-.stageMenu:focus-within .stageNavlist {
-  display: block;
-}
-
-.stageNavlist {
-  background-color: #fff;
-  box-shadow: 0 0 .3rem #0006, 0 .6rem 1rem #0006;
-  border-radius: .3rem;
-  display: none;
-  list-style: none;
-  outline: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  right: 0;
-}
-
-.stageNav {
-  padding: 0;
-  line-height: 1;
-}
-
-.stageNav:hover,
-.stageNav:focus {
-  background-color: #666;
-}
 
 .stageSelect {
   border: none;
@@ -235,56 +120,6 @@
   font-size: 1rem;
 }
 
-.stageTagline {
-  /* font-weight: 500; */
-  margin: 0;
-  text-shadow: 0 0 0 #0000, 0 0 0 #0000;
-  transition: 1s text-shadow ease-in-out;
-}
-
-.stageTabs {
-  padding: 0;
-}
-
-.stageTagline {
-  display: flex;
-  font-size: 1rem;
-  font-weight: 500;
-  justify-content: space-between;
-  margin: 0 0 0 auto;
-  padding: 0;
-  width: 10rem;
-}
-
-.stageTagline:hover:before,
-.stageTagline:focus-within:before {
-  color: #666666;
-}
-
-.stage.roleDevelop .stageTagline:before {
-  content: "{/}";
-  display: inline-block;
-  padding: 0 .5rem 0 0;
-}
-
-.stage.roleDesign .stageTagline:before {
-  content: "<?>";
-  display: inline-block;
-  padding: 0 .5rem 0 0;
-}
-
-.stage.roleArt .stageTagline:before {
-  content: "“!”";
-  display: inline-block;
-  padding: 0 .5rem 0 0;
-}
-
-.stage.roleDabble .stageTagline:before {
-  content: "(*)";
-  display: inline-block;
-  padding: 0 .5rem 0 0;
-}
-
 @media (min-width: 640px) {
   .stage {
     aspect-ratio: 16 / 9;
@@ -307,20 +142,6 @@
 
   .stageTag {
     font-size: .8rem;
-  }
-
-  .stageTabs {
-    top: 0;
-    display: inline-block;
-    /* height: 6rem; */
-    padding: 1rem;
-    position: absolute;
-    right: 4rem;
-    /* transform: scale(.7); */
-    /* transform-origin: left top; */
-    transition: transform 500ms;
-    /* width: 100%; */
-    z-index: 10;
   }
 
   .stageHello {
@@ -367,14 +188,9 @@
   .stageTab.selected:focus {
     transform: translateY(0rem) scale(1);
   }
-}
-
-@keyframes zoom-out {
-  from {
-    transform: scale(1.1) rotate(1deg);
-  }
-
-  to {
-    transform: scale(1);
+  .stageRoleMenu {
+    position: absolute;
+    top: 0;
+    right: 4rem;
   }
 }

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Select from 'src/components/Select';
 import Toggle from 'src/components/Toggle';
 import useLocalStorage from 'src/shared/hooks/useLocalStorage';
 import { 
@@ -17,26 +18,19 @@ import {
   navItem,
   navLink,
 } from './style.module.css';
-import { DEVELOPER } from 'src/shared/constants/role';
 const KEYCODE_TAB = 9;
 const ESC = 27;
 
-const Nav = ({role, setRole}) => {
+const Nav = () => {
   const router = useRouter();
   const routed = (path) => router.pathname === path ? 'page' : '';
   const navOpenRef = useRef(null);
   const navCloseRef = useRef(null);
   const navPanelRef = useRef(null);
   const [open, setOpen] = useState(null);
-  const [currentRole, setCurrentRole] = useState('');
-  // const [motionPref, setMotionPref] = useState('');
+
   const [theme, setTheme] = useLocalStorage('theme', '');
   const [motion, setMotion] = useLocalStorage('motion', '');
-
-  useEffect(() => {
-    setCurrentRole(localStorage.getItem('role', role) || DEVELOPER);
-    setRole(currentRole);
-  }, [role, setRole, currentRole, setCurrentRole]);
 
   const handleThemeToggle = (value) => {
     setTheme(value ? 'dark' : 'light');
@@ -178,7 +172,7 @@ const Nav = ({role, setRole}) => {
           </section> */}
           <section>
             <h2>Settings</h2>
-            <p>Role: <span className={span}>{currentRole}</span></p>
+            <Select />
             <ToggleTheme id="navToggleDarkMode" label="Dark mode" />
             <ToggleMotion id="navToggleMotion" label="Reduce Motion" />
           </section>
@@ -197,8 +191,3 @@ const Nav = ({role, setRole}) => {
 };
 
 export default Nav;
-
-Nav.propTypes = {
-  role: PropTypes.string.isRequired,
-  setRole: PropTypes.func.isRequired,
-};

@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import Head from 'next/head';
+import { useSettingsContext } from 'src/shared/context/Settings';
 import Layout from 'src/components/Layout';
 // import Hero from 'src/components/Hero';
 // import Jumbotron from 'src/components/Jumbotron';
@@ -31,7 +31,7 @@ import filterRepos from 'src/shared/functions/filterRepos';
 console.log('Thanks for visiting! Check out the Colophon if you’re interested in how this site is put together: https://lilly.art/colophon');
 
 const HomePage = () => {
-  const [currentRole, setCurrentRole] = useState('');
+  const [{role}] = useSettingsContext();
   
   return (
     <>
@@ -46,9 +46,9 @@ const HomePage = () => {
         <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, portfolio, development, design, art, illustration" />
         <meta name="description" content="N.E.Lilly: portfolio of art, development, and design." />
       </Head>
-      <Layout role={currentRole} setRole={setCurrentRole}>
+      <Layout>
         {/* <Hero role={currentRole} setRole={setCurrentRole} works={gallery} /> */}
-        <Stage role={currentRole} setRole={setCurrentRole} works={gallery} />
+        <Stage works={gallery} />
         {/* <Jumbotron role={currentRole} setRole={setCurrentRole} works={gallery} /> */}
         {/* It’s a fine line between design, illustration, and art. */}
         {/* Design is a discipline. Development is a discipline. Art is a discipline. */}
@@ -78,10 +78,10 @@ const HomePage = () => {
             <li>Building Accessibility Testing Into Your Workflow</li>
           </ul>
         </section> */}
-        {currentRole === DEVELOPER && <RepoList works={filterRepos(gallery)} />}
-        {currentRole === DEVELOPER && <Directory works={filterRole(gallery, "Development").slice(0, 10)} show={true} />}
-        {currentRole === DESIGNER && <Directory works={filterRole(gallery, "Design").slice(0, 10)} show={true} />}
-        {currentRole === ARTIST && <>
+        {role === DEVELOPER && <RepoList works={filterRepos(gallery)} />}
+        {role === DEVELOPER && <Directory works={filterRole(gallery, "Development").slice(0, 10)} show={true} />}
+        {role === DESIGNER && <Directory works={filterRole(gallery, "Design").slice(0, 10)} show={true} />}
+        {role === ARTIST && <>
           <section style={{padding: '3rem 4rem 3rem'}}>
             <h2>Topics in Art</h2>
             <p>Traditional sketches, paintings, electronic media, photo bashing, digital collages, generative art, responsive art, 3d art, art as code, &amp; code as art.</p>
@@ -91,15 +91,15 @@ const HomePage = () => {
           <Slides slides={sketchSlides.slides} title={sketchSlides.title} description={sketchSlides.description} />
           <Slides slides={paintingSlides.slides} title={paintingSlides.title} description={paintingSlides.description} />
         </>}
-        {(currentRole === ARTIST || currentRole === DESIGNER) && <Gallery works={filterRole(gallery, "Illustration")} />}
-        {currentRole === DILETTANTE && <FunHouse />}
-        {currentRole === DESIGNER && <Juvenilia title="Design" description="Early work in Commercial Art." works={juvenilia.designer} />}
-        {currentRole === ARTIST && <><Juvenilia title="Life Drawing" description="Sketches and studies from the early years." works={juvenilia.life} /><Juvenilia title="Art" description="Personal works from the early years." works={juvenilia.artist} /></>}
+        {(role === ARTIST || role === DESIGNER) && <Gallery works={filterRole(gallery, "Illustration")} />}
+        {role === DILETTANTE && <FunHouse />}
+        {role === DESIGNER && <Juvenilia title="Design" description="Early work in Commercial Art." works={juvenilia.designer} />}
+        {role === ARTIST && <><Juvenilia title="Life Drawing" description="Sketches and studies from the early years." works={juvenilia.life} /><Juvenilia title="Art" description="Personal works from the early years." works={juvenilia.artist} /></>}
         {/* {currentRole === DILETANTE && <Shelf title="An Intermittent Journal" />} */}
-        {currentRole === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}
-        {currentRole === DESIGNER && <Shelf color="#000" canvas="#e24b27" title={designShelf.title} books={designShelf.books} />}
-        {currentRole === ARTIST && <Shelf color="#fff" canvas="#a00" title={artistShelf.title} books={artistShelf.books} />}
-        {currentRole === DILETTANTE && <Shelf color="#fff" canvas="#0a0" title={dilettanteShelf.title} books={dilettanteShelf.books} />}
+        {role === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}
+        {role === DESIGNER && <Shelf color="#000" canvas="#e24b27" title={designShelf.title} books={designShelf.books} />}
+        {role === ARTIST && <Shelf color="#fff" canvas="#a00" title={artistShelf.title} books={artistShelf.books} />}
+        {role === DILETTANTE && <Shelf color="#fff" canvas="#0a0" title={dilettanteShelf.title} books={dilettanteShelf.books} />}
       </Layout>
     </>
   )

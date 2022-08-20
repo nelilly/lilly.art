@@ -1,17 +1,13 @@
-import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import * as d3 from 'd3';
 import { useD3 } from '../../shared/hooks/useD3';
+import { useSettingsContext } from 'src/shared/context/Settings';
+import Select from 'src/components/Select';
 import {
   ARTIST,
   DESIGNER,
   DEVELOPER,
   DILETTANTE,
 } from 'src/shared/constants/role';
-import { keyChange } from 'src/shared/functions/keyChange';
-import { roleClass } from 'src/shared/functions/roleClass';
-
-const roles = [DEVELOPER, DESIGNER, ARTIST, DILETTANTE];
 
 import {
   stage,
@@ -19,32 +15,17 @@ import {
   stageTitleImage,
   stageTitle,
   stageTag,
-  stageTagline,
-  stageTrigger,
-  stageNavlist,
-  stageNav,
-  stageOption,
-  stageMenu,
-  stageTabs,
   stageGlobe,
   stageGreeting,
   stageHello,
   stageQuote,
   stageQuoteBody,
   stageQuoteCite,
-  roleDevelop,
-  roleDesign,
-  roleArt,
-  roleDabble,
+  stageRoleMenu,
 } from './style.module.css';
 
-const Stage = ({setRole}) => {
-  // const [currentItem, setCurrentItem] = useState(1);
-  const [currentRole, setCurrentRole] = useState('');
-  useEffect(() => {
-    setCurrentRole(localStorage.getItem('role', currentRole) || DEVELOPER)
-    setRole(currentRole);
-  }, [setRole, currentRole, setCurrentRole]);
+const Stage = () => {
+  const [{role}] = useSettingsContext();
 
   const globeRef = useD3(
     (canvas) => {
@@ -82,34 +63,8 @@ const Stage = ({setRole}) => {
     []
   );
 
-  const handleRole = (event) => {
-    setCurrentRole(event.target.value);
-    localStorage.setItem('role', event.target.value);
-    setRole(currentRole);
-  }
-
-  const isRole = (role, value) => role === value;
-
-  const tabs = roles.map((role) => {
-    return <li className={stageNav} key={keyChange(`tab_${role}`)} role="option"><button
-    aria-controls={keyChange(`panel_${role}`)}
-    aria-selected={currentRole === role}
-    tabIndex={currentRole === role ? -1 : 0}
-    id={keyChange(`tab_${role}`)}
-    type="button"
-    className={stageOption}
-    onClick={(event) => handleRole(event)}
-    role="tab"
-    disabled={isRole(currentRole, role)}
-    value={role}>{role}</button></li>
-  });
-
   return (
-    <header className={`${stage} ${roleClass(currentRole,
-      roleDevelop,
-      roleDesign,
-      roleArt,
-      roleDabble)}`}>
+    <header className={`${stage}`}>
       <div  className={stageHeader}>
         <img src="/lilly3_swan.svg" className={stageTitleImage} height="160" width="160" />
         <h1 className={stageTitle}> N.E.Lilly</h1>
@@ -118,18 +73,11 @@ const Stage = ({setRole}) => {
 
       <canvas className={stageGlobe} width="1920" height="1080" ref={globeRef} />
 
-      <nav className={stageTabs}>
-        <div className={stageTagline}>
-          <span className={stageMenu}>
-          <button className={stageTrigger} aria-haspopup="listbox">{currentRole}</button>
-          <ul className={stageNavlist}>
-            {tabs}
-          </ul>
-          </span>
-        </div>
-      </nav>
+      <div className={stageRoleMenu}>
+        <Select />
+      </div>
 
-      {currentRole === 'a Developer' && <div className={stageGreeting}>
+      {role === DEVELOPER && <div className={stageGreeting}>
         <p className={stageHello}>“Hello World”</p>
         <blockquote className={stageQuote}>
           <p className={stageQuoteBody}>Do a spinning globe. A spinning globe sells it every time.</p>
@@ -137,7 +85,7 @@ const Stage = ({setRole}) => {
         </blockquote>
       </div>}
 
-      {currentRole === 'a Designer' && <div className={stageGreeting}>
+      {role === DESIGNER && <div className={stageGreeting}>
         <p className={stageHello}>“Hello World”</p>
         <blockquote className={stageQuote}>
           <p className={stageQuoteBody}>It’s not just what it looks like and feels like. Design is how it works.</p>
@@ -145,7 +93,7 @@ const Stage = ({setRole}) => {
         </blockquote>
       </div>}
 
-      {currentRole === 'an Artist' && <div className={stageGreeting}>
+      {role === ARTIST && <div className={stageGreeting}>
         <p className={stageHello}>“Hello World”</p>
         <blockquote className={stageQuote}>
           <p className={stageQuoteBody}>All works of Art are self-portraits.</p>
@@ -153,7 +101,7 @@ const Stage = ({setRole}) => {
         </blockquote>
       </div>}
 
-      {currentRole === 'a Dilettante' && <div className={stageGreeting}>
+      {role === DILETTANTE && <div className={stageGreeting}>
         <p className={stageHello}>“Hello World”</p>
         <blockquote className={stageQuote}>
           <p className={stageQuoteBody}>I wanted to be a professional dabbler but I just never could stick with it.</p>
@@ -165,8 +113,3 @@ const Stage = ({setRole}) => {
 };
 
 export default Stage;
-
-Stage.propTypes = {
-  role: PropTypes.string.isRequired,
-  setRole: PropTypes.func.isRequired,
-};

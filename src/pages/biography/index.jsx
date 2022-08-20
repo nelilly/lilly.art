@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import { DEVELOPER } from 'src/shared/constants/role';
 import Head from 'next/head';
 import Layout from 'src/components/Layout';
 import {
@@ -12,10 +10,6 @@ import {
 // console.log('Thanks for visiting!');
 
 const BioPage = () => {
-  const [currentRole, setCurrentRole] = useState('');
-  useEffect(() => {
-    setCurrentRole(localStorage.getItem('role', currentRole) || DEVELOPER);
-  }, [currentRole, setCurrentRole]);
   
   return (
     <>
@@ -30,7 +24,7 @@ const BioPage = () => {
         <meta name="keywords" content="N.E. Lilly, Nathan E. Lilly, biography, portfolio, development, design, art, illustration" />
         <meta name="description" content="N.E.Lilly: Biography." />
       </Head>
-      <Layout role={currentRole} setRole={setCurrentRole}>
+      <Layout>
         <article className={bio}>
           <blockquote className={quote}>
             <p>From time to time I have been asked for a biography, but there has been nothing eventful in my life. There have been ups and downs, but the main thing about it has been my work. What more do you want to know about an artist when you have his work? Even Giotto and Rembrandt were just simple men. There is very little known about Shakespeare. He was so simple they didn’t notice him.</p>

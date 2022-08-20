@@ -22,7 +22,7 @@ const Filter = ({
     </div>
     {!!categoryList.length && (
       <div>
-        <label htmlFor="categorySelect">Select Category</label>
+        <label htmlFor="categorySelect">Select Technology</label>
         <select id="categorySelect" onChange={(e) => onSelect(e)}>
           <option value="">All {categoryTitle}</option>
           {categoryList.map((lang) => (

@@ -59,8 +59,17 @@
   /* margin-bottom: auto; */
 }
 
+.galleryPagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
 @media (min-width: 640px) {
-  .gallery > h1 {
+  .gallery > h1,
+  .galleryPagination {
     padding: 2rem 4rem;
   }
 }

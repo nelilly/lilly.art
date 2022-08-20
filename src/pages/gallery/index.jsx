@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Layout from 'src/components/Layout';
 import Directory from 'src/components/Directory';
 import Filter from 'src/components/Filter';
+import Pagination from 'src/components/Pagination';
 import RepoList from 'src/components/RepoList';
 import filterRepos from 'src/shared/functions/filterRepos';
 
@@ -11,6 +12,7 @@ import { gallery } from 'src/data/gallery.json';
 
 import {
   gallery as galleryStyle,
+  galleryPagination
 } from './style.module.css';
 
 // console.log('Thanks for visiting!');
@@ -55,12 +57,10 @@ const GalleryPage = () => {
         return data.tech
         .map((language) => language.toLowerCase()
           === projectLanguage?.toLowerCase()).includes(true)
-          && data.title.toLowerCase().includes(keyword?.toLowerCase());
-        // || data.author.toLowerCase().includes(keyword?.toLowerCase());
+          && (data.title.toLowerCase().includes(keyword?.toLowerCase()) || data.description.toLowerCase().includes(keyword?.toLowerCase()));
       }
       if (keyword && !projectLanguage) {
-        return data.title.toLowerCase().includes(keyword?.toLowerCase());
-        // || data.author.toLowerCase().includes(keyword?.toLowerCase());
+        return data.title.toLowerCase().includes(keyword?.toLowerCase()) || data.description.toLowerCase().includes(keyword?.toLowerCase());
       }
       if (!keyword && projectLanguage) {
         return data.tech
@@ -98,6 +98,14 @@ const GalleryPage = () => {
             categoryList={techList}
           />
           <Directory works={filteredList.slice(pageNumber * 10, (pageNumber * 10) + 10)} />
+          <div className={galleryPagination}>
+            <Pagination
+              itemType={['Project', 'Projects']}
+              count={filteredList.length}
+              currentPage={pageNumber}
+              onPageSelect={onPageSelect}
+            />
+            </div>
           <RepoList works={filterRepos(gallery)} />
         </article>
       </Layout>

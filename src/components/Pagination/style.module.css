@@ -32,11 +32,13 @@
   border-bottom: .15rem solid var(--color-canvas-text);
   border: 0;
   color: var(--color-canvas-text);
+  display: inline-block;
   font-family: inherit;
   font-size: .8rem;
   line-height: .8;
   margin: 0 .25rem;
   padding: .1rem .5rem .25rem;
+  width: 2rem;
 }
 
 button.page:hover {

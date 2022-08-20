@@ -80,52 +80,20 @@ const HomePage = () => {
         </section> */}
         {currentRole === DEVELOPER && <RepoList works={filterRepos(gallery)} />}
         {currentRole === DEVELOPER && <Directory works={filterRole(gallery, "Development").slice(0, 10)} show={true} />}
-        {currentRole === DESIGNER && <Directory works={filterRole(gallery, "UX Design").slice(0, 10)} show={true} />}
-        {/* <section>
-          <h3>Widgets</h3>
-          <section style={{padding: '2rem'}}>
-            <h4>Accessible Parallax Carousel Proof of Concept</h4>
-            <p className="codepen" data-height="640" data-theme-id="light" data-default-tab="result" data-user="nelilly" data-slug-hash="JjYrOZw" style={{height: '640px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid', margin: '1em 0', padding: '1em'}} data-pen-title="Parallax Carousel">
-              <span>See the Pen <a href="https://codepen.io/nelilly/pen/JjYrOZw">
-              Parallax Carousel</a> by Nathan E. Lilly (<a href="https://codepen.io/nelilly">@nelilly</a>)
-              on <a href="https://codepen.io">CodePen</a>.</span>
-            </p>
-          </section>
-          <section style={{padding: '2rem'}}>
-            <h4>Understanding feColorMatrix</h4>
-            <p className="codepen" data-height="640" data-theme-id="light" data-default-tab="result" data-user="nelilly" data-slug-hash="WKRNNw" style={{height: '640px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid', margin: '1em 0', padding: '1em'}} data-pen-title="feColorMatrix">
-              <span>See the Pen <a href="https://codepen.io/nelilly/pen/WKRNNw">
-              feColorMatrix</a> by Nathan E. Lilly (<a href="https://codepen.io/nelilly">@nelilly</a>)
-              on <a href="https://codepen.io">CodePen</a>.</span>
-            </p>
-            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-          </section>
-          <section style={{padding: '2rem'}}>
-            <h4>Understanding feConvolveMatrix</h4>
-            <p className="codepen" data-height="640" data-theme-id="light" data-default-tab="result" data-user="nelilly" data-slug-hash="MBmjBB" style={{height: '640px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid', margin: '1em 0', padding: '1em'}} data-pen-title="feConvolveMatrix">
-              <span>See the Pen <a href="https://codepen.io/nelilly/pen/MBmjBB">
-              feConvolveMatrix</a> by Nathan E. Lilly (<a href="https://codepen.io/nelilly">@nelilly</a>)
-              on <a href="https://codepen.io">CodePen</a>.</span>
-            </p>
-            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-          </section>
-          <section>
-            <Shelf title={developerShelf.title} books={developerShelf.books} />
-          </section>
-        </section> */}
+        {currentRole === DESIGNER && <Directory works={filterRole(gallery, "Design").slice(0, 10)} show={true} />}
         {currentRole === ARTIST && <>
-        <section style={{padding: '3rem 4rem 3rem'}}>
-          <h2>Topics in Art</h2>
-          <p>Traditional sketches, paintings, electronic media, photo bashing, digital collages, generative art, responsive art, 3d art, art as code, &amp; code as art.</p>
-        </section>
+          <section style={{padding: '3rem 4rem 3rem'}}>
+            <h2>Topics in Art</h2>
+            <p>Traditional sketches, paintings, electronic media, photo bashing, digital collages, generative art, responsive art, 3d art, art as code, &amp; code as art.</p>
+          </section>
 
-        <Slides slides={generativeSlides.slides} title={generativeSlides.title} description={generativeSlides.description} display="split" />
-        <Slides slides={sketchSlides.slides} title={sketchSlides.title} description={sketchSlides.description} />
-        <Slides slides={paintingSlides.slides} title={paintingSlides.title} description={paintingSlides.description} />
+          <Slides slides={generativeSlides.slides} title={generativeSlides.title} description={generativeSlides.description} display="split" />
+          <Slides slides={sketchSlides.slides} title={sketchSlides.title} description={sketchSlides.description} />
+          <Slides slides={paintingSlides.slides} title={paintingSlides.title} description={paintingSlides.description} />
         </>}
         {(currentRole === ARTIST || currentRole === DESIGNER) && <Gallery works={filterRole(gallery, "Illustration")} />}
         {currentRole === DILETTANTE && <FunHouse />}
-        {currentRole === DESIGNER && <Juvenilia title="Design" works={juvenilia.designer} />}
+        {currentRole === DESIGNER && <Juvenilia title="Design" description="Early work in Commercial Art." works={juvenilia.designer} />}
         {currentRole === ARTIST && <><Juvenilia title="Life Drawing" description="Sketches and studies from the early years." works={juvenilia.life} /><Juvenilia title="Art" description="Personal works from the early years." works={juvenilia.artist} /></>}
         {/* {currentRole === DILETANTE && <Shelf title="An Intermittent Journal" />} */}
         {currentRole === DEVELOPER && <Shelf color="#000" canvas="#f0db4f" title={developerShelf.title} books={developerShelf.books} />}

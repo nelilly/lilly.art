@@ -63,7 +63,7 @@ const Colophon = ({ lastUpdated }) => {
           </blockquote>}
           {currentRole === DEVELOPER && <blockquote className={quote}>
             <p>Software is a great combination between artistry and engineering.</p>
-            <p className={quoteCitation}>&mdash; Bill</p>
+            <p className={quoteCitation}>&mdash; Bill Gates</p>
           </blockquote>}
           {currentRole === DILETTANTE && <blockquote className={quote}>
             <p>From inaccessible mountain range by way of desert untrod by human foot to the ends of the unknown seas, the breath of the everlasting creative spirit is felt, rejoicing over every speck of dust that hearkens to it and lives.</p>

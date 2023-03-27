@@ -1,6 +1,27 @@
 {
   "gallery": [
     {
+      "date":"2022-09-16T10:00:00",
+      "title":"Shiny New Year 2023",
+      "url":"https://shinynewyear.com",
+      "excerpt":"Event promotion site for a Firefly-themed New Year‘s Eve party.",
+      "description":"Event promotion site for a Firefly-themed New Year‘s Eve party.",
+      "image":"/images/development/2022-shinynewyear_cover.webp",
+      "imageSet":"shiny-new-year-2023",
+      "cover":"2022-shinynewyear_cover.webp",
+      "authorship":"commission",
+      "role":[
+        "Development",
+        "UX/UI Design",
+        "Graphic Design"
+      ],
+      "tech":[
+        "HTML5",
+        "CSS3"
+      ],
+      "era": "Toolchain"
+    },
+    {
       "date":"2022-01-25T10:00:00",
       "title":"HTML Hobbyist",
       "url":"https://www.html-hobbyist.com",
@@ -1266,9 +1287,9 @@
       "title":"Philadelphia Science Fiction Society Newsletter",
       "excerpt":"Newsletter for The Philadelphia Science Fiction Society",
       "description":"Newsletter for The Philadelphia Science Fiction Society",
-      "image":"/images/development/2003-psfs_cover.webp",
+      "image":"/images/design/print/2003-07-psfs-news_cover.webp",
       "imageSet":"psfs-newsletter",
-      "cover":"2003-psfs.png",
+      "cover":"2003-07-psfs-news_cover.webp",
       "authorship":"commission",
       "role":[
         "Print"

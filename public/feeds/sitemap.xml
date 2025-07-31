@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>lilly.art</title>
+  <link>https://lilly.art/</link>
+  <description>The N.E. Lilly portfolio of art, development, and design.</description>
+  <ttl>1440</ttl>
+  <skipHours>
+    <hour>0</hour>
+    <hour>1</hour>
+    <hour>2</hour>
+    <hour>3</hour>
+    <hour>4</hour>
+    <hour>5</hour>
+    <hour>6</hour>
+    <hour>7</hour>
+    <hour>17</hour>
+    <hour>18</hour>
+    <hour>19</hour>
+    <hour>20</hour>
+    <hour>21</hour>
+    <hour>22</hour>
+    <hour>23</hour>
+  </skipHours>
+  <skipDays>
+    <day>Saturday</day>
+    <day>Sunday</day>
+  </skipDays>
+	<lastBuildDate>Tue, 14 Nov 2023 17:15:56 +0000</lastBuildDate>
+	<language>en-US</language>
+  <item>
+    <title>Gallery</title>
+		<category><![CDATA[Gallery]]></category>
+    <link>https://lilly.art/gallery</link>
+    <description>Gallery of works by N.E. Lilly.</description>
+    <image>
+      <url>https://lilly.art/lilly3_swan.svg</url>
+      <title>Lilly Logo</title>
+      <link>https://lilly.art/gallery</link>
+    </image>
+    <pubDate>Tue, 14 Nov 2023 14:09:52 +0000</pubDate>
+  </item>
+  <item>
+    <title>Development</title>
+		<category><![CDATA[Development]]></category>
+    <link>https://lilly.art/development</link>
+    <description>List of software development projects.</description>
+    <pubDate>Tue, 14 Nov 2023 13:09:52 +0000</pubDate>
+    <lastBuildDate>2023-11-15T18:30:02Z</lastBuildDate>
+  </item>
+  <item>
+    <title>Audio</title>
+		<category><![CDATA[Audio]]></category>
+    <link>https://lilly.art/audio</link>
+    <description>An audio file.</description>
+    <enclosure url="https://lilly.art/sound.mp3" length="5000" type="audio/mpeg" />
+    <pubDate>Tue, 14 Nov 2023 13:09:52 +0000</pubDate>
+    <lastBuildDate>2003-12-13T18:30:02Z</lastBuildDate>
+  </item>
+  <item>
+    <title>Colophon</title>
+		<category><![CDATA[About]]></category>
+    <link>https://lilly.art/colophon</link>
+    <description>Information about the website’s authorship and construction methods.</description>
+    <pubDate>Tue, 14 Nov 2023 13:09:52 +0000</pubDate>
+    <lastBuildDate>2003-12-13T18:30:02Z</lastBuildDate>
+  </item>
+</channel>
+
+</rss>

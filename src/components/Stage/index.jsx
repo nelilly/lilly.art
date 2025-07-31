@@ -97,7 +97,7 @@ const Stage = () => {
         <p className={stageHello}>“Hello World”</p>
         <blockquote className={stageQuote}>
           <p className={stageQuoteBody}>All works of Art are self-portraits.</p>
-          <cite className={stageQuoteCite}>– Joseph Ducreux (probably), 1793</cite>
+          <cite className={stageQuoteCite}>– Baron Joseph Ducreux (probably), 1793</cite>
         </blockquote>
       </div>}
 

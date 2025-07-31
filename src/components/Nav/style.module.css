@@ -133,7 +133,7 @@
   outline: none;
   padding: .5rem;
   transition: transform 266ms ease-out;
-  transition-property: background-color, border, filter, transform;
+  transition-property: background-color, border;
   position: relative;
 }
 
@@ -156,7 +156,7 @@
 .primaryPanel .navLink {
   /* transform: rotateY(33deg); */
   /* transform-origin: 80% 50%; */
-  will-change: background-color, border, filter, transform;
+  will-change: background-color, border;
 }
 
 .secondaryPanel > section {
@@ -167,10 +167,10 @@
 
 .secondaryPanel .navLink {
   transition: transform 266ms ease-out;
-  transition-property: background-color, border, filter, transform;
+  transition-property: background-color, border;
   /* transform: rotateY(-33deg); */
   /* transform-origin: 20% 50%; */
-  will-change: background-color, border, filter, transform;
+  will-change: background-color, border;
 }
 
 .primaryPanel .navLink:hover,
